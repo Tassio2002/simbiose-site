@@ -1,15 +1,14 @@
-import "./styles/style.css"
+import Image from "next/image";
+import "./styles/style.css";
 
-export const Card = () => {
+export const Card = (props) => {
   return (
     <div className="card-container">
-        <h1 className="title">Teste</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi mollitia
-          exercitationem, commodi voluptates repellat architecto autem
-          dignissimos nulla ea delectus corrupti est aperiam explicabo aliquam
-          dolore excepturi saepe ut amet.
-        </p>
+      <Image width={64} height={64} src={props.icon} alt={props.alt} />
+      <h1 className="title">{props.title}</h1>
+      <p>
+        {props.description}
+      </p>
     </div>
   );
 };
