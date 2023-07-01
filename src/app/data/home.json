@@ -70,58 +70,26 @@
       "cards": [
         {
           "title": "FRONT-END",
-          "icons": [
-            "/angular",
-            "/react",
-            "/next",
-            "/vue"
-          ]
+          "icons": ["/angular", "/react", "/next", "/vue"]
         },
         {
           "title": "BACK-END",
-          "icons": [
-            "/python",
-            "/java",
-            "/rails",
-            "/node",
-            "/dotnet",
-            "/csharp"
-          ]
+          "icons": ["/python", "/java", "/rails", "/node", "/dotnet", "/csharp"]
         },
         {
           "title": "DEVOPS",
-          "icons": [
-            "/aws",
-            "/cloudflare",
-            "/ansible",
-            "/docker",
-            "/ngnix"
-          ]
+          "icons": ["/aws", "/cloudflare", "/ansible", "/docker", "/ngnix"]
         },
         {
           "title": "MOBILE",
-          "icons": [
-            "/kotlin",
-            "/flutter",
-            "/react-native"
-          ]
+          "icons": ["/kotlin", "/flutter", "/react-native"]
         },
         {
           "title": "BANCO DE DADOS",
-          "icons": [
-            "/mongodb",
-            "/sql"
-          ]
+          "icons": ["/mongodb", "/sql"]
         }
       ]
     },
-    "parceiros": [
-      "/cpe",
-      "/layers",
-      "/zoom",
-      "/motbot",
-      "/dremio",
-      "/insure"
-    ]
+    "parceiros": ["/cpe", "/layers", "/zoom", "/motbot", "/dremio", "/insure"]
   }
 }

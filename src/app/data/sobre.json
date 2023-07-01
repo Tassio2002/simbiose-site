@@ -1,0 +1,30 @@
+{
+  "sobre": {
+    "header": {
+      "title": "Impulsionamos pessoas e tecnologias em seu máximo potencial",
+      "description": "Nosso sonho é: demonstrar ao mundo uma versão do capitalismo que prioriza pessoas, tornando-as psíquica e financeiramente independentes."
+    },
+    "cards": [
+      {
+        "icon": "/sobre-1",
+        "title": "Missão",
+        "description": "A missão de cada membro do nosso time é: Impulsionar pessoas e tecnologias em seu máximo potencial para juntos demonstrarmos um capitalismo inclusivo e independente, por meio de pessoas que atuem desenvolvendo pessoas e tecnologia."
+      },
+      {
+        "icon": "/sobre-2",
+        "title": "Valores",
+        "description": "Na nossa jornada em busca do nosso sonho, estabelecemos valores inegociáveis que refletem quem somos como equipe e orientam nossas ações.\n\n1 - Honesto\n2 - Visão de Time\n3 - Disciplina e Adaptatividade\n4 - Desenvolvimento Comportamental\n5 - Comprometimento\n6 - Senso de Urgência\n7 - Responsabilidade Financeira"
+      },
+      {
+        "icon": "/sobre-3",
+        "title": "Auto-gestão",
+        "description": "Uma gestão forte traz previsibilidade e controle, simplificando o planejamento e o controle de equipes. No entanto, quando buscamos recrutar talentos com potencial de crescimento, essa abordagem pode limitar a inovação.  Na nossa empresa, valorizamos pessoas que se importam genuinamente com outras pessoas e desejam fazer um impacto positivo no mundo por meio da tecnologia e desenvolvimento humano. Aqui, não há hierarquia tradicional ou burocracia. Praticamos a autogestão. Encorajamos a busca por soluções inovadoras, sem restrições burocráticas. Permitimos que nossos colaboradores usem o máximo da sua criatividade e capacidade de inovar."
+      },
+      {
+        "icon": "/sobre-4",
+        "title": "Estrutura Organizacional",
+        "description": "Hoje utilizamos um modelo chamado O2 para nos organizarmos.\nO O2 É uma nomenclatura de uma tecnologia social que ajuda organizações a se tornarem mais adaptativas, auto organizadas e focadas no propósito. Saindo de abordagens de comando-controle e planejar-e-predizer para abordagens de sentir-e-responder e experimentar-aprender-e-adaptar.\nAqui não funcionamos no modelo tradicional de hierarquia piramidal e sim no sistema de círculos. Nesse site você pode entender com um pouco mais de detalhe como funciona."
+      }
+    ]
+  }
+}
