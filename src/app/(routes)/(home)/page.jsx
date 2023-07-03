@@ -7,6 +7,7 @@ export default function Home() {
     <>
       <h1 className="title">Hello NextJS</h1>
       <Link href="/servicos" className="btn_blue">Ir para serviços</Link>
+      <Link href="/sobre" className="btn_blue">Ir para sobre</Link>
       <Card />
     </>
   );
