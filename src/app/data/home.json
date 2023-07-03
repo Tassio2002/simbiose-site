@@ -1,0 +1,95 @@
+{
+  "home": {
+    "hero": {
+      "title": "Revolucione o futuro do seu negócio com software disruptivo",
+      "subtitle": "Desenvolvemos soluções personalizadas para impulsionar sua empresa rumo ao sucesso!"
+    },
+    "servicos": {
+      "title": "serviços oferecidos",
+      "subtitle": "Na Simbiose Ventures, oferecemos uma combinação poderosa de serviços: alocação de desenvolvedores altamente qualificados, gestão eficiente de banco de dados e uma fábrica de software que entrega soluções personalizadas. Seja o protagonista da transformação digital. Conte com nossa expertise, comprometimento e alcance resultados excepcionais!",
+      "cards": [
+        {
+          "icon": "/serviece-icon-1.png",
+          "title": "Software development",
+          "description": "Desenvolvimento de soluções tecnológicas inovadoras e personalizadas para impulsionar o seu negócio."
+        },
+        {
+          "icon": "/serviece-icon-2.png",
+          "title": "Banco de dados",
+          "description": "Gestão eficiente de dados para garantir segurança, integridade e disponibilidade das informações."
+        },
+        {
+          "icon": "/serviece-icon-3.png",
+          "title": "outsourcing",
+          "description": "Amplie a sua equipe com profissionais qualificados, focados em entregar resultados de alto desempenho."
+        },
+        {
+          "icon": "/serviece-icon-4.png",
+          "title": "QA/Automação",
+          "description": "Testes de qualidade rigorosos e automação de processos para garantir a excelência dos seus produtos."
+        },
+        {
+          "icon": "/serviece-icon-5.png",
+          "title": "Salesforce",
+          "description": "Maximização do relacionamento com clientes e otimização das operações de vendas e marketing."
+        },
+        {
+          "icon": "/serviece-icon-6.png",
+          "title": "Gestão de servidores",
+          "description": "Gerenciamento completo e seguro de servidores para garantir a disponibilidade e performance das suas aplicações."
+        }
+      ]
+    },
+    "estatisticas": {
+      "cards": [
+        {
+          "icon": "/stats-icon-1",
+          "number": "+ 10",
+          "title": "Anos de Experiência"
+        },
+        {
+          "icon": "/stats-icon-2",
+          "number": "+ 180",
+          "title": "Projetos Entregues"
+        },
+        {
+          "icon": "/stats-icon-3",
+          "number": "+ 40",
+          "title": "Parceiros Atendidos"
+        },
+        {
+          "icon": "/stats-icon-4",
+          "number": "+ 10",
+          "title": "Squads Alocados"
+        }
+      ]
+    },
+    "tecnologias": {
+      "title": "Tecnologias",
+      "subtitle": "A expertise da nossa equipe em diversas tecnologias. Em nossa empresa, nos destacamos na criação de projetos de alto impacto utilizando as seguintes linguagens e frameworks.",
+      "cards": [
+        {
+          "title": "FRONT-END",
+          "icons": ["/angular", "/react", "/next", "/vue"]
+        },
+        {
+          "title": "BACK-END",
+          "icons": ["/python", "/java", "/rails", "/node", "/dotnet", "/csharp"]
+        },
+        {
+          "title": "DEVOPS",
+          "icons": ["/aws", "/cloudflare", "/ansible", "/docker", "/ngnix"]
+        },
+        {
+          "title": "MOBILE",
+          "icons": ["/kotlin", "/flutter", "/react-native"]
+        },
+        {
+          "title": "BANCO DE DADOS",
+          "icons": ["/mongodb", "/sql"]
+        }
+      ]
+    },
+    "parceiros": ["/cpe", "/layers", "/zoom", "/motbot", "/dremio", "/insure"]
+  }
+}

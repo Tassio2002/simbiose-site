@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "logo": "/simbiose-logo",
+    "links": [
+      "Home +",
+      "Serviços +",
+      "Sobre +",
+      "Contato +",
+      "Trabalhe Conosco +"
+    ],
+    "menu": [
+      "desenvolvimento",
+      "Banco de dados",
+      "Outsourcing",
+      "QA/Automação",
+      "salesforce",
+      "Infra"
+    ],
+    "buttons": {
+      "theme": {
+        "icon": "/sun"
+      },
+      "language": {
+        "icon": "/global",
+        "current-language": "PT-BR"
+      }
+    }
+  },
+  "Footer": {
+    "enterprise": {
+      "brand": "/logo",
+      "description": "Na Simbiose Ventures, oferecemos uma combinação poderosa de serviços: alocação de desenvolvedores altamente qualificados, gestão eficiente de banco de dados e uma fábrica de software que entrega soluções personalizadas. Seja o protagonista da transformação digital. Conte com nossa expertise, comprometimento e alcance resultados excepcionais!"
+    },
+    "services": {
+      "title": "Serviços",
+      "links": [
+        "desenvolvimento de sites",
+        "desenvolvimento de sistemas web",
+        "desenvolvimento de app mobile",
+        "desenvolvimento de aplicações",
+        "desenvolvimento e consulta de APIs",
+        "desenvolvimento de e-commerces",
+        "hospedagem",
+        "Banco de Dados",
+        "Outsourcing",
+        "QA/Automação",
+        "Salesforce",
+        "Gestão de servidores"
+      ],
+      "contact": {
+        "title": "Contato",
+        "info": [
+          {
+            "icon": "/email",
+            "name": "comercial@simbioseventures.com"
+          },
+          {
+            "icon": "/telefone",
+            "name": "(11) 93088-2478"
+          }
+        ],
+        "social": [
+          {
+            "icon": "/linkedin",
+            "link": "https://www.linkedin.com/company/simbioseventures/"
+          },
+          {
+            "icon": "/whatsapp",
+            "link": "#"
+          },
+          {
+            "icon": "/instagram",
+            "link": "https://www.instagram.com/simbioseventures/"
+          }
+        ]
+      }
+    }
+  }
+}
