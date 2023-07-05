@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  footer {
+    @apply w-full flex justify-center text-white bg-cover bg-no-repeat bg-center h-96 fixed bottom-0;
+  }
+
+  .content {
+    @apply w-full max-w-[1357px] flex self-center gap-12;
+  }
+
+  .enterprise {
+    @apply flex flex-col gap-6 w-[30%];
+  }
+
+  .services {
+    @apply flex flex-col gap-6 w-[33%];
+  }
+
+  .services-title {
+    @apply flex items-center justify-start h-[35px] font-semibold text-lg;
+  }
+
+  .services-items {
+    @apply flex flex-col h-[150px] flex-wrap;
+  }
+
+  .service-item {
+    @apply flex gap-2 items-center mr-4;
+  }
+
+  .contacts {
+    @apply w-[30%] flex flex-col gap-6;
+  }
+
+  .contacts-title {
+    @apply flex justify-start h-[35px] font-semibold text-lg;
+  }
+
+  .items {
+    @apply flex flex-col gap-8;
+  }
+
+  .info {
+    @apply flex flex-col gap-2;
+  }
+
+  .info-item {
+    @apply flex gap-2;
+  }
+
+  .item-icon {
+    @apply w-[30px] flex items-center justify-center;
+  }
+
+  .social {
+    @apply flex gap-4;
+  }
+
+  .social-item {
+    @apply cursor-pointer;
+  }
+}
