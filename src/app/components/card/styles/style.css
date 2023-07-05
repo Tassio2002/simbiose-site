@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 @layer components {
-    .card-container {
-        @apply w-1/5 p-2 bg-slate-400
-    }
+  .card-container {
+    @apply w-1/5 p-2 bg-slate-400;
+  }
 
-    .title {
-        @apply text-xl font-bold
-    }
+  .title {
+    @apply text-xl font-bold;
+  }
 
-    .flex-container {
-        @apply w-full p-6 flex gap-2
-    }
+  .card-flex-container {
+    @apply w-full p-6 flex gap-2;
+  }
 }
