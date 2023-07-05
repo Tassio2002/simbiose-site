@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import "./styles/style.css";
 import data from "@/app/data/global-components.json";
 import Image from "next/image";
@@ -15,6 +15,7 @@ const NavBar = () => {
     languageText: navData.buttons.language.currentLanguage,
     themeBackground: navData.buttons.theme.background,
     languageBackground: navData.buttons.language.background,
+    menuBackground: navData.menu.background,
   };
 
   const backgrounds = {
@@ -23,6 +24,9 @@ const NavBar = () => {
     },
     language: {
       backgroundImage: `url(${assets.languageBackground})`,
+    },
+    menu: {
+      backgroundImage: `url(${assets.menuBackground})`,
     },
   };
 

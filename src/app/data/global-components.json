@@ -23,14 +23,35 @@
         "href": "/trabalhe"
       }
     ],
-    "menu": [
-      "desenvolvimento",
-      "Banco de dados",
-      "Outsourcing",
-      "QA/Automação",
-      "salesforce",
-      "Infra"
-    ],
+    "menu": {
+      "background": "menu-bg.png",
+      "links": [
+        {
+          "name": "desenvolvimento",
+          "href": "/servicos"
+        },
+        {
+          "name": "Banco de dados",
+          "href": "/servicos"
+        },
+        {
+          "name": "Outsourcing",
+          "href": "/servicos"
+        },
+        {
+          "name": "QA/Automação",
+          "href": "/servicos"
+        },
+        {
+          "name": "salesforce",
+          "href": "/servicos"
+        },
+        {
+          "name": "Infra",
+          "href": "/servicos"
+        }
+      ]
+    },
     "buttons": {
       "theme": {
         "background": "/btn-bg.png",
