@@ -100,5 +100,8 @@
         ]
       }
     }
+  },
+  "globalButton": {
+    "icon": "/white-right-arrow.png"
   }
 }
