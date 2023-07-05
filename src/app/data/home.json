@@ -43,22 +43,22 @@
     "estatisticas": {
       "cards": [
         {
-          "icon": "/stats-icon-1",
+          "icon": "/stats-icon-1.png",
           "number": "+ 10",
           "title": "Anos de Experiência"
         },
         {
-          "icon": "/stats-icon-2",
+          "icon": "/stats-icon-2.png",
           "number": "+ 180",
           "title": "Projetos Entregues"
         },
         {
-          "icon": "/stats-icon-3",
+          "icon": "/stats-icon-3.png",
           "number": "+ 40",
           "title": "Parceiros Atendidos"
         },
         {
-          "icon": "/stats-icon-4",
+          "icon": "/stats-icon-4.png",
           "number": "+ 10",
           "title": "Squads Alocados"
         }
@@ -70,26 +70,26 @@
       "cards": [
         {
           "title": "FRONT-END",
-          "icons": ["/angular", "/react", "/next", "/vue"]
+          "icons": ["/angular.png", "/react.png", "/next.png", "/vue.png"]
         },
         {
           "title": "BACK-END",
-          "icons": ["/python", "/java", "/rails", "/node", "/dotnet", "/csharp"]
+          "icons": ["/python.png", "/java.png", "/rails.png", "/node.png", "/dotnet.png", "/csharp.png"]
         },
         {
           "title": "DEVOPS",
-          "icons": ["/aws", "/cloudflare", "/ansible", "/docker", "/ngnix"]
+          "icons": ["/aws.png", "/cloudflare.png", "/ansible.png", "/docker.png", "/ngnix.png"]
         },
         {
           "title": "MOBILE",
-          "icons": ["/kotlin", "/flutter", "/react-native"]
+          "icons": ["/kotlin.png", "/flutter.png", "/react-native.png"]
         },
         {
           "title": "BANCO DE DADOS",
-          "icons": ["/mongodb", "/sql"]
+          "icons": ["/mongodb.png", "/sql.png"]
         }
       ]
     },
-    "parceiros": ["/cpe", "/layers", "/zoom", "/motbot", "/dremio", "/insure"]
+    "parceiros": ["/cpe.png", "/layers.png", "/zoom.png", "/motbot.png", "/dremio.png", "/insure.png"]
   }
 }

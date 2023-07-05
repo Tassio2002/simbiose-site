@@ -2,27 +2,27 @@
   "servicos": {
     "buttons": [
       {
-        "icon": "/service-icon-1",
+        "icon": "/service-icon-1.png",
         "title": "Software development"
       },
       {
-        "icon": "/service-icon-2",
+        "icon": "/service-icon-2.png",
         "title": "Banco de dados"
       },
       {
-        "icon": "/service-icon-3",
+        "icon": "/service-icon-3.png",
         "title": "Outsourcing"
       },
       {
-        "icon": "/service-icon-4",
+        "icon": "/service-icon-4.png",
         "title": "QA/Automação"
       },
       {
-        "icon": "/service-icon-5",
+        "icon": "/service-icon-5.png",
         "title": "Salesforce"
       },
       {
-        "icon": "/service-icon-6",
+        "icon": "/service-icon-6.png",
         "title": "Gestão de servidores"
       }
     ],
@@ -30,32 +30,32 @@
       {
         "title": "Software development",
         "description": "Oferecemos um amplo espectro de serviços de desenvolvimento, incluindo a criação de sites atrativos e funcionais, sistemas web personalizados, aplicativos mobile intuitivos, aplicações especializadas para atender às suas necessidades, desenvolvimento e integração de APIs para conectar seus sistemas, além de soluções completas para e-commerces e marketplaces. Conte com nossa expertise para impulsionar sua presença online e oferecer experiências excepcionais aos seus usuários.",
-        "img": "/services-img-1"
+        "img": "/services-img-1.png"
       },
       {
         "title": "Banco de dados",
         "description": "Contamos com uma equipe especializada em gerenciar e otimizar seu banco de dados, garantindo a integridade, segurança e performance dos seus dados. Desde a modelagem inicial até a manutenção contínua, oferecemos soluções personalizadas para atender às suas necessidades. Tenha a tranquilidade de saber que seus dados estão bem cuidados e prontos para apoiar suas operações e tomadas de decisão estratégicas.",
-        "img": "/services-img-2"
+        "img": "/services-img-2.png"
       },
       {
         "title": "Outsourcing",
         "description": " Libere sua equipe interna e deixe o trabalho pesado conosco. Com nosso serviço de outsourcing, fornecemos profissionais altamente qualificados e experientes para atender às suas necessidades de desenvolvimento de software. Aumente sua capacidade de entrega, reduza custos e ganhe flexibilidade escalável ao contar com nossa equipe externa dedicada. Tenha a tranquilidade de que seu projeto está em boas mãos, enquanto você se concentra em outras áreas estratégicas do seu negócio.",
-        "img": "/services-img-3"
+        "img": "/services-img-3.png"
       },
       {
         "title": "QA/Automação",
         "description": "Garanta a qualidade e eficiência dos seus produtos e processos com nosso serviço de QA/Automação. Nossa equipe especializada utiliza as melhores práticas e ferramentas de teste para identificar e corrigir potenciais problemas, garantindo uma experiência impecável para seus usuários. Automatize testes repetitivos e aumente a velocidade de entrega, reduzindo erros e acelerando o ciclo de desenvolvimento. Confie na nossa expertise em QA/Automação para impulsionar a qualidade do seu software e a satisfação dos seus clientes.",
-        "img": "/services-img-4"
+        "img": "/services-img-4.png"
       },
       {
         "title": "Salesforce",
         "description": "Potencialize o poder da plataforma Salesforce com nosso serviço especializado. Nossa equipe de consultores certificados em Salesforce oferece soluções personalizadas para impulsionar suas operações de vendas, marketing e atendimento ao cliente. Desde a configuração e personalização até o desenvolvimento de aplicativos sob medida, estamos prontos para ajudá-lo a extrair o máximo valor da plataforma Salesforce. Aumente a eficiência, melhore a colaboração e obtenha insights estratégicos para impulsionar o crescimento do seu negócio. Confie na nossa expertise em Salesforce para otimizar seus processos e impulsionar o sucesso da sua empresa.",
-        "img": "/services-img-5"
+        "img": "/services-img-5.png"
       },
       {
         "title": "Gestão de servidores",
         "description": "Conte com nossa expertise em gestão de servidores para garantir um ambiente de TI seguro, estável e altamente disponível. Nossa equipe qualificada monitora, configura e otimiza seus servidores, garantindo desempenho e eficiência. Realizamos atualizações, backups e manutenção preventiva, para que você possa focar no seu negócio sem se preocupar com a infraestrutura tecnológica. Tenha a tranquilidade de contar com uma gestão profissional de servidores, proporcionando maior segurança, escalabilidade e performance para suas operações.",
-        "img": "/services-img-6"
+        "img": "/services-img-6.png"
       }
     ]
   }
