@@ -10,7 +10,4 @@
   .button-container:hover {
     @apply bg-hover;
   }
-
-  button {
-  }
 }
