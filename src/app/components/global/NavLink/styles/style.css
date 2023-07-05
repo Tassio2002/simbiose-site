@@ -6,4 +6,20 @@
   .active {
     @apply text-primary list-disc marker:text-primary;
   }
+
+  .dropdown-menu {
+    @apply w-52 p-4 absolute top-10 bg-no-repeat bg-cover hidden;
+  }
+
+  .visible {
+    @apply block;
+  }
+
+  .menu-list {
+    @apply flex-col;
+  }
+
+  .menu-list li {
+    @apply hover:text-primary;
+  }
 }
