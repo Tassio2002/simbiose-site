@@ -8,12 +8,7 @@ import NavBar from "@/app/components/global/NavBar/NavBar";
 export default function Home() {
   const servicosCardData = data.home.servicos.cards;
   return (
-    <Container>
-      <NavBar />
-      <h1 className="title">Hello NextJS</h1>
-      <Link href="/servicos" className="btn_blue">
-        Ir para serviços
-      </Link>
+    <>
       <div className="flex-container">
         {servicosCardData.map((card, index) => (
           <Card
@@ -24,6 +19,6 @@ export default function Home() {
           />
         ))}
       </div>
-    </Container>
+    </>
   );
 }

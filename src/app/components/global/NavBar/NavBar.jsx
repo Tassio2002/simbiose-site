@@ -31,19 +31,19 @@ const NavBar = () => {
       <div className="nav-links">
         <ul>
           <li>
-            <Link href="/sobre">Home +</Link>
+            <Link href="/">Home +</Link>
           </li>
           <li>
-            <Link href="/sobre">Serviços</Link>
+            <Link href="/servicos">Serviços</Link>
           </li>
           <li>
             <Link href="/sobre">Sobre</Link>
           </li>
           <li>
-            <Link href="/sobre">Contato</Link>
+            <Link href="/contact">Contato</Link>
           </li>
           <li>
-            <Link href="/sobre">Trabalhe Conosco</Link>
+            <Link href="/trabalhe">Trabalhe Conosco</Link>
           </li>
         </ul>
       </div>

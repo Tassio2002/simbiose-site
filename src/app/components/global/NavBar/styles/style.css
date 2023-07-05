@@ -4,7 +4,7 @@
 
 @layer components {
   .nav-bar {
-    @apply w-full p-4 flex justify-between items-center bg-[#0C1335];
+    @apply w-full p-4 flex justify-between items-center;
   }
 
   .nav-links {
