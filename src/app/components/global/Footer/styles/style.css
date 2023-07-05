@@ -36,7 +36,7 @@
   }
 
   .contacts-title {
-    @apply flex justify-start h-[35px] font-semibold text-lg;
+    @apply flex items-center justify-start h-[35px] font-semibold text-lg;
   }
 
   .items {

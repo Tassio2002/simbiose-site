@@ -2,6 +2,7 @@ import { Card } from "@/app/components/card/Card";
 import "./styles/style.css";
 import data from "../../data/home.json";
 
+
 export default function Home() {
   const servicosCardData = data.home.servicos.cards;
   return (
