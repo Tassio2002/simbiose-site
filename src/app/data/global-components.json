@@ -22,21 +22,25 @@
       }
     }
   },
-  "Footer": {
+  "footer": {
+    "theme": {
+      "background": "/footer-background.png"
+    },
     "enterprise": {
-      "brand": "/logo",
+      "brand": "/logo.png",
       "description": "Na Simbiose Ventures, oferecemos uma combinação poderosa de serviços: alocação de desenvolvedores altamente qualificados, gestão eficiente de banco de dados e uma fábrica de software que entrega soluções personalizadas. Seja o protagonista da transformação digital. Conte com nossa expertise, comprometimento e alcance resultados excepcionais!"
     },
     "services": {
       "title": "Serviços",
+      "icon": "/blue-arrow-right.png",
       "links": [
-        "desenvolvimento de sites",
-        "desenvolvimento de sistemas web",
-        "desenvolvimento de app mobile",
-        "desenvolvimento de aplicações",
-        "desenvolvimento e consulta de APIs",
-        "desenvolvimento de e-commerces",
-        "hospedagem",
+        "Desenvolvimento de sites",
+        "Desenvolvimento de sistemas web",
+        "Desenvolvimento de app mobile",
+        "Desenvolvimento de aplicações",
+        "Desenvolvimento e consulta de APIs",
+        "Desenvolvimento de e-commerces",
+        "Hospedagem",
         "Banco de Dados",
         "Outsourcing",
         "QA/Automação",
@@ -47,25 +51,29 @@
         "title": "Contato",
         "info": [
           {
-            "icon": "/email",
+            "icon": "/email.png",
+            "iconwidth": 25,
+            "iconheight": 3,
             "name": "comercial@simbioseventures.com"
           },
           {
-            "icon": "/telefone",
+            "icon": "/telefone.png",
+            "iconwidth": 16,
+            "iconheight": 12,
             "name": "(11) 93088-2478"
           }
         ],
         "social": [
           {
-            "icon": "/linkedin",
+            "icon": "/linkedin.png",
             "link": "https://www.linkedin.com/company/simbioseventures/"
           },
           {
-            "icon": "/whatsapp",
-            "link": "#"
+            "icon": "/whatsapp.png",
+            "link": "https://api.whatsapp.com/send?phone=5511930882478&text=Ol%C3%A1,%20gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20tecnologia%20da%20Simbiose/BrTale%E2%80%A6"
           },
           {
-            "icon": "/instagram",
+            "icon": "/instagram.png",
             "link": "https://www.instagram.com/simbioseventures/"
           }
         ]

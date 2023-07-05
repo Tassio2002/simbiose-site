@@ -4,10 +4,10 @@
 
 @layer components {
   .flex-container {
-    @apply w-full max-w-[1357px] flex flex-col self-center;
+    @apply w-full max-w-[1357px] flex flex-col self-center min-h-screen;
   }
 
   .body-container {
-    @apply w-full flex justify-center
+    @apply w-full flex justify-center;
   }
 }
