@@ -1,10 +1,13 @@
+'use client'
 import "./styles/style.css";
 import data from "@/app/data/global-components.json";
 import Image from "next/image";
 import Link from "next/link";
+import { NavLink } from "../NavLink";
 
 const NavBar = () => {
   const navData = data.nav;
+
   const assets = {
     logo: navData.logo,
     sunIcon: navData.buttons.theme.icon,
@@ -14,44 +17,39 @@ const NavBar = () => {
     languageBackground: navData.buttons.language.background,
   };
 
-  const themeBackground = {
-    backgroundImage: `url(${assets.themeBackground})`,
+  const backgrounds = {
+    theme: {
+      backgroundImage: `url(${assets.themeBackground})`,
+    },
+    language: {
+      backgroundImage: `url(${assets.languageBackground})`,
+    },
   };
 
-  const languageBackground = {
-    backgroundImage: `url(${assets.languageBackground})`,
-  };
-  console.log(navData);
-  // li deve ser link
   return (
     <nav className="nav-bar">
       <div className="logo">
-        <Image src={assets.logo} alt={"Simbiose logo"} width={30} height={30} />
+        <Link href="/">
+          <Image
+            src={assets.logo}
+            alt={"Simbiose logo"}
+            width={30}
+            height={30}
+          />
+        </Link>
       </div>
       <div className="nav-links">
         <ul>
-          <li>
-            <Link href="/">Home +</Link>
-          </li>
-          <li>
-            <Link href="/servicos">Serviços</Link>
-          </li>
-          <li>
-            <Link href="/sobre">Sobre</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contato</Link>
-          </li>
-          <li>
-            <Link href="/trabalhe">Trabalhe Conosco</Link>
-          </li>
+          {navData.navLinks.map((link) => (
+            <NavLink key={link.name} href={link.href} name={link.name} />
+          ))}
         </ul>
       </div>
       <div className="nav-buttons">
-        <button className="theme" style={themeBackground}>
+        <button className="theme" style={backgrounds.theme}>
           <Image src={assets.sunIcon} alt={"Sun"} width={19} height={19} />
         </button>
-        <button className="language" style={languageBackground}>
+        <button className="language" style={backgrounds.language}>
           <Image src={assets.globeIcon} alt={"Sun"} width={19} height={19} />
           <p>{assets.languageText}</p>
         </button>

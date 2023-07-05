@@ -1,7 +1,28 @@
 {
   "nav": {
     "logo": "/simbiose-logo.png",
-    "links": ["Home +", "Serviços", "Sobre", "Contato", "Trabalhe Conosco"],
+    "navLinks": [
+      {
+        "name": "Home",
+        "href": "/"
+      },
+      {
+        "href": "/servicos",
+        "name": "Serviços"
+      },
+      {
+        "href": "/sobre",
+        "name": "Sobre"
+      },
+      {
+        "name": "Contato",
+        "href": "/contato"
+      },
+      {
+        "name": "Trabalhe Conosco",
+        "href": "/trabalhe"
+      }
+    ],
     "menu": [
       "desenvolvimento",
       "Banco de dados",
