@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-bar {
+    @apply w-full p-4 flex justify-between items-center bg-[#0C1335];
+  }
+
+  .nav-links {
+    @apply w-2/5 text-white;
+  }
+
+  .nav-links ul {
+    @apply flex justify-around capitalize;
+  }
+
+  .nav-links ul li {
+    @apply first:list-disc first:text-primary;
+  }
+
+  .nav-buttons {
+    @apply w-[11%] flex justify-between;
+  }
+
+  .theme {
+    @apply w-8 h-8 flex justify-center items-center rounded-full cursor-pointer
+  }
+
+  .language {
+    @apply flex justify-around px-2 items-center text-white w-24 rounded-3xl cursor-pointer
+  }
+}

@@ -11,7 +11,7 @@ module.exports = {
         "background": "#060922",
         "primary": "#09AFF4",
         "hover": "#164567"
-      },
+      }
     },
   },
   plugins: [],

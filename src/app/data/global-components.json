@@ -1,13 +1,7 @@
 {
   "nav": {
-    "logo": "/simbiose-logo",
-    "links": [
-      "Home +",
-      "Serviços +",
-      "Sobre +",
-      "Contato +",
-      "Trabalhe Conosco +"
-    ],
+    "logo": "/simbiose-logo.png",
+    "links": ["Home +", "Serviços", "Sobre", "Contato", "Trabalhe Conosco"],
     "menu": [
       "desenvolvimento",
       "Banco de dados",
@@ -18,11 +12,13 @@
     ],
     "buttons": {
       "theme": {
-        "icon": "/sun"
+        "background": "/btn-bg.png",
+        "icon": "/sun.png"
       },
       "language": {
-        "icon": "/global",
-        "current-language": "PT-BR"
+        "background": "/language-btn-bg.png",
+        "icon": "/global.png",
+        "currentLanguage": "PT-BR"
       }
     }
   },
