@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  header {
+    @apply w-full py-6;
+  }
+
+  .flex-hero {
+    @apply flex justify-between mt-36;
+  }
+
+  .hero-text {
+    @apply flex flex-col gap-12;
+  }
+
+  .enterprise-name {
+    @apply flex gap-[6px];
+  }
+
+  .enterprise-name span {
+    @apply text-primary font-semibold;
+  }
+
+  .hero-title {
+    @apply text-[56px] text-white font-bold;
+  }
+
+  .highlight {
+    @apply flex gap-1;
+  }
+  .phrase {
+    @apply max-w-[600px];
+  }
+
+  .subtitle {
+    @apply max-w-[400px] text-white;
+  }
+}

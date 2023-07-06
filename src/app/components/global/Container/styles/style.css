@@ -4,7 +4,7 @@
 
 @layer components {
   .flex-container {
-    @apply w-full max-w-[1357px] flex flex-col self-center min-h-screen;
+    @apply w-full max-w-[1357px] flex flex-col self-center;
   }
 
   .body-container {
