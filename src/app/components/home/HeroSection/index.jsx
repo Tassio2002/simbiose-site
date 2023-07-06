@@ -2,7 +2,7 @@ import "./styles/style.css";
 import data from "@/app/data/home.json";
 import NavBar from "../../global/NavBar/NavBar";
 import Container from "../../global/Container/Container";
-import EnterpriseName from "./Enterprise";
+import SectionName from "../../global/SectionName/Enterprise";
 import HeroTitle from "./Title";
 import HeroImage from "./HeroImage";
 
@@ -11,6 +11,7 @@ export const Hero = () => {
   const assets = {
     background: heroData.background,
     subtitle: heroData.leftDiv.texts.subtitle,
+    enterpriseName: heroData.leftDiv.enterprise.name
   };
   const heroStyle = {
     background: `url(${assets.background}) #060922 no-repeat`,
@@ -22,7 +23,7 @@ export const Hero = () => {
         <NavBar />
         <div className="flex-hero">
           <div className="hero-text">
-            <EnterpriseName />
+            <SectionName name={assets.enterpriseName}/>
             <HeroTitle />
             <p className="subtitle">{assets.subtitle}</p>
           </div>
