@@ -4,7 +4,15 @@
 
 @layer components {
   .card-container {
-    @apply w-1/5 p-2 bg-slate-400;
+    @apply relative flex flex-col gap-4 p-4 bg-transparent border-primary border justify-between text-white rounded-tl-[20px] rounded-tr-[3px] rounded-br-[20px] rounded-bl-[3px];
+  }
+
+  .card-container::after {
+    @apply absolute top-[5px] right-[5px] content-[''] block w-full h-full border-white border rounded-tl-[20px] rounded-tr-[3px] rounded-br-[20px] rounded-bl-[3px];
+  }
+
+  .card-content {
+    @apply gap-2;
   }
 
   .title {
@@ -12,6 +20,6 @@
   }
 
   .card-flex-container {
-    @apply w-full p-6 flex gap-2;
+    @apply w-full p-6 grid grid-cols-3 grid-rows-2 gap-4 box-border;
   }
 }
