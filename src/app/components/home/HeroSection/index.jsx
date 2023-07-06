@@ -10,7 +10,7 @@ export const Hero = () => {
   const heroData = data.home.hero;
   const assets = {
     background: heroData.background,
-    subtitle: heroData.leftDiv.texts.subtitle
+    subtitle: heroData.leftDiv.texts.subtitle,
   };
   const heroStyle = {
     background: `url(${assets.background}) #060922 no-repeat`,
@@ -24,9 +24,7 @@ export const Hero = () => {
           <div className="hero-text">
             <EnterpriseName />
             <HeroTitle />
-            <p className="subtitle">
-             {assets.subtitle}
-            </p>
+            <p className="subtitle">{assets.subtitle}</p>
           </div>
           <div className="hero-image">
             <HeroImage />

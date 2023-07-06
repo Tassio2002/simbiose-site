@@ -1,5 +1,5 @@
 import "./styles/style.css";
-import highlightImage from "../../../../../public/hero-title.svg"
+import highlightImage from "../../../../../public/hero-title.svg";
 import Image from "next/image";
 
 const HeroTitle = () => {

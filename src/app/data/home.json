@@ -82,12 +82,7 @@
       "cards": [
         {
           "title": "FRONT-END",
-          "icons": [
-            "/angular.png",
-            "/react.png",
-            "/next.png",
-            "/vue.png"
-          ]
+          "icons": ["/angular.png", "/react.png", "/next.png", "/vue.png"]
         },
         {
           "title": "BACK-END",
@@ -112,18 +107,11 @@
         },
         {
           "title": "MOBILE",
-          "icons": [
-            "/kotlin.png",
-            "/flutter.png",
-            "/react-native.png"
-          ]
+          "icons": ["/kotlin.png", "/flutter.png", "/react-native.png"]
         },
         {
           "title": "BANCO DE DADOS",
-          "icons": [
-            "/mongodb.png",
-            "/sql.png"
-          ]
+          "icons": ["/mongodb.png", "/sql.png"]
         }
       ]
     },
