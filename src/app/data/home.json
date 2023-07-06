@@ -1,8 +1,20 @@
 {
   "home": {
     "hero": {
-      "title": "Revolucione o futuro do seu negócio com software disruptivo",
-      "subtitle": "Desenvolvemos soluções personalizadas para impulsionar sua empresa rumo ao sucesso!"
+      "background": "hero-background.png",
+      "leftDiv": {
+        "enterprise": {
+          "point": "hero-point.svg",
+          "name": "SIMBIOSE VENTURES"
+        },
+        "texts": {
+          "title": {
+            "image": "hero-title.svg",
+            "text": "o futuro do seu negócio com software disruptivo"
+          },
+          "subtitle": "Desenvolvemos soluções personalizadas para impulsionar sua empresa rumo ao sucesso!"
+        }
+      }
     },
     "servicos": {
       "title": "serviços oferecidos",
@@ -70,26 +82,58 @@
       "cards": [
         {
           "title": "FRONT-END",
-          "icons": ["/angular.png", "/react.png", "/next.png", "/vue.png"]
+          "icons": [
+            "/angular.png",
+            "/react.png",
+            "/next.png",
+            "/vue.png"
+          ]
         },
         {
           "title": "BACK-END",
-          "icons": ["/python.png", "/java.png", "/rails.png", "/node.png", "/dotnet.png", "/csharp.png"]
+          "icons": [
+            "/python.png",
+            "/java.png",
+            "/rails.png",
+            "/node.png",
+            "/dotnet.png",
+            "/csharp.png"
+          ]
         },
         {
           "title": "DEVOPS",
-          "icons": ["/aws.png", "/cloudflare.png", "/ansible.png", "/docker.png", "/ngnix.png"]
+          "icons": [
+            "/aws.png",
+            "/cloudflare.png",
+            "/ansible.png",
+            "/docker.png",
+            "/ngnix.png"
+          ]
         },
         {
           "title": "MOBILE",
-          "icons": ["/kotlin.png", "/flutter.png", "/react-native.png"]
+          "icons": [
+            "/kotlin.png",
+            "/flutter.png",
+            "/react-native.png"
+          ]
         },
         {
           "title": "BANCO DE DADOS",
-          "icons": ["/mongodb.png", "/sql.png"]
+          "icons": [
+            "/mongodb.png",
+            "/sql.png"
+          ]
         }
       ]
     },
-    "parceiros": ["/cpe.png", "/layers.png", "/zoom.png", "/motbot.png", "/dremio.png", "/insure.png"]
+    "parceiros": [
+      "/cpe.png",
+      "/layers.png",
+      "/zoom.png",
+      "/motbot.png",
+      "/dremio.png",
+      "/insure.png"
+    ]
   }
 }
