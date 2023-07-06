@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .statistics-section {
+    @apply w-full h-72;
+  }
+
+  .statics-cards-container{
+    @apply flex justify-center items-center gap-4 h-72;
+  }
+}
