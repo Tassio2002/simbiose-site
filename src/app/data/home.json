@@ -56,6 +56,7 @@
       ]
     },
     "estatisticas": {
+      "background": "/stats-bg.png",
       "cards": [
         {
           "icon": "/stats-icon-1.png",
