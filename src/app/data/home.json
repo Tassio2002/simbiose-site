@@ -17,8 +17,11 @@
       }
     },
     "servicos": {
-      "title": "serviços oferecidos",
+      "name": "SERVIÇOS",
+      "title": "Serviços oferecidos",
       "subtitle": "Na Simbiose Ventures, oferecemos uma combinação poderosa de serviços: alocação de desenvolvedores altamente qualificados, gestão eficiente de banco de dados e uma fábrica de software que entrega soluções personalizadas. Seja o protagonista da transformação digital. Conte com nossa expertise, comprometimento e alcance resultados excepcionais!",
+      "circle": "circle.svg",
+      "arrow": "arrow.svg",
       "cards": [
         {
           "icon": "/serviece-icon-1.png",

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .enterprise-name {
+    @apply flex gap-[6px];
+  }
+
+  .enterprise-name span {
+    @apply font-semibold;
+  }
+}
