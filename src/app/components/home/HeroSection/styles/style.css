@@ -8,7 +8,7 @@
   }
 
   .flex-hero {
-    @apply flex mt-36;
+    @apply flex justify-between mt-36;
   }
 
   .hero-text {
