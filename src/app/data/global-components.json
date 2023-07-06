@@ -124,5 +124,8 @@
   },
   "globalButton": {
     "icon": "/white-right-arrow.png"
+  },
+  "card": {
+    "cardButtonIcon": "/blue-right-arrow.png"
   }
 }
