@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .cardSection {
+    @apply flex flex-col justify-center text-white items-center;
+  }
+
+  .techCard {
+    @apply relative flex flex-col gap-4 p-4 bg-hover border-hover border justify-between text-white rounded-tl-[20px] rounded-tr-[3px] rounded-br-[20px] rounded-bl-[3px] h-[500px] w-[25%];
+  }
+
+  .techCard::after {
+    @apply absolute bottom-[6px] left-[6px] content-[''] block w-full h-full border-hover bg-background border rounded-tl-[20px] rounded-tr-[3px] rounded-br-[20px] rounded-bl-[3px];
+  }
+
+  .content{
+    @apply z-10 flex flex-col p-6;
+  }
+}
