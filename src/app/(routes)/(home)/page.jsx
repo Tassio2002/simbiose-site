@@ -3,6 +3,7 @@ import "./styles/style.css";
 import data from "../../data/home.json";
 import Statistics from "@/app/components/home/Statistics/Statistics";
 import Container from "@/app/components/global/Container/Container";
+import PartnersSection from "@/app/components/home/PartnersSection";
 
 export default function Home() {
   const servicosCardData = data.home.servicos.cards;
@@ -12,6 +13,7 @@ export default function Home() {
         <ServiceSection />
       </Container>
       <Statistics />
+      <PartnersSection />
     </>
   );
 }
