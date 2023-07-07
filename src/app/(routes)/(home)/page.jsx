@@ -4,7 +4,7 @@ import data from "../../data/home.json";
 import Statistics from "@/app/components/home/Statistics/Statistics";
 import Container from "@/app/components/global/Container/Container";
 import { Card } from "@/app/components/card/Card";
-import TechnologiesCard from "@/app/components/technologiesCard/technologiesCard";
+import TechnologiesSection from "@/app/components/technologiesSection/technologiesSection";
 
 export default function Home() {
   const servicosCardData = data.home.servicos.cards;
@@ -21,9 +21,11 @@ export default function Home() {
             />
           ))}
         </div>
-        <TechnologiesCard title={"FRONT-END"} />
       </Container>
       <Statistics />
+      <Container>
+        <TechnologiesSection />
+      </Container>
     </>
   );
 }

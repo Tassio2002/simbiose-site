@@ -86,36 +86,128 @@
       "cards": [
         {
           "title": "FRONT-END",
-          "icons": ["/angular.png", "/react.png", "/next.png", "/vue.png"]
+          "icons": [
+            {
+              "icon": "/angular.png",
+              "width": 170,
+              "height": 60
+            },
+            {
+              "icon": "/react.png",
+              "width": 160,
+              "height": 60
+            },
+            {
+              "icon": "/next.png",
+              "width": 110,
+              "height": 60
+            },
+            {
+              "icon": "/vue.png",
+              "width": 110,
+              "height": 60
+            }
+          ]
         },
         {
           "title": "BACK-END",
           "icons": [
-            "/python.png",
-            "/java.png",
-            "/rails.png",
-            "/node.png",
-            "/dotnet.png",
-            "/csharp.png"
+            {
+              "icon": "/python.png",
+              "width": 150,
+              "height": 60
+            },
+            {
+              "icon": "/java.png",
+              "width": 130,
+              "height": 60
+            },
+            {
+              "icon": "/ruby.png",
+              "width": 130,
+              "height": 60
+            },
+            {
+              "icon": "/node.png",
+              "width": 150,
+              "height": 60
+            },
+            {
+              "icon": "/dotnet.png",
+              "width": 130,
+              "height": 60
+            },
+            {
+              "icon": "/csharp.png",
+              "width": 55,
+              "height": 55
+            }
           ]
         },
         {
           "title": "DEVOPS",
           "icons": [
-            "/aws.png",
-            "/cloudflare.png",
-            "/ansible.png",
-            "/docker.png",
-            "/ngnix.png"
+            {
+              "icon": "/aws.png",
+              "width": 80,
+              "height": 55
+            },
+            {
+              "icon": "/cloudflare.png",
+              "width": 130,
+              "height": 55
+            },
+            {
+              "icon": "/ansible.png",
+              "width": 140,
+              "height": 55
+            },
+            {
+              "icon": "/docker.png",
+              "width": 130,
+              "height": 55
+            },
+            {
+              "icon": "/ngnix.png",
+              "width": 120,
+              "height": 55
+            }
           ]
         },
         {
           "title": "MOBILE",
-          "icons": ["/kotlin.png", "/flutter.png", "/react-native.png"]
+          "icons": [
+            {
+              "icon": "/kotlin.png",
+              "width": 120,
+              "height": 55
+            },
+            {
+              "icon": "/flutter.png",
+              "width": 130,
+              "height": 55
+            },
+            {
+              "icon": "/react-native.png",
+              "width": 160,
+              "height": 55
+            }
+          ]
         },
         {
           "title": "BANCO DE DADOS",
-          "icons": ["/mongodb.png", "/sql.png"]
+          "icons": [
+            {
+              "icon": "/mongodb.png",
+              "width": 130,
+              "height": 55
+            },
+            {
+              "icon": "/sql.png",
+              "width": 130,
+              "height": 55
+            }
+          ]
         }
       ]
     },
