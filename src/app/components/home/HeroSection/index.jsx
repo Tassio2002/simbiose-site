@@ -9,29 +9,19 @@ import HeroImage from "./HeroImage";
 export const Hero = () => {
   const heroData = data.home.hero;
   const assets = {
-    background: heroData.background,
     subtitle: heroData.leftDiv.texts.subtitle,
-    enterpriseName: heroData.leftDiv.enterprise.name
-  };
-  const heroStyle = {
-    background: `url(${assets.background}) #060922 no-repeat`,
-    backgroundSize: "cover",
+    enterpriseName: heroData.leftDiv.enterprise.name,
   };
   return (
-    <header style={heroStyle}>
-      <Container>
-        <NavBar />
-        <div className="flex-hero">
-          <div className="hero-text">
-            <SectionName name={assets.enterpriseName}/>
-            <HeroTitle />
-            <p className="subtitle">{assets.subtitle}</p>
-          </div>
-          <div className="hero-image">
-            <HeroImage />
-          </div>
-        </div>
-      </Container>
-    </header>
+    <div className="flex-hero">
+      <div className="hero-text">
+        <SectionName name={assets.enterpriseName} />
+        <HeroTitle />
+        <p className="subtitle">{assets.subtitle}</p>
+      </div>
+      <div className="hero-image">
+        <HeroImage />
+      </div>
+    </div>
   );
 };
