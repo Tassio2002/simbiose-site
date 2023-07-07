@@ -119,13 +119,16 @@
         }
       ]
     },
-    "parceiros": [
-      "/cpe.png",
-      "/layers.png",
-      "/zoom.png",
-      "/motbot.png",
-      "/dremio.png",
-      "/insure.png"
-    ]
+    "parceiros": {
+      "background": "/stats-bg.png",
+      "images": [
+        "/cpe.png",
+        "/layers.png",
+        "/zoom.png",
+        "/motbot.png",
+        "/dremio.png",
+        "/insure.png"
+      ]
+    }
   }
 }
