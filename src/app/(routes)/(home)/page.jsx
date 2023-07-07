@@ -3,6 +3,7 @@ import "./styles/style.css";
 import data from "../../data/home.json";
 import Statistics from "@/app/components/home/Statistics/Statistics";
 import Container from "@/app/components/global/Container/Container";
+import PartnersSection from "@/app/components/home/PartnersSection";
 import { Card } from "@/app/components/card/Card";
 import TechnologiesSection from "@/app/components/technologiesSection/technologiesSection";
 
@@ -26,6 +27,7 @@ export default function Home() {
       <Container>
         <TechnologiesSection />
       </Container>
+      <PartnersSection />
     </>
   );
 }
