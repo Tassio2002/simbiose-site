@@ -6,6 +6,7 @@ import Container from "@/app/components/global/Container/Container";
 import PartnersSection from "@/app/components/home/PartnersSection";
 import { Card } from "@/app/components/card/Card";
 import TechnologiesSection from "@/app/components/technologiesSection/technologiesSection";
+import ContactSection from "@/app/components/home/ContactSection";
 
 export default function Home() {
   const servicosCardData = data.home.servicos.cards;
@@ -28,6 +29,7 @@ export default function Home() {
         <TechnologiesSection />
       </Container>
       <PartnersSection />
+      <ContactSection />
     </>
   );
 }

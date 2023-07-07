@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .contact-section {
+    @apply w-full p-16;
+  }
+
+  .contact-flex {
+    @apply w-full mt-10 flex items-center 
+  }
+
+  .contact-box {
+    @apply w-1/2;
+  }
+
+  .contacts-infos {
+    @apply flex flex-col gap-12;
+  }
+  .social-media {
+    @apply flex justify-start gap-10;
+  }
+
+  .contact-info {
+    @apply w-full flex items-center gap-4 text-white
+  }
+}

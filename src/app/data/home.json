@@ -221,6 +221,36 @@
         "/dremio.png",
         "/insure.png"
       ]
+    },
+    "contato": {
+      "name": "CONTATO",
+      "background": "/contact-bg.png",
+      "contacts": [
+        {
+          "icon": "/contact-email.png",
+          "title": "E-mail",
+          "contact": "comercial@simbioseventures.com"
+        },
+        {
+          "icon": "/contact-tel.png",
+          "title": "Telefone",
+          "contact": "(11) 93088-2478"
+        }
+      ],
+      "social": [
+        {
+          "icon": "/contact-linkedin.png",
+          "link": "https://www.linkedin.com/company/simbioseventures/"
+        },
+        {
+          "icon": "/contact-wpp.png",
+          "link": "https://www.linkedin.com/company/simbioseventures/"
+        },
+        {
+          "icon": "/contact-instagram.png",
+          "link": "https://www.linkedin.com/company/simbioseventures/"
+        }
+      ]
     }
   }
 }
