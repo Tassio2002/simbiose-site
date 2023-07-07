@@ -24,7 +24,6 @@ export default function Home() {
         <TechnologiesCard title={"FRONT-END"} />
       </Container>
       <Statistics />
-      <ServiceSection />
     </>
   );
 }

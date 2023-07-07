@@ -20,6 +20,6 @@
   }
 
   .card-flex-container {
-    @apply w-full p-6 grid grid-cols-3 grid-rows-2 gap-4 box-border;
+    @apply w-full grid grid-cols-3 grid-rows-2 gap-4 box-border;
   }
 }
