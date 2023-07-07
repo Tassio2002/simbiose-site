@@ -16,7 +16,7 @@
   }
 
   .enterprise-name {
-    @apply flex gap-[6px];
+    @apply flex gap-[6px] uppercase;
   }
 
   .enterprise-name span {
