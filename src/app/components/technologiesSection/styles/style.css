@@ -7,15 +7,15 @@
     @apply flex flex-col py-8 text-white gap-6;
   }
 
-  .technologies-section-title-and-subtitle{
+  .technologies-section-title-and-subtitle {
     @apply flex flex-col gap-2;
   }
 
-  .technologies-section-title{
+  .technologies-section-title {
     @apply text-4xl;
   }
 
   .technologies-cards {
-    @apply flex w-full gap-4 overflow-y-hidden no-scrollbar mt-6;
+    @apply flex w-full overflow-y-hidden no-scrollbar mt-6;
   }
 }
