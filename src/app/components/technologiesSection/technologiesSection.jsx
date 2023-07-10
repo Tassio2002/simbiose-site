@@ -12,7 +12,7 @@ const TechnologiesSection = () => {
     autoplay: false,
     withoutControls: true,
     autoplayInterval: 2000,
-    slidesToShow: 6,
+    slidesToShow: 4,
     wrapAround: false,
   };
 

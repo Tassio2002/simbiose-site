@@ -4,7 +4,7 @@
 
 @layer components {
   .cardSection {
-    @apply flex flex-col justify-center text-white items-center gap-2 mr-24;
+    @apply flex flex-col justify-center text-white items-center gap-2 mr-4;
   }
 
   .techCard {
@@ -19,7 +19,15 @@
     @apply z-10 flex flex-col p-6 justify-around items-center h-full;
   }
 
+  .tech-card-title-container {
+    @apply flex justify-center w-full;
+  }
+
   .tech-card-title {
     @apply font-semibold;
+  }
+
+  .languages-carousel {
+    @apply flex justify-between;
   }
 }

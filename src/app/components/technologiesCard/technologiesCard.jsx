@@ -4,7 +4,9 @@ import "./styles/style.css";
 const TechnologiesCard = ({ title, icons }) => {
   return (
     <div className="cardSection">
-      <span className="tech-card-title">{title}</span>
+      <div className="tech-card-title-container">
+        <span className="tech-card-title">{title}</span>
+      </div>
       <div className="techCard">
         <div className="tech-card-content">
           {icons.map((icon, index) => {
