@@ -250,7 +250,10 @@
           "icon": "/contact-instagram.png",
           "link": "https://www.linkedin.com/company/simbioseventures/"
         }
-      ]
+      ],
+      "form": {
+        "background": "/form-bg.svg"
+      }
     }
   }
 }

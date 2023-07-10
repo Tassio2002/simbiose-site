@@ -8,7 +8,7 @@
   }
 
   .contact-flex {
-    @apply w-full mt-10 flex items-center 
+    @apply w-full mt-10 flex items-center;
   }
 
   .contact-box {
@@ -23,6 +23,31 @@
   }
 
   .contact-info {
-    @apply w-full flex items-center gap-4 text-white
+    @apply w-full flex items-center gap-4 text-white;
+  }
+
+  .form {
+    @apply w-1/2;
+  }
+  form {
+    @apply py-6 px-16 flex flex-col gap-9 items-center;
+  }
+
+  form h2 {
+    @apply text-5xl text-center text-white;
+  }
+
+  form input,
+  textarea {
+    @apply w-full py-2 px-4 bg-button border-b-2 border-b-primary focus:outline-none focus:border-l-4 focus:border-b-4 focus:border-primary caret-white;
+  }
+
+  form input::placeholder,
+  textarea::placeholder {
+    @apply text-white/40;
+  }
+
+  .form-btn {
+    @apply min-w-[200px];
   }
 }

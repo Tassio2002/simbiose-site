@@ -4,6 +4,7 @@ import Container from "../../global/Container/Container";
 import SectionName from "../../global/SectionName/Enterprise";
 import Image from "next/image";
 import ContactInfo from "./contacts";
+import ContactForm from "./ContactForm";
 
 const contactData = data.home.contato;
 
@@ -33,11 +34,11 @@ const ContactSection = () => {
               ))}
               <div className="social-media">
                 {assets.socialMedias.map((socialMedia) => (
-                  <a key={socialMedia} href={socialMedia.link} target="_blank" >
+                  <a key={socialMedia} href={socialMedia.link} target="_blank">
                     <Image
                       src={socialMedia.icon}
-                      width={75}
-                      height={75}
+                      width={50}
+                      height={50}
                       alt="social media"
                     />
                   </a>
@@ -45,7 +46,9 @@ const ContactSection = () => {
               </div>
             </div>
           </div>
-          <div className="form"></div>
+          <div className="form">
+            <ContactForm />
+          </div>
         </div>
       </Container>
     </div>
