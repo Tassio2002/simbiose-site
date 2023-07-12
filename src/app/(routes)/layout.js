@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import Footer from "../components/global/Footer/Footer";
 import Header from "../components/global/Header";
 import { Hero } from "../components/home/HeroSection";
+import ButtonsContainer from "./servicos/ButtonsContainer";
 
 const SelectHeader = () => {
   const pathname = usePathname()
@@ -10,7 +11,7 @@ const SelectHeader = () => {
   if (pathname.endsWith("/")) {
     return <Hero />
   } else if (pathname.endsWith("/servicos")) {
-    return <p>Servicos</p>
+    return <ButtonsContainer />
   } else if (pathname.endsWith("/sobre")) {
     return <p>Sobre</p>
   }

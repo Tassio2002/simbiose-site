@@ -3,12 +3,28 @@
 @tailwind utilities;
 
 @layer components {
-    .btn_blue {
-        @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg 
+  .btn_blue {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg 
         shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 
         focus:ring-opacity-75;
-    }
-    .title {
-        @apply text-2xl font-bold mb-2
-    }
+  }
+  .title {
+    @apply text-2xl font-bold mb-2;
+  }
+
+  .btn-flex-container {
+    @apply px-20 flex justify-between items-center;
+  }
+
+  .service-btn-container {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .service-btn-icon {
+    @apply px-5 py-6 border-gray-600 border rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md flex items-center justify-center;
+  }
+
+  .service-btn-title {
+    @apply text-lg text-white font-medium
+  }
 }

@@ -1,5 +1,7 @@
 {
   "servicos": {
+    "background":"/service-btn-bg.svg",
+    "backgroundActive":"/service-btn-active.svg",
     "buttons": [
       {
         "icon": "/service-icon-1.png",
