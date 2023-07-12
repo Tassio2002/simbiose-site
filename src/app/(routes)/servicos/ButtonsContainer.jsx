@@ -8,9 +8,9 @@ const ButtonsContainer = () => {
 
   return (
     <div className="btn-flex-container">
-      {buttons.map((button) => (
+      {buttons.map((button, index) => (
         <ServiceButton
-          key={button.title}
+          key={index}
           icon={button.icon}
           title={button.title}
         />

@@ -59,6 +59,12 @@
         "description": "Conte com nossa expertise em gestão de servidores para garantir um ambiente de TI seguro, estável e altamente disponível. Nossa equipe qualificada monitora, configura e otimiza seus servidores, garantindo desempenho e eficiência. Realizamos atualizações, backups e manutenção preventiva, para que você possa focar no seu negócio sem se preocupar com a infraestrutura tecnológica. Tenha a tranquilidade de contar com uma gestão profissional de servidores, proporcionando maior segurança, escalabilidade e performance para suas operações.",
         "img": "/services-img-6.png"
       }
-    ]
+    ],
+    "contractButton": {
+      "text":"Contratar",
+      "link":"/",
+      "icon":"/btn-arrow"
+
+    }
   }
 }

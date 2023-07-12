@@ -1,5 +1,5 @@
 import "./styles/style.css";
-import data from "../../data/home.json";
+import data from "@/app/data/home.json";
 import ServiceSection from "@/app/components/home/ServiceSection";
 import Statistics from "@/app/components/home/Statistics/Statistics";
 import Container from "@/app/components/global/Container/Container";
