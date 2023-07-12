@@ -7,6 +7,7 @@ import ServiceMainContent from "./MainContent";
 
 export default function ServicesPage() {
   const serviceData = data.servicos
+  let actualIndex
   const content = serviceData.content[0]
   return (
     <div className="bg-background">
