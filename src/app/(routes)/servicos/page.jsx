@@ -1,3 +1,4 @@
+'use client'
 import "./styles/style.css";
 import data from "@/app/data/servicos.json";
 import ButtonsContainer from "./ButtonsContainer";
@@ -7,12 +8,15 @@ import ServiceMainContent from "./MainContent";
 
 export default function ServicesPage() {
   const serviceData = data.servicos
-  let actualIndex
   const content = serviceData.content[0]
+
+  const teste = () => {
+    console.log('teste');
+  }
   return (
     <div className="bg-background">
       <Header>
-        <ButtonsContainer />
+        <ButtonsContainer onHover={teste} />
         <ServiceMainContent title={content.title} description={content.description} src={content.img} />
       </Header>
       <Footer />

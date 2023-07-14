@@ -3,7 +3,7 @@ import "./styles/style.css";
 import data from "@/app/data/servicos.json";
 
 
-const ServiceButton = ({icon, title, onClick, isActive}) => {
+const ServiceButton = ({icon, title, onClick, isActive, onHover}) => {
   const serviceData = data.servicos;
   const buttonBg = `url(${serviceData.background})`;
   const buttonBgActived = `url(${serviceData.backgroundActive})`;
@@ -15,7 +15,7 @@ const ServiceButton = ({icon, title, onClick, isActive}) => {
 
   return (
     <div className="service-btn-container">
-      <button onClick={onClick} className="service-btn-icon" style={background}>
+      <button onClick={onClick} onMouseEnter={onHover} className="service-btn-icon" style={background}>
         <Image src={icon} width={64} height={64} alt={title} />
       </button>
       <span className="service-btn-title">{title}</span>

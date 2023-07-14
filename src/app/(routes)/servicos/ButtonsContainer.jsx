@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export
 
-const ButtonsContainer = () => {
+const ButtonsContainer = (props) => {
   const [activeButton, setActiveButton] = useState(null)
   const serviceData = data.servicos;
   const buttons = serviceData.buttons;
@@ -19,6 +19,7 @@ const ButtonsContainer = () => {
     <div className="btn-flex-container">
       {buttons.map((button, index) => (
         <ServiceButton
+          onHover={props.onHover}
           key={index}
           isActive={activeButton === index}
           onClick={() => handleClick(index)}
