@@ -18,7 +18,7 @@ const ServiceMainContent = (props) => {
         />
       </div>
       <div className="main-service-image">
-        <Image src={props.src} alt={props.title} width={600} height={500} />
+        <Image src={props.src} alt={props.title} width={500} height={500} />
       </div>
     </main>
   );

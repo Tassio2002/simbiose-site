@@ -20,7 +20,7 @@
   }
 
   .main-service {
-    @apply w-full py-8 flex items-center text-white;
+    @apply w-full py-8 my-10 flex items-center text-white;
   }
 
   .main-service-info {
