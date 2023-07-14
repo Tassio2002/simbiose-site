@@ -36,6 +36,6 @@
   }
 
   .main-service-image {
-    @apply w-1/2;
+    @apply w-1/2 h-[500px];
   }
 }

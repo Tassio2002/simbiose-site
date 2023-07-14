@@ -9,22 +9,27 @@ import { useState } from "react";
 
 export default function ServicesPage() {
   const [content, setContent] = useState(0);
-  const [activeButton, setActiveButton] = useState(null);
+  const [activeButton, setActiveButton] = useState(0);
   const serviceData = data.servicos;
   const actualContent = serviceData.content[content];
-  // trocar nome da function
-  const handleClick = (index) => {
+
+  const activeActualButton = (index) => {
     setActiveButton(index);
   };
+
   const setActualContent = (index) => {
     setContent(index);
-    handleClick(index);
-    console.log(activeButton);
   };
+
+  const handleClick = (index) => {
+    activeActualButton(index);
+    setActualContent(index);
+  };
+
   return (
     <div className="bg-background">
       <Header>
-        <ButtonsContainer onClick={setActualContent} isActive={activeButton} />
+        <ButtonsContainer onClick={handleClick} isActive={activeButton} />
         <ServiceMainContent
           title={actualContent.title}
           description={actualContent.description}

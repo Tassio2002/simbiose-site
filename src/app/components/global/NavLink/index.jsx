@@ -17,6 +17,10 @@ export const NavLink = (props) => {
   const closeMenu = () => {
     setIsOpen((current) => !current);
   };
+
+  const handleClick = () => {
+    
+  }
   const menu = (
     <div
       className={`dropdown-menu ${isOpen ? "visible" : ""}`}
