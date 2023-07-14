@@ -16,26 +16,26 @@
   }
 
   .service-btn-title {
-    @apply text-lg text-white font-medium
+    @apply text-lg text-white font-medium;
   }
 
   .main-service {
-    @apply w-full py-8 flex items-center text-white
+    @apply w-full py-8 flex items-center text-white;
   }
 
   .main-service-info {
-    @apply w-1/2
+    @apply w-1/2;
   }
 
   .main-service-info h2 {
-    @apply text-5xl font-medium mb-8
+    @apply text-5xl font-medium mb-8;
   }
 
   .main-service-info p {
-    @apply mb-12
+    @apply mb-12;
   }
 
   .main-service-image {
-    @apply w-1/2
+    @apply w-1/2;
   }
 }

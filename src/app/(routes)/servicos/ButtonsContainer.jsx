@@ -1,28 +1,20 @@
-'use client'
+"use client";
 import "./styles/style.css";
 import data from "@/app/data/servicos.json";
 import ServiceButton from "./ServiceButton";
 import { useState } from "react";
 
-export
-
-const ButtonsContainer = (props) => {
-  const [activeButton, setActiveButton] = useState(null)
+export const ButtonsContainer = (props) => {
   const serviceData = data.servicos;
   const buttons = serviceData.buttons;
-  
-  const handleClick = (index) => {
-    setActiveButton(index)
-  }
 
   return (
     <div className="btn-flex-container">
       {buttons.map((button, index) => (
         <ServiceButton
-          onHover={() => props.onHover(index)}
           key={index}
-          isActive={activeButton === index}
-          onClick={() => handleClick(index)}
+          isActive={props.isActive === index}
+          onClick={() => props.onClick(index)}
           icon={button.icon}
           title={button.title}
         />
