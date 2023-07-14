@@ -5,11 +5,13 @@ import ButtonsContainer from "./ButtonsContainer";
 import Header from "@/app/components/global/Header";
 import Footer from "@/app/components/global/Footer/Footer";
 import ServiceMainContent from "./MainContent";
-import { useState } from "react";
+import { useContext } from "react";
+import ServiceContext from "@/app/data/ServiceContext";
 
 export default function ServicesPage() {
-  const [content, setContent] = useState(0);
-  const [activeButton, setActiveButton] = useState(0);
+  const { content, setContent, activeButton, setActiveButton } =
+    useContext(ServiceContext);
+
   const serviceData = data.servicos;
   const actualContent = serviceData.content[content];
 

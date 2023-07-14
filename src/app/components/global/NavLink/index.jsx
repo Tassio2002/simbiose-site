@@ -1,10 +1,14 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./styles/style.css";
 import data from "../../../data/global-components.json";
+import ServiceContext from "@/app/data/ServiceContext";
+
 export const NavLink = (props) => {
+  const { content, setContent, activeButton, setActiveButton } =
+    useContext(ServiceContext);
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const isActtive = pathname.endsWith(props.href);
@@ -18,9 +22,10 @@ export const NavLink = (props) => {
     setIsOpen((current) => !current);
   };
 
-  const handleClick = () => {
-    
-  }
+  const handleClick = (index) => {
+    setContent(index);
+    setActiveButton(index);
+  };
   const menu = (
     <div
       className={`dropdown-menu ${isOpen ? "visible" : ""}`}
@@ -29,8 +34,8 @@ export const NavLink = (props) => {
       onMouseLeave={closeMenu}
     >
       <ul className="menu-list">
-        {data.nav.menu.links.map((link) => (
-          <li key={link.name}>
+        {data.nav.menu.links.map((link, index) => (
+          <li key={link.name} onClick={() => handleClick(index)}>
             <Link href={link.href}>{link.name}</Link>
           </li>
         ))}
