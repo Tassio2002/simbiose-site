@@ -5,19 +5,21 @@ import ButtonsContainer from "./ButtonsContainer";
 import Header from "@/app/components/global/Header";
 import Footer from "@/app/components/global/Footer/Footer";
 import ServiceMainContent from "./MainContent";
+import { useState } from "react";
 
 export default function ServicesPage() {
+  const [content, setContent] = useState(0)
   const serviceData = data.servicos
-  const content = serviceData.content[0]
+  const actualContent = serviceData.content[content]
 
-  const teste = () => {
-    console.log('teste');
+  const setActualContent = (index) => {
+    setContent(index)
   }
   return (
     <div className="bg-background">
       <Header>
-        <ButtonsContainer onHover={teste} />
-        <ServiceMainContent title={content.title} description={content.description} src={content.img} />
+        <ButtonsContainer onHover={setActualContent} />
+        <ServiceMainContent title={actualContent.title} description={actualContent.description} src={actualContent.img} />
       </Header>
       <Footer />
     </div>

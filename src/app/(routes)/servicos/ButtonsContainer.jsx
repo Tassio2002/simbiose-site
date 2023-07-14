@@ -19,7 +19,7 @@ const ButtonsContainer = (props) => {
     <div className="btn-flex-container">
       {buttons.map((button, index) => (
         <ServiceButton
-          onHover={props.onHover}
+          onHover={() => props.onHover(index)}
           key={index}
           isActive={activeButton === index}
           onClick={() => handleClick(index)}
