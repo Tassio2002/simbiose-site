@@ -8,7 +8,7 @@
   }
 
   .dropdown-menu {
-    @apply w-52 p-4 absolute top-10 bg-no-repeat bg-cover hidden;
+    @apply w-52 p-4 absolute top-14 bg-no-repeat bg-cover hidden;
   }
 
   .visible {
