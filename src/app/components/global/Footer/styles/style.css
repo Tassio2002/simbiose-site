@@ -62,4 +62,39 @@
   .social-item {
     @apply cursor-pointer;
   }
+  
+  
+  @media screen and (max-width: 1280px){
+    .content{
+      @apply flex-col items-center;
+    }
+
+    .enterprise {
+      @apply items-center;
+    }
+    .enterprise p{
+      @apply hidden justify-center;
+    }
+
+    .services{
+      @apply hidden;
+    }
+
+    .contacts{
+      @apply flex-col w-full;
+    }
+
+    .contacts-title{
+      @apply hidden;
+    }
+
+    .items{
+      @apply w-full items-center;
+    }
+
+    .info-item{
+      @apply w-full justify-center;
+    }
+
+  }
 }
