@@ -12,6 +12,7 @@ const Statistics = () => {
 
   return (
     <div className="statistics-section" style={Background}>
+      <h2>Nossa história em números</h2>
       <Container>
         <div className="statics-cards-container">
           {StatisticsData.cards.map((item, index) => {

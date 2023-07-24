@@ -4,10 +4,14 @@
 
 @layer components {
   .partners-section {
-    @apply w-full py-10 px-2 flex justify-between gap-2;
+    @apply w-full py-10 px-2 flex justify-between gap-2 flex-col items-center;
   }
 
   .partner-box {
     @apply h-full flex items-center
+  }
+
+  .partners-section h2{
+    @apply text-4xl font-medium mb-8 text-white;
   }
 }
