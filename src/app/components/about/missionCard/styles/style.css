@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .mission-card-container {
+    @apply relative flex flex-col gap-4 p-4 bg-transparent border-primary border justify-between text-white rounded-tl-[20px] rounded-tr-[3px] rounded-br-[20px] rounded-bl-[3px] w-[49%];
+  }
+
+  .mission-card-container::after {
+    @apply absolute top-[5px] right-[5px] content-[''] block w-full h-full border-white border rounded-tl-[20px] rounded-tr-[3px] rounded-br-[20px] rounded-bl-[3px];
+  }
+
+  @media screen and (max-width: 1280px) {
+    .mission-card-container {
+      @apply w-full;
+    }
+  }
+}

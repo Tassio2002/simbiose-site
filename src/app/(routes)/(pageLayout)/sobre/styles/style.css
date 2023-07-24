@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 @layer components {
-  
+  .mission-cards-wrapper {
+    @apply py-12 box-border w-full flex flex-wrap gap-4 justify-center;
+  }
+
+  @media screen and (max-width: 1280px) {
+    .mission-cards-wrapper {
+      @apply p-4;
+    }
+  }
 }
