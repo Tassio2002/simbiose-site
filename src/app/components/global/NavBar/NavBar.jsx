@@ -10,6 +10,7 @@ const NavBar = () => {
 
   const assets = {
     logo: navData.logo,
+    menuIcon: navData.menuIcon,
     sunIcon: navData.buttons.theme.icon,
     globeIcon: navData.buttons.language.icon,
     languageText: navData.buttons.language.currentLanguage,
@@ -30,6 +31,10 @@ const NavBar = () => {
     },
   };
 
+  const expandMenu = () => {
+    console.log("Expandiu");
+  };
+
   return (
     <nav className="nav-bar">
       <div className="logo">
@@ -41,6 +46,9 @@ const NavBar = () => {
             height={30}
           />
         </Link>
+      </div>
+      <div className="menu-hamburguer" onClick={expandMenu}>
+        <Image src={assets.menuIcon} alt={"Menu Icon"} width={30} height={30} />
       </div>
       <div className="nav-links">
         <ul>

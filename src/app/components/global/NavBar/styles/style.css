@@ -26,4 +26,26 @@
   .language {
     @apply flex justify-around px-2 items-center text-white w-24 rounded-3xl cursor-pointer;
   }
+
+  @media screen and (max-width: 1280px) {
+    .nav-links {
+      @apply hidden;
+    }
+
+    .nav-buttons {
+      @apply hidden;
+    }
+
+    .nav-bar {
+      @apply flex w-full justify-between;
+    }
+
+    header {
+      @apply pt-0;
+    }
+
+    .nav-bar {
+      @apply bg-[#060922] mt-[-1.5rem] bg-opacity-60;
+    }
+  }
 }

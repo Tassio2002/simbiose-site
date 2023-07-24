@@ -1,6 +1,7 @@
 {
   "nav": {
     "logo": "/simbiose-logo.png",
+    "menuIcon": "/menu.png",
     "navLinks": [
       {
         "name": "Home",
