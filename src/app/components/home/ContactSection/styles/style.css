@@ -51,3 +51,21 @@
     @apply min-w-[200px];
   }
 }
+
+@media screen and (max-width: 768px){
+  .contact-flex{
+    @apply flex-col;
+  }
+
+  .form{
+    @apply w-full order-1;
+  }
+
+  .contact-box {
+    @apply order-2 mt-5;
+  }
+
+  .contact-info{
+    @apply hidden;
+  }
+}
