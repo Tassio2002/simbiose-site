@@ -1,4 +1,5 @@
 "use client";
+import HeroAboutPage from "@/app/components/about/heroAboutPage/heroAboutPage";
 import { usePathname } from "next/navigation";
 import Footer from "../../components/global/Footer/Footer";
 import Header from "../../components/global/Header";
@@ -10,7 +11,7 @@ const SelectHeader = () => {
   if (pathname.endsWith("/")) {
     return <Hero />;
   } else if (pathname.endsWith("/sobre")) {
-    return <p>Sobre</p>;
+    return <HeroAboutPage />;
   }
 };
 

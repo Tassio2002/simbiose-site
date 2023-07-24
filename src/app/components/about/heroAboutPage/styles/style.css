@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .heroAboutPage {
+    @apply flex w-full py-28 items-center gap-10;
+  }
+
+  .videoWrapper {
+    @apply w-3/5;
+  }
+
+  .contentWrapper {
+  }
+
+  @media screen and (max-width: 1280px) {
+    .heroAboutPage {
+      @apply flex flex-col-reverse py-16;
+    }
+
+    .videoWrapper {
+      @apply flex justify-center w-full px-2;
+    }
+  }
+}

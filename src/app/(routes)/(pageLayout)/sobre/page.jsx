@@ -1,10 +1,9 @@
-import Link from "next/link";
+import "./styles/style.css";
 
 export default function SobrePage() {
-    return (
-      <>
-        <h1 className="title">Sobre</h1>
-        <Link href="/" className="btn_blue">Voltar</Link>
-      </>
-    );
-  }
+  return (
+    <>
+      <p>Cards</p>
+    </>
+  );
+}
