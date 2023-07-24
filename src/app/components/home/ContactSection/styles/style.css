@@ -30,7 +30,7 @@
     @apply w-1/2;
   }
   form {
-    @apply py-6 px-16 flex flex-col gap-9 items-center;
+    @apply py-6 px-16 flex flex-col gap-9 items-center rounded-tl-[20px] rounded-tr-[3px] rounded-br-[20px] rounded-bl-[3px];
   }
 
   form h2 {
@@ -39,7 +39,7 @@
 
   form input,
   textarea {
-    @apply w-full py-2 px-4 bg-button border-b-2 border-b-primary focus:outline-none focus:border-l-4 focus:border-b-4 focus:border-primary caret-white;
+    @apply w-full py-2 px-4 bg-button border-b-2 border-b-primary focus:outline-none focus:border-l-4 focus:border-b-4 focus:border-primary caret-white rounded-tl-[20px] rounded-tr-[3px] rounded-br-[20px] rounded-bl-[3px];
   }
 
   form input::placeholder,
@@ -59,6 +59,15 @@
 
   .form{
     @apply w-full order-1;
+  }
+
+  .form h2{
+    font-size: 0;
+  }
+
+  .form h2::after {
+    content: "Fale conosco ";
+    @apply text-5xl;
   }
 
   .contact-box {
