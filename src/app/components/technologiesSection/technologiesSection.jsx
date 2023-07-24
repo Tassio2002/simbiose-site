@@ -14,8 +14,9 @@ const TechnologiesSection = () => {
     autoplay: false,
     withoutControls: true,
     autoplayInterval: 2000,
-    slidesToShow: isMobile ? 1 : 4,
+    slidesToShow: isMobile ? 1 : 3,
     wrapAround: false,
+    dragThreshold: isMobile ? 0.1 : 0.5,
   };
 
   return (
