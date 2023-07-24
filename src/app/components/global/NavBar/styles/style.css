@@ -27,6 +27,10 @@
     @apply flex justify-around px-2 items-center text-white w-24 rounded-3xl cursor-pointer;
   }
 
+  .menu-hamburguer {
+    @apply md:hidden;
+  }
+
   @media screen and (max-width: 1280px) {
     .nav-links {
       @apply hidden;

@@ -4,15 +4,18 @@ import TechnologiesCard from "@/app/components/technologiesCard/technologiesCard
 import data from "@/app/data/home.json";
 import SectionName from "../global/SectionName/Enterprise";
 import Carousel from "nuka-carousel";
+import { useState, useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const TechnologiesSection = () => {
   const TechSectionData = data.home.tecnologias;
-
+  const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
+  console.log(isMobile);
   const params = {
     autoplay: false,
     withoutControls: true,
     autoplayInterval: 2000,
-    slidesToShow: 4,
+    slidesToShow: isMobile ? 1 : 4,
     wrapAround: false,
   };
 
