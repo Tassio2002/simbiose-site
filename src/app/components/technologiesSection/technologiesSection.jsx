@@ -4,13 +4,12 @@ import TechnologiesCard from "@/app/components/technologiesCard/technologiesCard
 import data from "@/app/data/home.json";
 import SectionName from "../global/SectionName/Enterprise";
 import Carousel from "nuka-carousel";
-import { useState, useEffect } from "react";
-import { useMediaQuery } from "react-responsive";
+import { useContext } from "react";
+import MobileObserverContext from "@/app/data/MobileObserverContext";
 
 const TechnologiesSection = () => {
   const TechSectionData = data.home.tecnologias;
-  const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
-  console.log(isMobile);
+  const isMobile = useContext(MobileObserverContext);
   const params = {
     autoplay: false,
     withoutControls: true,
