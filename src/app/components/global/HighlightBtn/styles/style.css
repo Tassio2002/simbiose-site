@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .highlightBtn {
+    @apply bg-primary text-white flex items-center justify-center gap-4 rounded-tl-[20px] rounded-tr-[5px] rounded-br-[20px] rounded-bl-[5px] text-lg w-max px-14 py-3;
+  }
+}
