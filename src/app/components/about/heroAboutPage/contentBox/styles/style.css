@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .content-box {
+    @apply text-white flex flex-col gap-6;
+  }
+
+  .content-box-enterprise{
+    @apply text-primary flex flex-row items-baseline text-4xl font-semibold;
+  }
+
+  .content-box-title{
+    @apply text-2xl;
+  }
+
+  .content-box-description{
+
+  }
+}

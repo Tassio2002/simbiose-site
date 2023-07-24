@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .heroAboutPage {
+    @apply flex w-full py-28 items-center gap-10;
+  }
+
+  .videoWrapper {
+    @apply w-3/5;
+  }
+
+  .contentWrapper {
+    
+  }
+}
