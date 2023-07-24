@@ -126,6 +126,9 @@
   "globalButton": {
     "icon": "/white-right-arrow.png"
   },
+  "highlightBtn": {
+    "icon": "/highlightArrow.png"
+  },
   "card": {
     "cardButtonIcon": "/blue-right-arrow.png"
   }

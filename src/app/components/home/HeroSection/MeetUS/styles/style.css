@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .meetUsText {
+    @apply text-white text-lg;
+  }
+
+  .meetUsIcons{
+    @apply flex gap-4 mt-6;
+  }
+}

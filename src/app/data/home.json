@@ -13,6 +13,13 @@
             "text": "o futuro do seu negócio com software disruptivo"
           },
           "subtitle": "Desenvolvemos soluções personalizadas para impulsionar sua empresa rumo ao sucesso!"
+        },
+        "meetUs": {
+          "text": "Conheça-nos",
+          "icons": {
+            "tel": "/contact-tel.png",
+            "linkedin": "/contact-linkedin.png"
+          }
         }
       }
     },

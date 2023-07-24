@@ -37,4 +37,26 @@
   .subtitle {
     @apply max-w-[400px] text-white;
   }
+
+  @media screen and (max-width: 1280px) {
+    .flex-hero {
+      @apply mt-8 p-4;
+    }
+
+    .hero-image {
+      @apply hidden;
+    }
+
+    .hero-text{
+      @apply w-full flex flex-col;
+    }
+
+    .hero-title{
+      @apply text-2xl;
+    }
+
+    .subtitle{
+      @apply w-[75%];
+    }
+  }
 }
