@@ -19,3 +19,9 @@
     @apply flex w-full overflow-y-hidden no-scrollbar mt-6;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .technologies-section {
+    @apply pl-6;
+  }
+}
