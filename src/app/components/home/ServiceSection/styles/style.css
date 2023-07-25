@@ -29,3 +29,30 @@
 .top-section .service-btn a {
   @apply min-w-[200px];
 }
+
+@media screen and (max-width: 768px){
+  .service-section{
+    @apply pl-6;
+  }
+
+  .service-title {
+    @apply hidden;
+  }
+
+  .service-section .enterprise-name span {
+    font-size: 0;
+  }
+
+  .service-section .enterprise-name span::after{
+    font-size: 16px;
+    content: "SOLUÇÕES";
+  }
+
+  .top-section{
+    @apply flex flex-col items-start;
+  }
+
+  .top-section .service-btn{
+    @apply flex justify-start mt-8;
+  }
+}

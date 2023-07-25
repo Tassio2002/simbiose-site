@@ -23,3 +23,17 @@
     @apply w-full grid grid-cols-3 grid-rows-2 gap-4 box-border;
   }
 }
+
+@media screen and (max-width: 768px){
+  .card-container{
+    @apply m-2 h-[300px] max-w-[300px];
+  }
+
+  .card-flex-container{
+    @apply grid-rows-1 grid-cols-none;
+  }
+
+  .services-cards{
+    @apply flex w-full overflow-y-hidden no-scrollbar mt-6;
+  }
+}
