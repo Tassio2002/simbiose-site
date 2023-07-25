@@ -78,3 +78,13 @@
     @apply hidden;
   }
 }
+
+@media screen {
+ .contact-section {
+    @apply p-6;
+ }
+
+  form{
+    @apply p-6;
+  }
+}
