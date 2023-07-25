@@ -36,7 +36,7 @@ const ContactSection = () => {
                 {assets.socialMedias.map((socialMedia) => (
                   <a key={socialMedia} href={socialMedia.link} target="_blank">
                     <Image
-                      className="social-media-icon"
+                      className="social-media-icon upscale-on-hover"
                       src={socialMedia.icon}
                       width={50}
                       height={50}

@@ -3,7 +3,7 @@ import "./styles/style.css";
 
 const StatCard = ({ icon, number, title }) => {
   return (
-    <div className="stat-card-container">
+    <div className="stat-card-container upscale-on-hover">
       <Image className="icon" src={icon} width={45} height={45} alt="Icon" />
       <span className="number">{number}</span>
       <p className="title">{title}</p>
