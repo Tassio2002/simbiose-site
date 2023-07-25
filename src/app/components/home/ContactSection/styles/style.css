@@ -21,6 +21,10 @@
   .social-media {
     @apply flex justify-start gap-10;
   }
+  .social-media-icon:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+  }
 
   .contact-info {
     @apply w-full flex items-center gap-4 text-white;
