@@ -74,7 +74,7 @@ const Footer = () => {
               {footerData.services.contact.social.map((item, index) => {
                 return (
                   <Link key={index} href={item.link}>
-                    <div className="social-item">
+                    <div className="social-item upscale-on-hover">
                       <Image
                         src={item.icon}
                         width={30}
