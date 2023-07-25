@@ -35,15 +35,17 @@ const Footer = () => {
           <div className="services-items">
             {footerServices.map((service, index) => {
               return (
-                <div className={"service-item"} key={index}>
-                  <Image
-                    src={footerData.services.icon}
-                    width={17}
-                    height={7}
-                    alt={"Blue Arrow Right"}
-                  />
-                  <p>{service}</p>
-                </div>
+                <Link key={index} href={service.url}>
+                  <div className={"service-item upscale-on-hover"}>
+                    <Image
+                      src={footerData.services.icon}
+                      width={17}
+                      height={7}
+                      alt={"Blue Arrow Right"}
+                    />
+                    <p>{service.title}</p>
+                  </div>
+                </Link>
               );
             })}
           </div>
