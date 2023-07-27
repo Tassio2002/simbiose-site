@@ -47,15 +47,15 @@
       @apply hidden;
     }
 
-    .hero-text{
+    .hero-text {
       @apply w-full flex flex-col;
     }
 
-    .hero-title{
+    .hero-title {
       @apply text-2xl;
     }
 
-    .subtitle{
+    .subtitle {
       @apply w-[75%];
     }
   }

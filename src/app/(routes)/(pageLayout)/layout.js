@@ -1,9 +1,11 @@
 "use client";
 import HeroAboutPage from "@/app/components/about/heroAboutPage/heroAboutPage";
+import Particles from "@/app/components/global/Particles/particles";
 import { usePathname } from "next/navigation";
 import Footer from "../../components/global/Footer/Footer";
 import Header from "../../components/global/Header";
 import { Hero } from "../../components/home/HeroSection";
+import data from "@/app/data/home.json";
 
 const SelectHeader = () => {
   const pathname = usePathname();
@@ -16,9 +18,13 @@ const SelectHeader = () => {
 };
 
 export default function pagesLayout({ children }) {
+  const particlesData = data.home.hero.background;
+
   return (
     <div className="bg-background">
-      <Header>{SelectHeader()}</Header>
+      <Particles background={particlesData}>
+        <Header>{SelectHeader()}</Header>
+      </Particles>
       {children}
       <Footer />
     </div>

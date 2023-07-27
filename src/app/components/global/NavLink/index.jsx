@@ -15,11 +15,11 @@ export const NavLink = (props) => {
   const menuBackground = data.nav.menu.background;
 
   const openMenu = () => {
-    setIsOpen((current) => !current);
+    setIsOpen(true);
   };
 
   const closeMenu = () => {
-    setIsOpen((current) => !current);
+    setIsOpen(false);
   };
 
   const handleClick = (index) => {
@@ -28,7 +28,7 @@ export const NavLink = (props) => {
   };
   const menu = (
     <div
-      className={`dropdown-menu ${isOpen ? "visible" : ""}`}
+      className={'dropdown-menu'}
       style={{ backgroundImage: `url(${menuBackground})` }}
       onMouseEnter={openMenu}
       onMouseLeave={closeMenu}
@@ -48,13 +48,13 @@ export const NavLink = (props) => {
         onMouseEnter={openMenu}
         onMouseLeave={closeMenu}
         key={props.name}
-        className={`${isActtive ? "active" : ""}`}
+        className={`menu-link ${isActtive ? "active" : ""}`}
       >
         <Link key={props.name} href={props.href}>
           {isActtive ? `${props.name} +` : `${props.name}`}
         </Link>
+        {props.name === "Serviços" ? menu : ""}
       </li>
-      {props.name === "Serviços" ? menu : ""}
     </>
   );
 };
