@@ -30,7 +30,7 @@ export default function ServicesPage() {
 
   return (
     <div className="bg-background">
-      <Header>
+      <Header background={serviceData.heroBackground}>
         <ButtonsContainer onClick={handleClick} isActive={activeButton} />
         <ServiceMainContent
           title={actualContent.title}

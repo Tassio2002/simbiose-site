@@ -7,8 +7,16 @@
     @apply text-primary list-disc marker:text-primary;
   }
 
+  .menu-link {
+    @apply relative;
+  }
+
   .dropdown-menu {
-    @apply w-52 p-4 absolute top-14 bg-no-repeat bg-cover hidden;
+    @apply hidden w-max p-6 absolute bg-no-repeat bg-cover -left-12 right-0 text-white;
+  }
+
+  .menu-link:hover .dropdown-menu {
+    @apply block;
   }
 
   .visible {

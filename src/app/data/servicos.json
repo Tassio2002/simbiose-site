@@ -1,5 +1,6 @@
 {
   "servicos": {
+    "heroBackground": "hero-background.png",
     "background":"/service-btn-bg.svg",
     "backgroundActive":"/service-btn-active.svg",
     "buttons": [

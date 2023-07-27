@@ -5,20 +5,19 @@ import SectionName from "../../global/SectionName/Enterprise";
 import Image from "next/image";
 import ContactInfo from "./contacts";
 import ContactForm from "./ContactForm";
+import ParticlesContact from "../../global/ParticlesContact/particlesContact";
 
 const contactData = data.home.contato;
 
 export const assets = {
-  background: {
-    backgroundImage: `url(${contactData.background}#060922)`,
-  },
   sectionName: contactData.name,
   contacts: contactData.contacts,
   socialMedias: contactData.social,
 };
 const ContactSection = () => {
   return (
-    <div className="contact-section" style={assets.background}>
+    <div className="contact-section">
+      <ParticlesContact></ParticlesContact>
       <Container>
         <SectionName name={assets.sectionName} color="text-white" />
         <div className="contact-flex">

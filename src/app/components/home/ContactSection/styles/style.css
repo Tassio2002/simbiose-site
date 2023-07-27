@@ -4,11 +4,11 @@
 
 @layer components {
   .contact-section {
-    @apply w-full p-16;
+    @apply w-full p-16 relative;
   }
 
   .contact-flex {
-    @apply w-full mt-10 flex items-center;
+    @apply w-full mt-10 flex items-center relative z-50;
   }
 
   .contact-box {
@@ -52,16 +52,16 @@
   }
 }
 
-@media screen and (max-width: 768px){
-  .contact-flex{
-    @apply flex-col;
+@media screen and (max-width: 768px) {
+  .contact-flex {
+    @apply flex-col relative z-50;
   }
 
-  .form{
+  .form {
     @apply w-full order-1;
   }
 
-  .form h2{
+  .form h2 {
     font-size: 0;
   }
 
@@ -74,7 +74,7 @@
     @apply order-2 mt-5;
   }
 
-  .contact-info{
+  .contact-info {
     @apply hidden;
   }
 }

@@ -26,6 +26,7 @@ export const Hero = () => {
         <HighlightBtn />
         {isMobile && <MeetUs />}
       </div>
+
       <div className="hero-image">
         <HeroImage />
       </div>

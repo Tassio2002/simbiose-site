@@ -1,0 +1,38 @@
+body {
+  overflow-x: hidden;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+#particles-js {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  left: 0;
+  height: 770px;
+  overflow-x: hidden;
+}
+.count-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 2px;
+  height: 770px;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
