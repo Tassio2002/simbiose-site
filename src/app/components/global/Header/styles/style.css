@@ -9,7 +9,7 @@
 
   @media screen and (max-width: 1280px) {
     header {
-      @apply w-full pt-0;
+      @apply pt-0;
     }
   }
 }

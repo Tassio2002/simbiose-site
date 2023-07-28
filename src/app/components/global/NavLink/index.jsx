@@ -25,7 +25,6 @@ export const NavLink = (props) => {
   const { expandMenu } = useContext(DropdownMenuContext);
 
   const handleClick = (index) => {
-    console.log("oi");
     setContent(index);
     setActiveButton(index);
     expandMenu();
