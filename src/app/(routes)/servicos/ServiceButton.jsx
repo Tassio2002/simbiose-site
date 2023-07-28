@@ -22,7 +22,11 @@ const ServiceButton = ({ icon, title, onClick, isActive, onHover }) => {
       >
         <Image src={icon} width={64} height={64} alt={title} />
       </button>
-      <span className="service-btn-title">{title}</span>
+      <span
+        className={isActive ? "service-btn-title-active" : "service-btn-title"}
+      >
+        {title}
+      </span>
     </div>
   );
 };

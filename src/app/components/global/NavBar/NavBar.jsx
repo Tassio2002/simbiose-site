@@ -4,6 +4,9 @@ import data from "@/app/data/global-components.json";
 import Image from "next/image";
 import Link from "next/link";
 import { NavLink } from "../NavLink";
+import { useContext, useState } from "react";
+import MobileNavBar from "./mobileNavBar";
+import { DropdownMenuContext } from "@/app/data/DropdownMenuContext";
 
 const NavBar = () => {
   const navData = data.nav;
@@ -30,25 +33,31 @@ const NavBar = () => {
       backgroundImage: `url(${assets.menuBackground})`,
     },
   };
-
-  const expandMenu = () => {
-    console.log("Expandiu");
-  };
-
+  const { isExpanded, expandMenu } = useContext(DropdownMenuContext);
   return (
     <nav className="nav-bar">
-      <div className="logo">
-        <Link href="/">
-          <Image
-            src={assets.logo}
-            alt={"Simbiose logo"}
-            width={30}
-            height={30}
-          />
-        </Link>
-      </div>
-      <div className="menu-hamburguer" onClick={expandMenu}>
-        <Image src={assets.menuIcon} alt={"Menu Icon"} width={30} height={30} />
+      <div className="mobile-header">
+        <div className="logo-and-menu-icon">
+          <div className="logo">
+            <Link href="/">
+              <Image
+                src={assets.logo}
+                alt={"Simbiose logo"}
+                width={30}
+                height={30}
+              />
+            </Link>
+          </div>
+          <div className="menu-hamburguer" onClick={expandMenu}>
+            <Image
+              src={assets.menuIcon}
+              alt={"Menu Icon"}
+              width={30}
+              height={30}
+            />
+          </div>
+        </div>
+        {isExpanded && <MobileNavBar />}
       </div>
       <div className="nav-links">
         <ul>

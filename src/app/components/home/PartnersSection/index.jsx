@@ -4,7 +4,7 @@ import data from "@/app/data/home.json";
 import Image from "next/image";
 import Carousel from "nuka-carousel";
 import MobileObserverContext from "@/app/data/MobileObserverContext";
-import {useContext} from "react";
+import { useContext } from "react";
 
 const PartnersSection = () => {
   const partnersData = data.home.parceiros;
@@ -17,8 +17,9 @@ const PartnersSection = () => {
   const params = {
     autoplay: true,
     withoutControls: true,
-    autoplayInterval: 2000,
-    slidesToShow: isMobile ? 3 :6,
+    autoplayInterval: 4000,
+    speed: 9999,
+    slidesToShow: isMobile ? 3 : 6,
     wrapAround: true,
     style: {
       alignItems: "center",
@@ -29,7 +30,7 @@ const PartnersSection = () => {
       <h2>Parceiros de sucesso</h2>
       <Carousel {...params} className="carousel">
         {partnersData.images.map((image, i) => (
-          <div key={i} className="partner-box" >
+          <div key={i} className="partner-box">
             <Image
               className="partner-image"
               src={image}

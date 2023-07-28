@@ -22,9 +22,13 @@ export default function pagesLayout({ children }) {
 
   return (
     <div className="bg-background">
-      <Particles background={particlesData}>
+      <div
+        className="hero-particles-and-header"
+        style={{ position: "relative" }}
+      >
+        <Particles background={particlesData}></Particles>
         <Header>{SelectHeader()}</Header>
-      </Particles>
+      </div>
       {children}
       <Footer />
     </div>

@@ -1,6 +1,7 @@
 import "./styles/style.css";
 import Container from "../Container/Container";
 import NavBar from "../NavBar/NavBar";
+import { DropdownMenuContextProvider } from "@/app/data/DropdownMenuContext";
 
 const Header = ({ children, background }) => {
   const headerStyle = {
@@ -10,7 +11,9 @@ const Header = ({ children, background }) => {
   return (
     <header style={headerStyle}>
       <Container>
-        <NavBar />
+        <DropdownMenuContextProvider>
+          <NavBar />
+        </DropdownMenuContextProvider>
         {children}
       </Container>
     </header>

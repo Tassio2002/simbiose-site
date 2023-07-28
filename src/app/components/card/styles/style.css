@@ -24,16 +24,16 @@
   }
 }
 
-@media screen and (max-width: 768px){
-  .card-container{
-    @apply m-2 h-[300px] max-w-[300px];
+@media screen and (max-width: 768px) {
+  .card-container {
+    @apply m-2 h-[300px] max-w-[300px] ml-6 mr-0;
   }
 
-  .card-flex-container{
+  .card-flex-container {
     @apply grid-rows-1 grid-cols-none;
   }
 
-  .services-cards{
-    @apply flex w-full overflow-y-hidden no-scrollbar mt-6;
+  .services-cards {
+    @apply flex w-full no-scrollbar mt-6 overflow-hidden;
   }
 }

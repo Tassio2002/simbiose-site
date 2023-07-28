@@ -5,6 +5,7 @@ import { useContext, useState } from "react";
 import "./styles/style.css";
 import data from "../../../data/global-components.json";
 import ServiceContext from "@/app/data/ServiceContext";
+import { DropdownMenuContext } from "@/app/data/DropdownMenuContext";
 
 export const NavLink = (props) => {
   const { content, setContent, activeButton, setActiveButton } =
@@ -21,14 +22,17 @@ export const NavLink = (props) => {
   const closeMenu = () => {
     setIsOpen(false);
   };
+  const { expandMenu } = useContext(DropdownMenuContext);
 
   const handleClick = (index) => {
     setContent(index);
     setActiveButton(index);
+    expandMenu();
   };
+
   const menu = (
     <div
-      className={'dropdown-menu'}
+      className={"dropdown-menu"}
       style={{ backgroundImage: `url(${menuBackground})` }}
       onMouseEnter={openMenu}
       onMouseLeave={closeMenu}
@@ -50,7 +54,7 @@ export const NavLink = (props) => {
         key={props.name}
         className={`menu-link ${isActtive ? "active" : ""}`}
       >
-        <Link key={props.name} href={props.href}>
+        <Link key={props.name} href={props.href} onClick={expandMenu}>
           {isActtive ? `${props.name} +` : `${props.name}`}
         </Link>
         {props.name === "Serviços" ? menu : ""}
