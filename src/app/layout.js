@@ -4,6 +4,7 @@ import { ServiceContextProvider } from "./data/ServiceContextProvider";
 import { MobileObserverContextProvider } from "./data/MobileObserverContextProvider";
 import Script from "next/script";
 import Head from "next/head";
+import { SetServicePageIndexContextProvider } from "./data/setServicePageIndex";
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -23,7 +24,9 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={jost.className}>
         <MobileObserverContextProvider>
-          <ServiceContextProvider>{children}</ServiceContextProvider>
+          <SetServicePageIndexContextProvider>
+            <ServiceContextProvider>{children}</ServiceContextProvider>
+          </SetServicePageIndexContextProvider>
         </MobileObserverContextProvider>
       </body>
     </html>
