@@ -30,4 +30,10 @@
   .menu-list li {
     @apply hover:text-primary;
   }
+
+  @media screen and (max-width: 1280px) {
+    .active {
+      @apply list-none;
+    }
+  }
 }
