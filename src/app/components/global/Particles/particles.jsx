@@ -15,12 +15,12 @@ const Particles = ({ children, background, backgroundColor }) => {
           <span class="js-count-particles"></span>
         </div>
       </div>
-      
+
       <Script
-        src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+        src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
         async
       />
-      <Script src="http://threejs.org/examples/js/libs/stats.min.js" async />
+      <Script src="https://threejs.org/examples/js/libs/stats.min.js" async />
       <Script src="/scripts/particles.js" async />
     </>
   );
