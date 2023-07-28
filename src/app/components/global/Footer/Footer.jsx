@@ -2,6 +2,8 @@ import "./styles/style.css";
 import data from "@/app/data/global-components.json";
 import Image from "next/image";
 import Link from "next/link";
+import { useContext } from "react";
+import { SetServicePageIndexContext } from "@/app/data/setServicePageIndex";
 
 const Footer = () => {
   const footerData = data.footer;
@@ -15,6 +17,9 @@ const Footer = () => {
   };
 
   const footerServices = data.footer.services.links;
+  const { index, setIndex, changeValue } = useContext(
+    SetServicePageIndexContext
+  );
 
   return (
     <footer className="footer-container" style={themeBackground}>
@@ -35,15 +40,21 @@ const Footer = () => {
           <div className="services-items">
             {footerServices.map((service, index) => {
               return (
-                <div className={"service-item"} key={index}>
-                  <Image
-                    src={footerData.services.icon}
-                    width={17}
-                    height={7}
-                    alt={"Blue Arrow Right"}
-                  />
-                  <p>{service}</p>
-                </div>
+                <Link
+                  key={index}
+                  onClick={() => changeValue(service.card)}
+                  href={"/servicos"}
+                >
+                  <div className={"service-item upscale-on-hover"}>
+                    <Image
+                      src={footerData.services.icon}
+                      width={17}
+                      height={7}
+                      alt={"Blue Arrow Right"}
+                    />
+                    <p>{service.title}</p>
+                  </div>
+                </Link>
               );
             })}
           </div>
