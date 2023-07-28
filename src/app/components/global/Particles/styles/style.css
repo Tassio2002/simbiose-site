@@ -7,8 +7,7 @@ canvas {
 }
 #particles-js {
   position: relative;
-  width: 100vw;
-  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -35,4 +34,13 @@ canvas {
 }
 .count-particles {
   border-radius: 0 0 3px 3px;
+}
+
+@media screen and (max-width: 768px) {
+  #particles-js {
+    height: 670px;
+  }
+  .count-particles {
+    height: 670px;
+  }
 }

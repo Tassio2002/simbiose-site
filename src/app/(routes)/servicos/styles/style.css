@@ -4,7 +4,7 @@
 
 @layer components {
   .btn-flex-container {
-    @apply px-20 pt-14 flex justify-between items-center;
+    @apply px-20 pt-14 flex justify-center gap-16 items-center;
   }
 
   .service-btn-container {
@@ -12,11 +12,19 @@
   }
 
   .service-btn-icon {
-    @apply px-5 py-6 border-gray-600 border rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md flex items-center justify-center;
+    @apply px-3 py-4 border-gray-600 border rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md flex items-center justify-center;
+  }
+
+  .service-btn-icon img {
+    @apply w-[80%];
   }
 
   .service-btn-title {
-    @apply text-lg text-white font-medium;
+    @apply text-base text-white font-medium mt-2;
+  }
+
+  .service-btn-title-active {
+    @apply text-base text-primary font-medium mt-2;
   }
 
   .main-service {
@@ -36,6 +44,48 @@
   }
 
   .main-service-image {
-    @apply w-1/2 h-[500px];
+    @apply w-1/2 h-[500px] flex justify-end;
+  }
+
+  @media screen and (max-width: 1280px) {
+    .btn-flex-container {
+      @apply p-0 overflow-scroll no-scrollbar justify-start gap-6 items-start mt-8;
+    }
+
+    .service-btn-container {
+      @apply flex justify-center text-center;
+    }
+
+    .service-btn-icon {
+      @apply p-2 h-[90px] w-[90px];
+    }
+
+    .service-btn-container:first-child {
+      @apply ml-6;
+    }
+
+    .service-btn-container:last-child {
+      @apply mr-6;
+    }
+
+    .service-btn-title {
+      @apply text-sm;
+    }
+
+    .main-service {
+      @apply w-full flex flex-col mb-0 p-0;
+    }
+
+    .main-service-info {
+      @apply w-full p-6;
+    }
+
+    .main-service-image {
+      @apply w-full flex justify-center h-max;
+    }
+
+    .main-service-image img {
+      @apply w-[80%] h-[60%];
+    }
   }
 }

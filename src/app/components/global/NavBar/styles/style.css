@@ -49,7 +49,7 @@
     }
 
     .nav-bar {
-      @apply bg-[#060922] mt-[-1.5rem] bg-opacity-60;
+      @apply bg-[#060922] bg-opacity-60;
     }
   }
 }

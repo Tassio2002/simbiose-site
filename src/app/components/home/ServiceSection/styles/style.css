@@ -6,33 +6,32 @@
   .service-section {
     @apply py-20 text-white;
   }
-}
 
-.service-title {
-  @apply text-5xl pb-10;
-}
+  .service-title {
+    @apply text-5xl pb-10;
+  }
 
-.service-subtitle {
-  @apply font-light;
-}
+  .service-subtitle {
+    @apply font-light;
+  }
 
-.top-section {
-  @apply w-full py-14 flex justify-between items-center;
-}
+  .top-section {
+    @apply w-full py-14 flex justify-between items-center;
+  }
 
-.top-section .service-texts {
-  @apply w-2/3;
+  .top-section .service-texts {
+    @apply w-2/3;
+  }
+  .top-section .service-btn {
+    @apply w-1/3 flex justify-end;
+  }
+  .top-section .service-btn a {
+    @apply min-w-[200px];
+  }
 }
-.top-section .service-btn {
-  @apply w-1/3 flex justify-end;
-}
-.top-section .service-btn a {
-  @apply min-w-[200px];
-}
-
-@media screen and (max-width: 768px){
-  .service-section{
-    @apply pl-6;
+@media screen and (max-width: 768px) {
+  .service-section {
+    @apply pt-8;
   }
 
   .service-title {
@@ -43,16 +42,35 @@
     font-size: 0;
   }
 
-  .service-section .enterprise-name span::after{
+  .service-section .enterprise-name span::after {
     font-size: 16px;
     content: "SOLUÇÕES";
   }
 
-  .top-section{
-    @apply flex flex-col items-start;
+  .top-section {
+    @apply flex flex-col items-start w-auto py-10 ml-6;
   }
 
-  .top-section .service-btn{
+  .top-section .service-btn {
     @apply flex justify-start mt-8;
+  }
+
+  .services-cards {
+    @apply w-auto m-0;
+  }
+
+  .service-subtitle {
+    @apply w-full;
+  }
+  .service-texts {
+    @apply w-full;
+  }
+
+  .top-section .service-texts {
+    @apply w-full;
+  }
+
+  .service-section {
+    @apply pb-10 text-white;
   }
 }

@@ -18,17 +18,6 @@ export default function RootLayout({ children }) {
         <MobileObserverContextProvider>
           <ServiceContextProvider>{children}</ServiceContextProvider>
         </MobileObserverContextProvider>
-        <Script
-          src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
-          async
-        />
-        <Script src="http://threejs.org/examples/js/libs/stats.min.js" async />
-        <Script src="/scripts/particles.js" async />
-        <Script
-          src="https://cdn.jsdelivr.net/npm/tsparticles@1.37.4/tsparticles.min.js"
-          async
-        />
-        <Script src="/scripts/particlesContact.js" async />
       </body>
     </html>
   );
