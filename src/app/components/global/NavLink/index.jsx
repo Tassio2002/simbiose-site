@@ -6,6 +6,7 @@ import "./styles/style.css";
 import data from "../../../data/global-components.json";
 import ServiceContext from "@/app/data/ServiceContext";
 import { DropdownMenuContext } from "@/app/data/DropdownMenuContext";
+import MobileObserverContext from "@/app/data/MobileObserverContext";
 
 export const NavLink = (props) => {
   const { content, setContent, activeButton, setActiveButton } =
@@ -14,6 +15,7 @@ export const NavLink = (props) => {
   const pathname = usePathname();
   const isActtive = pathname.endsWith(props.href);
   const menuBackground = data.nav.menu.background;
+  const isMobile = useContext(MobileObserverContext);
 
   const openMenu = () => {
     setIsOpen(true);
@@ -55,7 +57,7 @@ export const NavLink = (props) => {
         className={`menu-link ${isActtive ? "active" : ""}`}
       >
         <Link key={props.name} href={props.href} onClick={expandMenu}>
-          {isActtive ? `${props.name} +` : `${props.name}`}
+          {isActtive && !isMobile ? `${props.name} +` : `${props.name}`}
         </Link>
         {props.name === "Serviços" ? menu : ""}
       </li>
