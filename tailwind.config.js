@@ -17,6 +17,9 @@ module.exports = {
       boxShadow: {
         buttonShadow: "-5px 5px #09AFF4",
       },
+      dropShadow: {
+        "3xl": "-2px 2px 0px #09AFF4",
+      },
     },
   },
   plugins: [
