@@ -31,6 +31,10 @@
     @apply md:hidden;
   }
 
+  .mobile-nav {
+    @apply hidden;
+  }
+
   @media screen and (max-width: 1280px) {
     .nav-links {
       @apply hidden;
@@ -49,7 +53,18 @@
     }
 
     .nav-bar {
-      @apply bg-[#060922] bg-opacity-60;
+      @apply bg-[#060922] bg-opacity-60 relative;
+    }
+
+    .mobile-nav {
+      @apply flex text-white flex justify-center text-center absolute top-[62px] left-0 bg-[#060922] bg-opacity-60 w-full;
+    }
+
+    .logo-and-menu-icon {
+      @apply flex justify-between w-full;
+    }
+    .mobile-header {
+      @apply flex flex-col w-full;
     }
   }
 }

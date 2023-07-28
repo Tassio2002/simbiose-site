@@ -16,7 +16,7 @@
 
   @media screen and (max-width: 1280px) {
     .heroAboutPage {
-      @apply flex flex-col-reverse py-16;
+      @apply flex flex-col-reverse pb-16 pt-4;
     }
 
     .videoWrapper {
