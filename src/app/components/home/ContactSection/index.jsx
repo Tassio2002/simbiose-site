@@ -1,7 +1,6 @@
 import "./styles/style.css";
 import data from "@/app/data/home.json";
 import Container from "../../global/Container/Container";
-import SectionName from "../../global/SectionName/Enterprise";
 import Image from "next/image";
 import ContactInfo from "./contacts";
 import ContactForm from "./ContactForm";
@@ -20,7 +19,6 @@ const ContactSection = () => {
   return (
     <div className="contact-section" style={assets.background}>
       <Container>
-        <SectionName name={assets.sectionName} color="text-white" />
         <div className="contact-flex">
           <div className="contact-box">
             <div className="contacts-infos">
