@@ -13,6 +13,7 @@ export const NavLink = (props) => {
     useContext(ServiceContext);
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const isServicesPage = pathname === "/servicos";
   const isActtive = pathname.endsWith(props.href);
   const menuBackground = data.nav.menu.background;
   const isMobile = useContext(MobileObserverContext);
@@ -59,7 +60,7 @@ export const NavLink = (props) => {
         <Link key={props.name} href={props.href} onClick={expandMenu}>
           {isActtive && !isMobile ? `${props.name} +` : `${props.name}`}
         </Link>
-        {props.name === "Serviços" ? menu : ""}
+        {props.name === "Serviços" && !isServicesPage ? menu : ""}
       </li>
     </>
   );
