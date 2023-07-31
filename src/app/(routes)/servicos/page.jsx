@@ -27,6 +27,7 @@ export default function ServicesPage() {
   };
 
   const handleClick = (index) => {
+    console.log(actualContent.title);
     activeActualButton(index);
     setActualContent(index);
   };

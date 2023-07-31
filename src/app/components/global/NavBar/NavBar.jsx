@@ -62,7 +62,12 @@ const NavBar = () => {
       <div className="nav-links">
         <ul>
           {navData.navLinks.map((link) => (
-            <NavLink key={link.name} href={link.href} name={link.name} />
+            <NavLink
+              key={link.name}
+              href={link.href}
+              name={link.name}
+              target={link.target}
+            />
           ))}
         </ul>
       </div>
