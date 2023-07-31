@@ -22,5 +22,9 @@
     .videoWrapper {
       @apply flex justify-center w-full px-2;
     }
+
+    .contentWrapper {
+      @apply px-8;
+    }
   }
 }
