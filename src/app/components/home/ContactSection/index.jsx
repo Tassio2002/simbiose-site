@@ -38,8 +38,8 @@ const ContactSection = () => {
                     <Image
                       className="social-media-icon upscale-on-hover"
                       src={socialMedia.icon}
-                      width={50}
-                      height={50}
+                      width={35}
+                      height={35}
                       alt="social media"
                     />
                   </a>
