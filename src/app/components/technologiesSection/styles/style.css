@@ -24,17 +24,9 @@
   .technologies-section-title-and-subtitle {
     @apply ml-6;
   }
-
-  .enterprise-name {
-    @apply ml-6;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-  .enterprise-name {
-    @apply ml-14;
-  }
-
   .technologies-section-title-and-subtitle {
     @apply px-14;
   }
