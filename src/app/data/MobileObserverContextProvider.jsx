@@ -4,7 +4,7 @@ import MobileObserverContext from "./MobileObserverContext";
 import { useMediaQuery } from "react-responsive";
 
 export function MobileObserverContextProvider({ children }) {
-  const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
+  const isMobile = useMediaQuery({ query: `(max-width: 767px)` });
 
   return (
     <MobileObserverContext.Provider value={isMobile}>

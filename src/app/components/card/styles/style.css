@@ -24,7 +24,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .card-container {
     @apply m-2 h-[300px] max-w-[300px] ml-6 mr-0;
   }
@@ -35,5 +35,17 @@
 
   .services-cards {
     @apply flex w-full no-scrollbar mt-6 overflow-hidden;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .card-flex-container {
+    @apply px-14;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1357px) {
+  .card-flex-container {
+    @apply px-14;
   }
 }
