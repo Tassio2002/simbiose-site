@@ -16,7 +16,7 @@
   }
 
   .nav-buttons {
-    @apply w-[11%] flex justify-between;
+    @apply w-[11%] flex justify-between hidden;
   }
 
   .theme {
