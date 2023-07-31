@@ -44,7 +44,7 @@
           "href": "/servicos"
         },
         {
-          "name": "salesforce",
+          "name": "Transformação digital",
           "href": "/servicos"
         },
         {
@@ -86,7 +86,7 @@
         { "title": "Banco de Dados", "card": 1 },
         { "title": "Outsourcing", "card": 2 },
         { "title": "QA/Automação", "card": 3 },
-        { "title": "Salesforce", "card": 4 },
+        { "title": "Transformação digital", "card": 4 },
         { "title": "Gestão de servidores", "card": 5 }
       ],
       "contact": {
