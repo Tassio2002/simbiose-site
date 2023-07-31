@@ -4,9 +4,10 @@ import data from "@/app/data/global-components.json";
 import Image from "next/image";
 import Link from "next/link";
 import { NavLink } from "../NavLink";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import MobileNavBar from "./mobileNavBar";
 import { DropdownMenuContext } from "@/app/data/DropdownMenuContext";
+import {useTheme} from "@/app/hooks/useTheme";
 
 const NavBar = () => {
   const navData = data.nav;
@@ -33,6 +34,9 @@ const NavBar = () => {
       backgroundImage: `url(${assets.menuBackground})`,
     },
   };
+
+  const {theme, setTheme} = useTheme();
+
   const { isExpanded, expandMenu } = useContext(DropdownMenuContext);
   return (
     <nav className="nav-bar">
@@ -67,9 +71,11 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="nav-buttons">
-        <button className="theme" style={backgrounds.theme}>
+
+        <button className="theme" style={backgrounds.theme} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
           <Image src={assets.sunIcon} alt={"Sun"} width={19} height={19} />
         </button>
+
         <button className="language" style={backgrounds.language}>
           <Image src={assets.globeIcon} alt={"Sun"} width={19} height={19} />
           <p>{assets.languageText}</p>

@@ -2,9 +2,9 @@ import "./globals.css";
 import { Jost } from "next/font/google";
 import { ServiceContextProvider } from "./data/ServiceContextProvider";
 import { MobileObserverContextProvider } from "./data/MobileObserverContextProvider";
-import Script from "next/script";
 import Head from "next/head";
 import { SetServicePageIndexContextProvider } from "./data/setServicePageIndex";
+import ThemeContextProvider from "./hooks/useTheme";
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -23,11 +23,13 @@ export default function RootLayout({ children }) {
         />
       </Head>
       <body className={jost.className}>
+      <ThemeContextProvider>
         <MobileObserverContextProvider>
           <SetServicePageIndexContextProvider>
             <ServiceContextProvider>{children}</ServiceContextProvider>
           </SetServicePageIndexContextProvider>
         </MobileObserverContextProvider>
+      </ThemeContextProvider>
       </body>
     </html>
   );
