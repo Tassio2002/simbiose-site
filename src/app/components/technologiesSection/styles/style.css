@@ -20,12 +20,20 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .technologies-section-title-and-subtitle {
     @apply ml-6;
   }
+}
 
-  .enterprise-name {
-    @apply ml-6;
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .technologies-section-title-and-subtitle {
+    @apply px-14;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1357px) {
+  .technologies-section-title-and-subtitle {
+    @apply px-14;
   }
 }

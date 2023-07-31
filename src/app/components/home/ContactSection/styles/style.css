@@ -8,7 +8,7 @@
   }
 
   .contact-flex {
-    @apply w-full mt-10 flex items-center relative z-50;
+    @apply w-full mt-10 flex items-center relative z-50 box-border gap-4;
   }
 
   .contact-box {
@@ -78,6 +78,10 @@
     @apply hidden;
   }
 
+  .social-media {
+    @apply justify-center;
+  }
+
   .social-media img {
     @apply w-[80%];
   }
@@ -90,5 +94,20 @@
 
   form {
     @apply p-6;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .contact-box {
+    @apply w-[40%];
+  }
+  .form {
+    @apply w-[60%];
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1357px) {
+  .contact-flex {
+    @apply px-14;
   }
 }

@@ -72,7 +72,7 @@
     }
 
     .enterprise {
-      @apply w-[50%];
+      @apply w-[50%] flex items-center;
     }
 
     .enterprise p {
@@ -103,8 +103,23 @@
       @apply text-lg;
     }
 
-    .social{
+    .social {
       @apply hidden;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    .enterprise {
+      @apply flex items-center;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1357px) {
+  .content {
+    @apply px-14;
+  }
+  .services {
+    @apply w-[40%];
   }
 }

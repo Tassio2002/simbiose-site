@@ -8,15 +8,15 @@
   }
 
   .nav-links {
-    @apply w-2/5 text-white;
+    @apply text-white;
   }
 
   .nav-links ul {
-    @apply flex justify-around capitalize;
+    @apply flex gap-6 capitalize;
   }
 
   .nav-buttons {
-    @apply w-[11%] flex justify-between hidden;
+    @apply hidden w-[11%] flex justify-between;
   }
 
   .theme {
@@ -35,7 +35,17 @@
     @apply hidden;
   }
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    .nav-links {
+      @apply flex;
+    }
+
+    .nav-bar {
+      @apply px-14;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
     .nav-links {
       @apply hidden;
     }
@@ -45,15 +55,11 @@
     }
 
     .nav-bar {
-      @apply flex w-full justify-between;
+      @apply flex w-full justify-between bg-[#060922] bg-opacity-60 relative;
     }
 
     header {
       @apply pt-0;
-    }
-
-    .nav-bar {
-      @apply bg-[#060922] bg-opacity-60 relative;
     }
 
     .mobile-nav {
@@ -66,5 +72,11 @@
     .mobile-header {
       @apply flex flex-col w-full;
     }
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1357px) {
+  .nav-bar {
+    @apply px-14;
   }
 }

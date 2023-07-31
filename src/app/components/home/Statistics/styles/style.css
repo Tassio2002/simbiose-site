@@ -14,6 +14,14 @@
   .statistics-section h2 {
     @apply text-4xl font-medium mb-8 text-white mt-5;
   }
+
+  .title {
+    @apply text-center;
+  }
+
+  .stat-card-container {
+    @apply box-border p-2;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -23,5 +31,17 @@
 
   .statistics-section h2 {
     @apply text-3xl;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .statics-cards-container {
+    @apply px-4;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1357px) {
+  .statics-cards-container {
+    @apply px-14;
   }
 }
