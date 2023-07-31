@@ -5,23 +5,28 @@
     "navLinks": [
       {
         "name": "Home",
-        "href": "/"
+        "href": "/",
+        "target": "_self"
       },
       {
         "href": "/servicos",
-        "name": "Serviços"
+        "name": "Serviços",
+        "target": "_self"
       },
       {
         "href": "/sobre",
-        "name": "Sobre"
+        "name": "Sobre",
+        "target": "_self"
       },
       {
         "name": "Contato",
-        "href": "/#tsparticles"
+        "href": "/#tsparticles",
+        "target": "_self"
       },
       {
         "name": "Trabalhe Conosco",
-        "href": "https://docs.google.com/forms/d/e/1FAIpQLSfmln-8srXWNT1-_ggFE3f7-eG-822as8MRMpVvA7cFICHnyw/viewform"
+        "href": "https://docs.google.com/forms/d/e/1FAIpQLSfmln-8srXWNT1-_ggFE3f7-eG-822as8MRMpVvA7cFICHnyw/viewform",
+        "target": "_blank"
       }
     ],
     "menu": {

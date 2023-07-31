@@ -57,7 +57,12 @@ export const NavLink = (props) => {
         key={props.name}
         className={`menu-link ${isActtive ? "active" : ""}`}
       >
-        <Link key={props.name} href={props.href} onClick={expandMenu}>
+        <Link
+          key={props.name}
+          href={props.href}
+          onClick={expandMenu}
+          target={props.target}
+        >
           {isActtive && !isMobile ? `${props.name} +` : `${props.name}`}
         </Link>
         {props.name === "Serviços" && !isServicesPage ? menu : ""}
