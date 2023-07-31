@@ -4,14 +4,12 @@ import { usePathname } from "next/navigation";
 import { useContext, useState } from "react";
 import "./styles/style.css";
 import data from "../../../data/global-components.json";
-import ServiceContext from "@/app/data/ServiceContext";
 import { DropdownMenuContext } from "@/app/data/DropdownMenuContext";
 import MobileObserverContext from "@/app/data/MobileObserverContext";
+import {SetServicePageIndexContext} from "@/app/data/setServicePageIndex";
 
 export const NavLink = (props) => {
-  const { content, setContent, activeButton, setActiveButton } =
-    useContext(ServiceContext);
-  const [isOpen, setIsOpen] = useState(false);
+  const [ setIsOpen] = useState(false);
   const pathname = usePathname();
   const isActtive = pathname.endsWith(props.href);
   const menuBackground = data.nav.menu.background;
@@ -26,9 +24,12 @@ export const NavLink = (props) => {
   };
   const { expandMenu } = useContext(DropdownMenuContext);
 
+  const { changeValue } = useContext(
+    SetServicePageIndexContext
+  );
+
   const handleClick = (index) => {
-    setContent(index);
-    setActiveButton(index);
+    changeValue(index)
     expandMenu();
   };
 

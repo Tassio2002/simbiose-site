@@ -52,6 +52,7 @@ const ServiceSection = () => {
               icon={card.icon}
               title={card.title}
               description={card.description}
+              card_id={card.card}
             />
           ))}
         </div>
