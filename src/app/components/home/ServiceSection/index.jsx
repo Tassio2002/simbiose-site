@@ -1,12 +1,10 @@
 import "./styles/style.css";
 import data from "@/app/data/home.json";
-import SectionName from "../../global/SectionName/Enterprise";
 import { Card } from "@/app/components/card/Card";
 import Button from "../../global/Button/Button";
 import Carousel from "nuka-carousel";
 import { useContext } from "react";
 import MobileObserverContext from "@/app/data/MobileObserverContext";
-import Link from "next/link";
 
 const ServiceSection = () => {
   const serviceData = data.home.servicos;
@@ -38,7 +36,6 @@ const ServiceSection = () => {
   if (!isMobile) {
     return (
       <section className="service-section">
-        <SectionName name={assets.name} color="text-white" />
         <div className="top-section">
           <div className="service-texts">
             <h2 className="service-title">{assets.title}</h2>
@@ -63,7 +60,6 @@ const ServiceSection = () => {
   } else {
     return (
       <section className="service-section">
-        <SectionName name={assets.name} color="text-white" />
         <div className="top-section">
           <div className="service-texts">
             <h2 className="service-title">{assets.title}</h2>

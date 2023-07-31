@@ -2,7 +2,6 @@
 import "./styles/style.css";
 import TechnologiesCard from "@/app/components/technologiesCard/technologiesCard";
 import data from "@/app/data/home.json";
-import SectionName from "../global/SectionName/Enterprise";
 import Carousel from "nuka-carousel";
 import { useContext } from "react";
 import MobileObserverContext from "@/app/data/MobileObserverContext";
@@ -21,7 +20,6 @@ const TechnologiesSection = () => {
 
   return (
     <div className="technologies-section">
-      <SectionName name={"Linguagens"} />
       <div className="technologies-section-title-and-subtitle">
         <span className="technologies-section-title">
           {TechSectionData.title}
