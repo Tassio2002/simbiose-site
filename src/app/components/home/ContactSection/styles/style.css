@@ -4,7 +4,7 @@
 
 @layer components {
   .contact-section {
-    @apply w-full p-16 relative;
+    @apply w-full p-16 relative bg-contain;
   }
 
   .contact-flex {

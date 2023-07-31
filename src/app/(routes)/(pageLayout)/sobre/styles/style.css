@@ -9,7 +9,7 @@
 
   @media screen and (max-width: 1280px) {
     .mission-cards-wrapper {
-      @apply p-4;
+      @apply px-10 py-6;
     }
   }
 }
