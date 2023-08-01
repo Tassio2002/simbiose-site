@@ -31,7 +31,7 @@ export const NavLink = (props) => {
     >
       <ul className="menu-list">
         {data.nav.menu.links.map((link, index) => (
-          <li key={link.name} onClick={() => handleClick(index)}>
+          <li key={index} onClick={() => handleClick(index)}>
             <Link href={link.href}>{link.name}</Link>
           </li>
         ))}

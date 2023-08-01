@@ -29,8 +29,8 @@ const PartnersSection = () => {
     <section style={Background} className="partners-section">
       <h2>Parceiros de sucesso</h2>
       <Carousel {...params} className="carousel">
-        {partnersData.images.map((image, i) => (
-          <div key={i} className="partner-box">
+        {partnersData.images.map((image, index) => (
+          <div key={index} className="partner-box">
             <Image
               className="partner-image"
               src={image}
