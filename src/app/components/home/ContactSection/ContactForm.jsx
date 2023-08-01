@@ -10,7 +10,7 @@ const ContactForm = () => {
     },
   };
   return (
-    <div className="form-container" st>
+    <div className="form-container">
       <form style={style.background}>
         <h2>Tem alguma dúvida?</h2>
         <input type="text" placeholder="* Nome" />

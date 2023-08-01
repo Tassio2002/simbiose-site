@@ -54,6 +54,7 @@ const ServiceSection = () => {
               title={card.title}
               description={card.description}
               card_id={card.card}
+              alt={card.alt}
             />
           ))}
         </div>

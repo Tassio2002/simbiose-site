@@ -32,36 +32,42 @@
       "cards": [
         {
           "icon": "/service-icon-1.png",
+          "alt": "Software development Service Icon",
           "title": "Software development",
           "description": "Desenvolvimento de soluções tecnológicas inovadoras e personalizadas para impulsionar o seu negócio.",
           "card": 0
         },
         {
           "icon": "/service-icon-2.png",
+          "alt": "Banco de dados Service Icon",
           "title": "Banco de dados",
           "description": "Gestão eficiente de dados para garantir segurança, integridade e disponibilidade das informações.",
           "card": 1
         },
         {
           "icon": "/service-icon-3.png",
+          "alt": "Outsourcing Service Icon",
           "title": "Outsourcing",
           "description": "Amplie a sua equipe com profissionais qualificados, focados em entregar resultados de alto desempenho.",
           "card": 2
         },
         {
           "icon": "/service-icon-4.png",
+          "alt": "QA/Automação Service Icon",
           "title": "QA/Automação",
           "description": "Testes de qualidade rigorosos e automação de processos para garantir a excelência dos seus produtos.",
           "card": 3
         },
         {
           "icon": "/service-icon-5.png",
+          "alt": "Transformação digital Service Icon",
           "title": "Transformação digital",
           "description": "Evite que os investimentos em novos processos e tecnologias sejam passageiros! Garanta a transformação digital da sua organização.",
           "card": 4
         },
         {
           "icon": "/service-icon-6.png",
+          "alt": "Gestão de servidores Service Icon",
           "title": "Gestão de servidores",
           "description": "Gerenciamento completo e seguro de servidores para garantir a disponibilidade e performance das suas aplicações.",
           "card": 5
@@ -253,15 +259,18 @@
       "social": [
         {
           "icon": "/contact-linkedin.png",
-          "link": "https://www.linkedin.com/company/simbioseventures/"
+          "link": "https://www.linkedin.com/company/simbioseventures/",
+          "alt": "Linkedin Icon"
         },
         {
           "icon": "/contact-wpp.png",
-          "link": "https://api.whatsapp.com/send?phone=5511930882478&text=Ol%C3%A1,%20gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20tecnologia%20da%20Simbiose/BrTale%E2%80%A6"
+          "link": "https://api.whatsapp.com/send?phone=5511930882478&text=Ol%C3%A1,%20gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20tecnologia%20da%20Simbiose/BrTale%E2%80%A6",
+          "alt": "Whatsapp Icon"
         },
         {
           "icon": "/contact-instagram.png",
-          "link": "https://www.instagram.com/simbiose.ventures/"
+          "link": "https://www.instagram.com/simbiose.ventures/",
+          "alt": "Instagram Icon"
         }
       ],
       "form": {

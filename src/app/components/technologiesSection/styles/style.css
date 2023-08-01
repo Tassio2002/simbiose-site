@@ -18,6 +18,10 @@
   .technologies-cards {
     @apply flex w-full overflow-y-hidden no-scrollbar mt-6;
   }
+
+  .grab {
+    @apply bg-red-500;
+  }
 }
 
 @media screen and (max-width: 767px) {

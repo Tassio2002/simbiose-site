@@ -38,7 +38,7 @@ const ContactSection = () => {
                       src={socialMedia.icon}
                       width={35}
                       height={35}
-                      alt="social media"
+                      alt={socialMedia.alt}
                     />
                   </a>
                 ))}
