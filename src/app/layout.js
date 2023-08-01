@@ -1,4 +1,3 @@
-"use client";
 import "./globals.css";
 import { Jost } from "next/font/google";
 import { ServiceContextProvider } from "./data/ServiceContextProvider";
