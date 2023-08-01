@@ -31,14 +31,14 @@ const ContactSection = () => {
                 />
               ))}
               <div className="social-media">
-                {assets.socialMedias.map((socialMedia) => (
-                  <a key={socialMedia} href={socialMedia.link} target="_blank">
+                {assets.socialMedias.map((socialMedia, index) => (
+                  <a key={index} href={socialMedia.link} target="_blank">
                     <Image
                       className="social-media-icon upscale-on-hover"
                       src={socialMedia.icon}
                       width={35}
                       height={35}
-                      alt="social media"
+                      alt={socialMedia.alt}
                     />
                   </a>
                 ))}

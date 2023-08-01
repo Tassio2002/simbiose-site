@@ -44,7 +44,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1357px) {
+@media screen and (min-width: 1280px) and (max-width: 1470px) {
   .card-flex-container {
     @apply px-14;
   }

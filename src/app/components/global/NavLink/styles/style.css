@@ -4,7 +4,14 @@
 
 @layer components {
   .active {
-    @apply text-primary list-disc marker:text-primary;
+    @apply text-primary;
+  }
+  .active::before {
+    @apply absolute content-["\2022"] block text-4xl -top-[4px] -left-[14px];
+  }
+
+  .activeLink::after {
+    @apply absolute content-["+"] block text-base top-0 -right-[14px];
   }
 
   .menu-link {
@@ -12,7 +19,7 @@
   }
 
   .dropdown-menu {
-    @apply hidden w-max p-6 absolute bg-no-repeat bg-cover -left-12 right-0 text-white;
+    @apply hidden w-max p-6 absolute bg-no-repeat bg-cover -left-16 right-0 text-white;
   }
 
   .menu-link:hover .dropdown-menu {
@@ -31,7 +38,7 @@
     @apply hover:text-primary;
   }
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 767px) {
     .active {
       @apply list-none;
     }

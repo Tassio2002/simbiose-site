@@ -6,8 +6,8 @@ const MobileNavBar = () => {
   return (
     <div className="mobile-nav">
       <ul>
-        {navData.navLinks.map((link) => (
-          <NavLink key={link.name} href={link.href} name={link.name} />
+        {navData.navLinks.map((link, index) => (
+          <NavLink key={index} href={link.href} name={link.name} />
         ))}
       </ul>
     </div>

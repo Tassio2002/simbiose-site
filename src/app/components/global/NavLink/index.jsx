@@ -6,31 +6,21 @@ import "./styles/style.css";
 import data from "../../../data/global-components.json";
 import { DropdownMenuContext } from "@/app/data/DropdownMenuContext";
 import MobileObserverContext from "@/app/data/MobileObserverContext";
-import {SetServicePageIndexContext} from "@/app/data/setServicePageIndex";
+import { SetServicePageIndexContext } from "@/app/data/setServicePageIndex";
 
 export const NavLink = (props) => {
-  const [ setIsOpen] = useState(false);
   const pathname = usePathname();
   const isServicesPage = pathname === "/servicos";
-  const isActtive = pathname.endsWith(props.href);
+  const isActive = pathname.endsWith(props.href);
   const menuBackground = data.nav.menu.background;
   const isMobile = useContext(MobileObserverContext);
 
-  const openMenu = () => {
-    setIsOpen(true);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
   const { expandMenu } = useContext(DropdownMenuContext);
 
-  const { changeValue } = useContext(
-    SetServicePageIndexContext
-  );
+  const { changeValue } = useContext(SetServicePageIndexContext);
 
   const handleClick = (index) => {
-    changeValue(index)
+    changeValue(index);
     expandMenu();
   };
 
@@ -38,12 +28,10 @@ export const NavLink = (props) => {
     <div
       className={"dropdown-menu"}
       style={{ backgroundImage: `url(${menuBackground})` }}
-      onMouseEnter={openMenu}
-      onMouseLeave={closeMenu}
     >
       <ul className="menu-list">
         {data.nav.menu.links.map((link, index) => (
-          <li key={link.name} onClick={() => handleClick(index)}>
+          <li key={index} onClick={() => handleClick(index)}>
             <Link href={link.href}>{link.name}</Link>
           </li>
         ))}
@@ -52,19 +40,15 @@ export const NavLink = (props) => {
   );
   return (
     <>
-      <li
-        onMouseEnter={openMenu}
-        onMouseLeave={closeMenu}
-        key={props.name}
-        className={`menu-link ${isActtive ? "active" : ""}`}
-      >
+      <li key={props.name} className={`menu-link ${isActive ? "active" : ""}`}>
         <Link
           key={props.name}
           href={props.href}
           onClick={expandMenu}
           target={props.target}
+          className={`${isActive && !isMobile && "activeLink"}`}
         >
-          {isActtive && !isMobile ? `${props.name} +` : `${props.name}`}
+          {props.name}
         </Link>
         {props.name === "Serviços" && !isServicesPage ? menu : ""}
       </li>

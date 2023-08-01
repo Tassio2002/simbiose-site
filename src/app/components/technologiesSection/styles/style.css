@@ -18,6 +18,10 @@
   .technologies-cards {
     @apply flex w-full overflow-y-hidden no-scrollbar mt-6;
   }
+
+  .grab {
+    @apply bg-red-500;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -26,13 +30,13 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1280px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .technologies-section-title-and-subtitle {
     @apply px-14;
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1357px) {
+@media screen and (min-width: 1280px) and (max-width: 1470px) {
   .technologies-section-title-and-subtitle {
     @apply px-14;
   }

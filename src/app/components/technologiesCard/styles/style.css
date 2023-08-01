@@ -7,10 +7,6 @@
     @apply flex flex-col justify-center text-white items-center gap-2 mr-4;
   }
 
-  .cardSection:first-child {
-    @apply ml-6;
-  }
-
   .techCard {
     @apply relative flex flex-col gap-4 p-4 bg-hover border-hover border justify-between text-white rounded-tl-[20px] rounded-tr-[3px] rounded-br-[20px] rounded-bl-[3px] h-[500px] w-[300px];
   }
@@ -33,5 +29,17 @@
 
   .languages-carousel {
     @apply flex justify-between;
+  }
+}
+
+@media screen and (max-width: 1470px) {
+  .cardSection:first-child {
+    @apply ml-14;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardSection:first-child {
+    @apply ml-6;
   }
 }

@@ -49,10 +49,12 @@ const ServiceSection = () => {
           {servicosCardData.map((card, index) => (
             <Card
               key={index}
+              linkKey={index}
               icon={card.icon}
               title={card.title}
               description={card.description}
               card_id={card.card}
+              alt={card.alt}
             />
           ))}
         </div>
@@ -76,6 +78,7 @@ const ServiceSection = () => {
               <Card
                 className="service-card"
                 key={index}
+                linkKey={index}
                 icon={card.icon}
                 title={card.title}
                 description={card.description}

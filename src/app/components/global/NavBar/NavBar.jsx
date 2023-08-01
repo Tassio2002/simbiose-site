@@ -61,9 +61,9 @@ const NavBar = () => {
       </div>
       <div className="nav-links">
         <ul>
-          {navData.navLinks.map((link) => (
+          {navData.navLinks.map((link, index) => (
             <NavLink
-              key={link.name}
+              key={index}
               href={link.href}
               name={link.name}
               target={link.target}
