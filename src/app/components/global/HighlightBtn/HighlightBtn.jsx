@@ -5,7 +5,7 @@ import data from "@/app/data/global-components.json";
 const HighlightBtn = () => {
   const btnData = data.highlightBtn;
   return (
-    <a href="#tsparticles">
+    <a href="#contact-section">
       <button className="highlightBtn">
         Contato
         <Image src={btnData.icon} width={20} height={10} alt="Right Arrow" />

@@ -13,7 +13,7 @@ const ServiceMainContent = (props) => {
         <p>{props.description}</p>
         <Button
           text={btnProps.text}
-          link={"/#tsparticles"}
+          link={"/#contact-section"}
           icon={btnProps.icon}
         />
       </div>

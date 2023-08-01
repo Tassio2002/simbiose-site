@@ -17,7 +17,7 @@
         "meetUs": {
           "text": "Conheça-nos",
           "icons": {
-            "tel": "/contact-tel.png",
+            "instagram": "/contact-instagram.png",
             "linkedin": "/contact-linkedin.png"
           }
         }

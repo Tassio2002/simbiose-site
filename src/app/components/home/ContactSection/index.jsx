@@ -17,7 +17,11 @@ export const assets = {
 };
 const ContactSection = () => {
   return (
-    <div className="contact-section" style={assets.background}>
+    <div
+      className="contact-section"
+      id="contact-section"
+      style={assets.background}
+    >
       <Container>
         <div className="contact-flex">
           <div className="contact-box">
