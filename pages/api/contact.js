@@ -1,25 +1,45 @@
 require('dotenv').config()
 
-const sgMail = require("@sendgrid/mail")
+const nodemailer = require('nodemailer')
 
-const {SG_API_KEY, FROM_EMAIL, TO_EMAIL} = process.env
+const TO_EMAIL = process.env.TO_EMAIL;
 
-sgMail.setApiKey(SG_API_KEY);
+const MAIL_HOST = process.env.MAIL_HOST;
+const MAIL_PORT = process.env.MAIL_PORT;
+const MAIL_USER = process.env.MAIL_USER;
+const MAIL_PASS = process.env.MAIL_PASS;
+
+
+const transporter = nodemailer.createTransport({
+  host: MAIL_HOST,
+  port: MAIL_PORT,
+  secure: false,
+  auth: {
+    user: MAIL_USER,
+    pass: MAIL_PASS,
+  },
+  tls: {
+    rejectUnauthorized: false,
+  },
+});
+
 
 export default async function handler(request, response){
-    const {name, company, phone, email, message } = request.body
 
-    const msg = {
-        to: TO_EMAIL,
-        from: FROM_EMAIL,
-        subject: 'Br-Talent contato',
-        html:
-            `   <p><strong>Nome: </strong>${name}</p>
-            <p><strong>Empresa: </strong>${company}</p>
-            <p><strong>Telefone: </strong>${phone}</p>
-            <p><strong>Email: </strong>${email}</p>
-            <p><strong>Mensagem: </strong>${message}</p>`
-    };
-    await sgMail.send(msg);
-    response.json({success: true})
+  const {name, email, phone, message } = request.body
+
+  await transporter.sendMail({
+    subject: 'Novo contato pelo Site',
+
+    to: [ TO_EMAIL , 'hownatios@gmail.com'],
+    html:
+      ` 
+        <p><strong>Nome: </strong>${name}</p>
+        <p><strong>Email: </strong>${email}</p>
+        <p><strong>Telefone: </strong>${phone}</p>
+        <p><strong>Mensagem: </strong>${message}</p>
+      `
+  })
+
+  response.json({success: true})
 }
