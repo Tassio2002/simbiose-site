@@ -7,6 +7,7 @@ const Particles = ({ children, background, backgroundColor }) => {
     background: `url(${background}) no-repeat`,
     backgroundSize: "cover",
   };
+
   return (
     <>
       <div className="particles-wrapper">
@@ -15,16 +16,6 @@ const Particles = ({ children, background, backgroundColor }) => {
           <span className="js-count-particles"></span>
         </div>
       </div>
-
-      <Script
-        src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
-        async
-      />
-      <Script
-        src="https://threejs.org/examples/jsm/libs/stats.module.js"
-        async
-      />
-      <Script src="/scripts/particles.js" async />
     </>
   );
 };

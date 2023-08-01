@@ -4,7 +4,14 @@
 
 @layer components {
   .active {
-    @apply text-primary list-disc marker:text-primary;
+    @apply text-primary;
+  }
+  .active::before {
+    @apply absolute content-["\2022"] block text-4xl -top-[4px] -left-[14px];
+  }
+
+  .activeLink::after {
+    @apply absolute content-["+"] block text-base top-0 -right-[14px];
   }
 
   .menu-link {

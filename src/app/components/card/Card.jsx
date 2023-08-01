@@ -2,14 +2,11 @@ import Image from "next/image";
 import CardButton from "../cardButton/cardButton";
 import "./styles/style.css";
 import Link from "next/link";
-import {useContext} from "react";
-import {SetServicePageIndexContext} from "@/app/data/setServicePageIndex";
+import { useContext } from "react";
+import { SetServicePageIndexContext } from "@/app/data/setServicePageIndex";
 
 export const Card = (props) => {
-
-  const { changeValue } = useContext(
-    SetServicePageIndexContext
-  );
+  const { changeValue } = useContext(SetServicePageIndexContext);
 
   return (
     <div className="card-container">
@@ -19,7 +16,7 @@ export const Card = (props) => {
         <p>{props.description}</p>
       </div>
       <Link
-        key={props.key}
+        key={props.linkKey}
         onClick={() => changeValue(props.card_id)}
         href={"/servicos"}
       >

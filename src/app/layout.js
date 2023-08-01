@@ -29,6 +29,8 @@ export default function RootLayout({ children }) {
           </SetServicePageIndexContextProvider>
         </MobileObserverContextProvider>
       </body>
+      <Script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" />
+      <Script src="/scripts/particles.js" />
     </html>
   );
 }

@@ -11,10 +11,12 @@ const Header = ({ children, background }) => {
   return (
     <header style={headerStyle}>
       <Container>
-        <DropdownMenuContextProvider>
-          <NavBar />
-        </DropdownMenuContextProvider>
-        {children}
+        <>
+          <DropdownMenuContextProvider>
+            <NavBar />
+          </DropdownMenuContextProvider>
+          {children}
+        </>
       </Container>
     </header>
   );
