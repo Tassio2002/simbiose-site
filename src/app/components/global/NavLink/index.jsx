@@ -50,7 +50,7 @@ export const NavLink = (props) => {
         >
           {props.name}
         </Link>
-        {props.name === "Serviços" && !isServicesPage ? menu : ""}
+        {props.name === "Serviços" && !isServicesPage && !isMobile ? menu : ""}
       </li>
     </>
   );
