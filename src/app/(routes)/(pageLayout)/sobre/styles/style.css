@@ -7,9 +7,15 @@
     @apply py-12 box-border w-full flex flex-wrap gap-4 justify-center;
   }
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1279px) {
     .mission-cards-wrapper {
       @apply px-10 py-6;
     }
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1470px) {
+  .mission-cards-wrapper {
+    @apply px-14;
   }
 }

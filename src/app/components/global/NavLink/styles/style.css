@@ -12,7 +12,7 @@
   }
 
   .dropdown-menu {
-    @apply hidden w-max p-6 absolute bg-no-repeat bg-cover -left-12 right-0 text-white;
+    @apply hidden w-max p-6 absolute bg-no-repeat bg-cover -left-16 right-0 text-white;
   }
 
   .menu-link:hover .dropdown-menu {
@@ -31,7 +31,7 @@
     @apply hover:text-primary;
   }
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 767px) {
     .active {
       @apply list-none;
     }

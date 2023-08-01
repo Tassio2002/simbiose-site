@@ -14,7 +14,7 @@
   .contentWrapper {
   }
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1279px) {
     .heroAboutPage {
       @apply flex flex-col-reverse pb-16 pt-4;
     }
@@ -26,5 +26,11 @@
     .contentWrapper {
       @apply px-8;
     }
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1470px) {
+  .heroAboutPage {
+    @apply px-14;
   }
 }

@@ -8,7 +8,7 @@
   }
 
   .content {
-    @apply w-full max-w-[1357px] flex self-center gap-12;
+    @apply w-full max-w-[1470px] flex self-center gap-12;
   }
 
   .enterprise {
@@ -115,7 +115,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1357px) {
+@media screen and (min-width: 1280px) and (max-width: 1470px) {
   .content {
     @apply px-14;
   }
