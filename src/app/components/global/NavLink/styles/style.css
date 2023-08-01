@@ -6,13 +6,6 @@
   .active {
     @apply text-primary;
   }
-  .active::before {
-    @apply absolute content-["\2022"] block text-4xl -top-[4px] -left-[14px];
-  }
-
-  .activeLink::after {
-    @apply absolute content-["+"] block text-base top-0 -right-[14px];
-  }
 
   .menu-link {
     @apply relative;
@@ -42,5 +35,15 @@
     .active {
       @apply list-none;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .active::before {
+    @apply absolute content-["\2022"] block text-4xl -top-[4px] -left-[14px];
+  }
+
+  .activeLink::after {
+    @apply absolute content-["+"] block text-base top-0 -right-[14px];
   }
 }
