@@ -50,6 +50,14 @@
   .form-btn {
     @apply min-w-[200px];
   }
+
+  .form-container-post-shipment h2{
+    @apply text-5xl text-center text-white;
+  }
+
+  .form-container-post-shipment h3{
+    @apply text-3xl text-center text-white;
+  }
 }
 
 @media screen and (max-width: 768px) {

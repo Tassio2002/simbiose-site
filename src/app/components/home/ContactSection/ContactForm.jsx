@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import "./styles/style.css";
 import data from "@/app/data/home.json";
 import dataButton from "@/app/data/global-components.json";
@@ -14,8 +15,10 @@ const ContactForm = () => {
     },
   };
 
+  const [emailSent, setEmailSent] = useState(false);
+
   function sendedFlow() {
-    return console.log("Ação após o envio");
+    setEmailSent(true);
   }
 
   const handleSubmit = async (event) => {
@@ -45,25 +48,37 @@ const ContactForm = () => {
     }
   }
 
-  return (
-    <div className="form-container">
-      <form style={style.background} onSubmit={handleSubmit}>
-        <h2>Tem alguma dúvida?</h2>
-        <input type="text" placeholder="* Nome" />
-        <input type="email" placeholder="* E-mail" />
-        <input type="tel" placeholder="Telefone" />
-        <textarea
-          cols="30"
-          rows="6"
-          placeholder="* Conte como podemos ajudá-lo."
-        ></textarea>
-        <button type={'submit'} className="form-btn button-container">
-          <p>Enviar</p>
-          <Image src={buttonData.icon} width={17} height={8} alt={"Icon"} />
-        </button>
-      </form>
-    </div>
-  );
+  if(emailSent){
+    return (
+      <div className="form-container-post-shipment">
+        <div style={style.background}>
+          <h2 className={'postShipmentTitle'}>Agradecemos o contato!</h2>
+          <h3 className={'postShipmentText'}>Estaremos retornando o mais breve possível.</h3>
+        </div>
+      </div>
+    );
+  }
+  else {
+    return (
+      <div className="form-container">
+        <form style={style.background} onSubmit={handleSubmit}>
+          <h2>Tem alguma dúvida?</h2>
+          <input type="text" placeholder="* Nome"/>
+          <input type="email" placeholder="* E-mail"/>
+          <input type="tel" placeholder="Telefone"/>
+          <textarea
+            cols="30"
+            rows="6"
+            placeholder="* Conte como podemos ajudá-lo."
+          ></textarea>
+          <button type={'submit'} className="form-btn button-container">
+            <p>Enviar</p>
+            <Image src={buttonData.icon} width={17} height={8} alt={"Icon"}/>
+          </button>
+        </form>
+      </div>
+    );
+  }
 };
 
 export default ContactForm;
