@@ -2,8 +2,6 @@ require('dotenv').config()
 
 const nodemailer = require('nodemailer')
 
-const TO_EMAIL = process.env.TO_EMAIL;
-
 const MAIL_HOST = process.env.MAIL_HOST;
 const MAIL_PORT = process.env.MAIL_PORT;
 const MAIL_USER = process.env.MAIL_USER;
@@ -30,8 +28,11 @@ export default async function handler(request, response){
 
   await transporter.sendMail({
     subject: 'Novo contato pelo Site',
-
-    to: [ TO_EMAIL , 'hownatios@gmail.com'],
+    from: MAIL_USER,
+    to: [ 'fabio.luiz@simbioseventures.com',
+          'camila.gomes@simbioseventures.com',
+          'comercial@simbioseventures.com'],
+    replyTo: email,
     html:
       ` 
         <p><strong>Nome: </strong>${name}</p>
