@@ -21,6 +21,7 @@ const PartnersSection = () => {
     speed: 9999,
     slidesToShow: isMobile ? 3 : 6,
     wrapAround: true,
+    cellSpacing: isMobile ? 25 : 3,
     style: {
       alignItems: "center",
     },
