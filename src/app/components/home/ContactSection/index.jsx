@@ -4,6 +4,7 @@ import Container from "../../global/Container/Container";
 import Image from "next/image";
 import ContactInfo from "./contacts";
 import ContactForm from "./ContactForm";
+import {useEffect} from "react";
 
 const contactData = data.home.contato;
 
@@ -16,11 +17,27 @@ export const assets = {
   socialMedias: contactData.social,
 };
 const ContactSection = () => {
+  function createStars() {
+    const stars = 100; // Número de estrelas
+
+    for (let i = 0; i < stars; i++) {
+      const star = document.createElement("div");
+      star.className = "star";
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.animationDuration = `${Math.random() * 2 + 1}s`; // Define duração da animação para cada estrela
+      document.getElementById("contact-section").appendChild(star);
+    }
+  }
+
+  useEffect(() => {
+    createStars();
+  }, []);
+
   return (
     <div
       className="contact-section"
       id="contact-section"
-      style={assets.background}
     >
       <Container>
         <div className="contact-flex">
