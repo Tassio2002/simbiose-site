@@ -3,6 +3,7 @@ import "./styles/style.css";
 import data from "@/app/data/home.json";
 import dataButton from "@/app/data/global-components.json";
 import Image from "next/image";
+import InputMask from "react-input-mask";
 
 const ContactForm = () => {
   const buttonData = dataButton.globalButton;
@@ -60,14 +61,17 @@ const ContactForm = () => {
       <div className="form-container">
         <form style={style.background} onSubmit={handleSubmit}>
           <h2>Tem alguma dúvida?</h2>
-          <input type="text" placeholder="* Nome" />
-          <input type="email" placeholder="* E-mail" />
-          <input type="tel" placeholder="Telefone" />
+          <input type="text" placeholder="* Nome" required />
+          <input type="email" placeholder="* E-mail" required />
+          <InputMask mask={'(99) 9 9999-9999'} maskChar='' placeholder="Telefone">
+            {(inputProps) => <input {...inputProps} type="tel" required />}
+          </InputMask>
           <textarea
             className="inputMsg"
             cols="30"
             rows="6"
             placeholder="* Conte como podemos ajudá-lo."
+            required
           ></textarea>
           <button type={"submit"} className="form-btn button-container">
             <p>Enviar</p>
