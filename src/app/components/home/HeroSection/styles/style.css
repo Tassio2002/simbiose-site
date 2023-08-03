@@ -38,6 +38,12 @@
     @apply max-w-[400px] text-white;
   }
 
+  @media screen and (max-width: 406px) {
+    .highlight {
+      @apply flex flex-col;
+    }
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     .flex-hero {
       @apply px-14;
