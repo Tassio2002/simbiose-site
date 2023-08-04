@@ -16,7 +16,7 @@ export default function ServicesPage() {
     useContext(ServiceContext);
 
   const serviceData = data.servicos;
-  const actualContent = serviceData.content[content];
+  const actualContent = serviceData.content[index];
 
   const activeActualButton = (index) => {
     setActiveButton(index);
