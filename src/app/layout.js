@@ -12,16 +12,16 @@ import { useEffect } from "react";
 
 const jost = Jost({ subsets: ["latin"] });
 
+export const metadata = {
+  title: "Simbiose Ventures",
+  description: "Simbiose Ventures",
+};
+
 export default function RootLayout({ children }) {
   useEffect(() => {
     initLinkedInPixel();
     initLinkedPixel2();
   }, []);
-
-  export const metadata = {
-    title: "Simbiose Ventures",
-    description: "Simbiose Ventures",
-  };
 
   return (
     <html lang="pt-br">
