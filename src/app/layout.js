@@ -1,4 +1,3 @@
-"use client";
 import "./globals.css";
 import Script from "next/script";
 import Head from "next/head";
@@ -8,7 +7,6 @@ import { MobileObserverContextProvider } from "./data/MobileObserverContextProvi
 import { SetServicePageIndexContextProvider } from "./data/setServicePageIndex";
 import { initLinkedInPixel } from "../../public/scripts/pixelScript.js";
 import { initLinkedPixel2 } from "../../public/scripts/googleTag.js";
-import { useEffect } from "react";
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -17,12 +15,10 @@ export const metadata = {
   description: "Simbiose Ventures",
 };
 
-export default function RootLayout({ children }) {
-  useEffect(() => {
-    initLinkedInPixel();
-    initLinkedPixel2();
-  }, []);
+initLinkedInPixel();
+initLinkedPixel2();
 
+export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <Head>
