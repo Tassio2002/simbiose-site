@@ -18,15 +18,18 @@ export default function RootLayout({ children }) {
     initLinkedPixel2();
   }, []);
 
+  export const metadata = {
+    title: "Simbiose Ventures",
+    description: "Simbiose Ventures",
+  };
+
   return (
     <html lang="pt-br">
       <Head>
-        <title>Simbiose Ventures</title>
         <meta
           http-equiv="Content-Security-Policy"
           content="upgrade-insecure-requests"
         />
-        <meta name="description" content="Simbiose Ventures" />
       </Head>
       <body className={jost.className}>
         <MobileObserverContextProvider>
