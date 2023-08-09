@@ -22,11 +22,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <Head>
-        <title>Simbiose Ventures</title>
+        <title>{metadata.title}</title>
         <meta
           http-equiv="Content-Security-Policy"
           content="upgrade-insecure-requests"
         />
+        <meta name="description" content={metadata.description} />
       </Head>
       <body className={jost.className}>
         <MobileObserverContextProvider>
