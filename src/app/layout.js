@@ -21,12 +21,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <Head>
+        <title>Simbiose Ventures</title>
         <meta
           http-equiv="Content-Security-Policy"
           content="upgrade-insecure-requests"
         />
         <meta name="description" content="Simbiose Ventures" />
-        <title>Simbiose Ventures</title>
       </Head>
       <body className={jost.className}>
         <MobileObserverContextProvider>
