@@ -37,7 +37,6 @@ export default function RootLayout({ children }) {
             <ServiceContextProvider>{children}</ServiceContextProvider>
           </SetServicePageIndexContextProvider>
         </MobileObserverContextProvider>
-        3
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-L1VDPRBXQQ%22%3E"
           async
