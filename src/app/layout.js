@@ -25,6 +25,8 @@ export default function RootLayout({ children }) {
           http-equiv="Content-Security-Policy"
           content="upgrade-insecure-requests"
         />
+        <meta name="description" content="Simbiose Ventures" />
+        <title>Simbiose Ventures</title>
       </Head>
       <body className={jost.className}>
         <MobileObserverContextProvider>
