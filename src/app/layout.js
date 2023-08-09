@@ -37,11 +37,11 @@ export default function RootLayout({ children }) {
             <ServiceContextProvider>{children}</ServiceContextProvider>
           </SetServicePageIndexContextProvider>
         </MobileObserverContextProvider>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-L1VDPRBXQQ%22%3E"
-          async
-        ></Script>
       </body>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-L1VDPRBXQQ%22%3E"
+        async
+      ></Script>
     </html>
   );
 }
