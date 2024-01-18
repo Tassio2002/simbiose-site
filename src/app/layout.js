@@ -5,8 +5,6 @@ import { Jost } from "next/font/google";
 import { ServiceContextProvider } from "./data/ServiceContextProvider";
 import { MobileObserverContextProvider } from "./data/MobileObserverContextProvider";
 import { SetServicePageIndexContextProvider } from "./data/setServicePageIndex";
-import { GoogleAnalytics } from '@next/third-parties/google'
-
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -14,9 +12,6 @@ export const metadata = {
   title: "Simbiose Ventures",
   description: "Simbiose Ventures",
 };
-
-initLinkedInPixel();
-initLinkedPixel2();
 
 export default function RootLayout({ children }) {
   return (
@@ -32,11 +27,35 @@ export default function RootLayout({ children }) {
       <body className={jost.className}>
         <MobileObserverContextProvider>
           <SetServicePageIndexContextProvider>
-            <ServiceContextProvider>{children}</ServiceContextProvider>
+            <ServiceContextProvider>
+              {children}
+              <Script id="gtag" strategy="afterInteractive">
+                {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-L1VDPRBXQQ');
+                `}
+              </Script>
+              <Script id="linkedin-tag" strategy="afterInteractive">
+                {`
+                  _linkedin_partner_id = "5647329";
+                  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+                  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+                  (function(l) {
+                    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+                    window.lintrk.q=[]}
+                    var s = document.getElementsByTagName("script")[0];
+                    var b = document.createElement("script");
+                    b.type = "text/javascript";b.async = true;
+                    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+                    s.parentNode.insertBefore(b, s);})(window.lintrk);
+                `}
+              </Script>
+            </ServiceContextProvider>
           </SetServicePageIndexContextProvider>
         </MobileObserverContextProvider>
       </body>
-      <GoogleAnalytics gaId="G-L1VDPRBXQQ" />
     </html>
   );
 }
