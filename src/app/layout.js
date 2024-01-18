@@ -5,6 +5,7 @@ import { MobileObserverContextProvider } from "./data/MobileObserverContextProvi
 import Script from "next/script";
 import Head from "next/head";
 import { SetServicePageIndexContextProvider } from "./data/setServicePageIndex";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
           </SetServicePageIndexContextProvider>
         </MobileObserverContextProvider>
       </body>
+      <GoogleAnalytics gaId="G-L1VDPRBXQQ" />
     </html>
   );
 }
