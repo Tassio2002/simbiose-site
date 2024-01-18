@@ -5,8 +5,8 @@ import { Jost } from "next/font/google";
 import { ServiceContextProvider } from "./data/ServiceContextProvider";
 import { MobileObserverContextProvider } from "./data/MobileObserverContextProvider";
 import { SetServicePageIndexContextProvider } from "./data/setServicePageIndex";
-import { initLinkedInPixel } from "../../public/scripts/pixelScript.js";
-import { initLinkedPixel2 } from "../../public/scripts/googleTag.js";
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -36,10 +36,7 @@ export default function RootLayout({ children }) {
           </SetServicePageIndexContextProvider>
         </MobileObserverContextProvider>
       </body>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-L1VDPRBXQQ%22%3E"
-        async
-      ></Script>
+      <GoogleAnalytics gaId="G-L1VDPRBXQQ" />
     </html>
   );
 }
