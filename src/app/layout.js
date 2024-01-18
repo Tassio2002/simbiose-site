@@ -29,14 +29,6 @@ export default function RootLayout({ children }) {
           <SetServicePageIndexContextProvider>
             <ServiceContextProvider>
               {children}
-              <Script id="gtag" strategy="afterInteractive">
-                {`
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', 'G-L1VDPRBXQQ');
-                `}
-              </Script>
               <Script id="linkedin-tag" strategy="afterInteractive">
                 {`
                   _linkedin_partner_id = "5647329";
@@ -50,6 +42,15 @@ export default function RootLayout({ children }) {
                     b.type = "text/javascript";b.async = true;
                     b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
                     s.parentNode.insertBefore(b, s);})(window.lintrk);
+                `}
+              </Script>
+              <Script id="google-tag" src="https://www.googletagmanager.com/gtag/js?id=AW-11182275938" strategy="afterInteractive" />
+              <Script id="google-tag-config" strategy="afterInteractive">
+                {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'AW-11182275938');
                 `}
               </Script>
             </ServiceContextProvider>
