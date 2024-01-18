@@ -35,6 +35,9 @@
     .active {
       @apply list-none;
     }
+    .menu-link a {
+      @apply text-2xl;
+    }
   }
 }
 

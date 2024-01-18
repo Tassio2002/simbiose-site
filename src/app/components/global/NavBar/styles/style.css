@@ -66,6 +66,10 @@
       @apply flex text-white flex justify-center text-center absolute top-[62px] left-0 bg-[#060922] bg-opacity-60 w-full;
     }
 
+    .mobile-nav ul {
+      @apply flex flex-col gap-4;
+    }
+
     .logo-and-menu-icon {
       @apply flex justify-between w-full;
     }
