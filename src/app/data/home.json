@@ -10,7 +10,7 @@
         "texts": {
           "title": {
             "image": "hero-title.svg",
-            "text": "o futuro do seu negócio com software disruptivo"
+            "text": "o seu negócio educacional através da tecnologia"
           },
           "subtitle": "Desenvolvemos soluções personalizadas para impulsionar sua empresa rumo ao sucesso!"
         },
@@ -31,38 +31,38 @@
       "arrow": "arrow.svg",
       "cards": [
         {
+          "icon": "/service-icon-5.png",
+          "alt": "Integração Service Icon",
+          "title": "Integração",
+          "description": "Integramos sistemas para maior conectividade e promovemos uma cultura de inovação, que impacta positivamente a rotina de seu negócio.",
+          "card": 0
+        },
+        {
           "icon": "/service-icon-1.png",
           "alt": "Software development Service Icon",
           "title": "Software development",
           "description": "Desenvolvimento de soluções tecnológicas inovadoras e personalizadas para impulsionar o seu negócio.",
-          "card": 0
+          "card": 1
         },
         {
           "icon": "/service-icon-2.png",
           "alt": "Banco de dados Service Icon",
           "title": "Banco de dados",
           "description": "Gestão eficiente de dados para garantir segurança, integridade e disponibilidade das informações.",
-          "card": 1
+          "card": 2
         },
         {
           "icon": "/service-icon-3.png",
           "alt": "Outsourcing Service Icon",
           "title": "Outsourcing",
           "description": "Amplie a sua equipe com profissionais qualificados, focados em entregar resultados de alto desempenho.",
-          "card": 2
+          "card": 3
         },
         {
           "icon": "/service-icon-4.png",
           "alt": "QA/Automação Service Icon",
           "title": "QA/Automação",
           "description": "Testes de qualidade rigorosos e automação de processos para garantir a excelência dos seus produtos.",
-          "card": 3
-        },
-        {
-          "icon": "/service-icon-5.png",
-          "alt": "Transformação digital Service Icon",
-          "title": "Transformação digital",
-          "description": "Evite que os investimentos em novos processos e tecnologias sejam passageiros! Garanta a transformação digital da sua organização.",
           "card": 4
         },
         {
@@ -79,12 +79,12 @@
       "cards": [
         {
           "icon": "/stats-icon-1.png",
-          "number": "+ 10",
+          "number": "+ 12",
           "title": "Anos de Experiência"
         },
         {
           "icon": "/stats-icon-2.png",
-          "number": "+ 180",
+          "number": "+ 190",
           "title": "Projetos Entregues"
         },
         {

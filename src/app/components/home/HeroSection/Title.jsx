@@ -15,10 +15,10 @@ const HeroTitle = () => {
           height={isMobile ? 30 : 64}
           alt="highlight text"
         />
-        <span>o futuro do seu</span>
+        <span>o seu negócio</span>
       </div>
       <div className="phrase">
-        <p>negócio com software disruptivo</p>
+        <p>educacional através da tecnologia</p>
       </div>
     </div>
   );
