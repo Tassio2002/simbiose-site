@@ -5,6 +5,10 @@
     "backgroundActive":"/service-btn-active.svg",
     "buttons": [
       {
+        "icon": "/service-icon-5.png",
+        "title": "Integração"
+      },
+      {
         "icon": "/service-icon-1.png",
         "title": "Software development"
       },
@@ -21,15 +25,16 @@
         "title": "QA/Automação"
       },
       {
-        "icon": "/service-icon-5.png",
-        "title": "Transformação digital"
-      },
-      {
         "icon": "/service-icon-6.png",
         "title": "Gestão de servidores"
       }
     ],
     "content": [
+      {
+        "title": "Integração",
+        "description": "A Transformação Digital na Simbiose Ventures impulsiona a inovação e eficiência. Com soluções personalizadas e tecnologias inovadoras, otimizamos processos, melhoramos a experiência do cliente e fortalecemos a segurança cibernética. Integramos sistemas para maior conectividade e promovemos uma cultura de inovação, que impacta positivamente a rotina de seu negócio.",
+        "img": "/services-img-5.png"
+      },
       {
         "title": "Software development",
         "description": "Oferecemos um amplo espectro de serviços de desenvolvimento, incluindo a criação de sites atrativos e funcionais, sistemas web personalizados, aplicativos mobile intuitivos, aplicações especializadas para atender às suas necessidades, desenvolvimento e integração de APIs para conectar seus sistemas, além de soluções completas para e-commerces e marketplaces. Conte com nossa expertise para impulsionar sua presença online e oferecer experiências excepcionais aos seus usuários.",
@@ -49,11 +54,6 @@
         "title": "QA/Automação",
         "description": "Garanta a qualidade e eficiência dos seus produtos e processos com nosso serviço de QA/Automação. Nossa equipe especializada utiliza as melhores práticas e ferramentas de teste para identificar e corrigir potenciais problemas, garantindo uma experiência impecável para seus usuários. Automatize testes repetitivos e aumente a velocidade de entrega, reduzindo erros e acelerando o ciclo de desenvolvimento. Confie na nossa expertise em QA/Automação para impulsionar a qualidade do seu software e a satisfação dos seus clientes.",
         "img": "/services-img-4.png"
-      },
-      {
-        "title": "Transformação digital",
-        "description": "A Transformação Digital na Simbiose Ventures impulsiona a inovação e eficiência. Com soluções personalizadas e tecnologias inovadoras, otimizamos processos, melhoramos a experiência do cliente e fortalecemos a segurança cibernética. Integramos sistemas para maior conectividade e promovemos uma cultura de inovação. Comprometidos com o sucesso de nossos clientes na era digital.",
-        "img": "/services-img-5.png"
       },
       {
         "title": "Gestão de servidores",

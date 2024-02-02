@@ -33,6 +33,10 @@
       "background": "menu-bg.png",
       "links": [
         {
+          "name": "Integração",
+          "href": "/servicos"
+        },
+        {
           "name": "desenvolvimento",
           "href": "/servicos"
         },
@@ -46,10 +50,6 @@
         },
         {
           "name": "QA/Automação",
-          "href": "/servicos"
-        },
-        {
-          "name": "Transformação digital",
           "href": "/servicos"
         },
         {
@@ -76,22 +76,22 @@
     },
     "enterprise": {
       "brand": "/logo.png",
-      "description": "Na Simbiose Ventures, oferecemos uma combinação poderosa de serviços: alocação de desenvolvedores altamente qualificados, gestão eficiente de banco de dados e uma fábrica de software que entrega soluções personalizadas. Seja o protagonista da transformação digital. Conte com nossa expertise, comprometimento e alcance resultados excepcionais!"
+      "description": "Somos a Simbiose, sua parceira na jornada de transformação e revolução do setor educacional através de tecnologia. Somos integradores de sistemas e criadores de soluções personalizadas. Trabalhamos em estreita colaboração com fornecedores de tecnologia e instituições de ensino líderes do setor educacional. Nosso compromisso é oferecer soluções inovadoras, resolvendo suas dores específicas e compartilhando o sucesso com você."
     },
     "services": {
       "title": "Serviços",
       "icon": "/blue-arrow-right.png",
       "links": [
-        { "title": "Desenvolvimento de sites", "card": 0 },
+        { "title": "Integração", "card": 0 },
         { "title": "Desenvolvimento de sistemas web", "card": 0 },
         { "title": "Desenvolvimento de app mobile", "card": 0 },
         { "title": "Desenvolvimento de aplicações", "card": 0 },
         { "title": "Desenvolvimento e consulta de APIs", "card": 0 },
         { "title": "Desenvolvimento de e-commerces", "card": 0 },
-        { "title": "Banco de Dados", "card": 1 },
-        { "title": "Outsourcing", "card": 2 },
-        { "title": "QA/Automação", "card": 3 },
-        { "title": "Transformação digital", "card": 4 },
+        { "title": "Desenvolvimento de sites", "card": 1 },
+        { "title": "Banco de Dados", "card": 2 },
+        { "title": "Outsourcing", "card": 3 },
+        { "title": "QA/Automação", "card": 4 },
         { "title": "Gestão de servidores", "card": 5 }
       ],
       "contact": {
