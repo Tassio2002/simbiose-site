@@ -4,7 +4,7 @@ import Container from "../../global/Container/Container";
 import Image from "next/image";
 import ContactInfo from "./contacts";
 import ContactForm from "./ContactForm";
-import {useEffect} from "react";
+import { useEffect } from "react";
 
 const contactData = data.home.contato;
 
@@ -16,7 +16,7 @@ export const assets = {
   contacts: contactData.contacts,
   socialMedias: contactData.social,
 };
-const ContactSection = () => {
+const ContactSection = ({ titleForm }) => {
   function createStars() {
     const stars = 100; // Número de estrelas
 
@@ -35,10 +35,7 @@ const ContactSection = () => {
   }, []);
 
   return (
-    <div
-      className="contact-section"
-      id="contact-section"
-    >
+    <div className="contact-section" id="contact-section">
       <Container>
         <div className="contact-flex">
           <div className="contact-box">
@@ -67,7 +64,7 @@ const ContactSection = () => {
             </div>
           </div>
           <div className="form">
-            <ContactForm />
+            <ContactForm titleForm={titleForm} />
           </div>
         </div>
       </Container>

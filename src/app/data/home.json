@@ -1,7 +1,7 @@
 {
   "home": {
     "hero": {
-      "background": "/hero-background.png",
+      " ": "/hero-background.png",
       "leftDiv": {
         "enterprise": {
           "point": "hero-point.svg",

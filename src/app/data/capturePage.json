@@ -1,0 +1,38 @@
+{
+  "capturePage": {
+    "background": "/hero-background.png",
+    "logo": "/logo.png",
+    "linkedin": {
+      "icon": "/logo-linkedin-white-26.png",
+      "link": "https://www.linkedin.com/company/simbioseventures/"
+    },
+    "whatsapp": {
+      "icon": "/logo-whatsapp-white-24.png",
+      "link": "https://api.whatsapp.com/send?phone=5531984853252&text=Ol%C3%A1,%20gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20tecnologia%20da%20Simbiose/BrTale%E2%80%A6"
+    },
+    "videos": {
+      "src": "https://www.youtube.com/embed/UJYGxmVa_u4",
+      "alt": "Video de captura"
+    },
+    "depoimentos": [
+      {
+        "imagem": "/logo-whatsapp-white-24.png",
+        "nome": "Joaozinho",
+        "empresa": "Joaozinho ltda",
+        "depoimento": "Lorem ipsum dolor sit amet. Et voluptate asperiores quo libero facilis non Quis ducimus sit omnis eius aut earum itaque eos voluptas reiciendis aut esse voluptas. Ad modi quas quo quam facere aut repellendus aperiam. Et consequatur perferendis et velit assumenda et nulla exercitationem vel temporibus aperiam aut sint quaerat ut dolores galisum.Sed officia incidunt cum commodi officiis aut voluptas odio est nihil Quis qui dolore minus ex omnis harum. Est magnam veritatis et dolore quia in ducimus nihil et sunt nostrum quo voluptatem consequatur At possimus omnis vel amet fugiat."
+      },
+      {
+        "imagem": "/logo-whatsapp-white-24.png",
+        "nome": "Joaozinho",
+        "empresa": "Joaozinho ltda",
+        "depoimento": "Lorem ipsum dolor sit amet. Et voluptate asperiores quo libero facilis non Quis ducimus sit omnis eius aut earum itaque eos voluptas reiciendis aut esse voluptas. Ad modi quas quo quam facere aut repellendus aperiam. Et consequatur perferendis et velit assumenda et nulla exercitationem vel temporibus aperiam aut sint quaerat ut dolores galisum.Sed officia incidunt cum commodi officiis aut voluptas odio est nihil Quis qui dolore minus ex omnis harum. Est magnam veritatis et dolore quia in ducimus nihil et sunt nostrum quo voluptatem consequatur At possimus omnis vel amet fugiat."
+      },
+      {
+        "imagem": "/logo-whatsapp-white-24.png",
+        "nome": "Joaozinho",
+        "empresa": "Joaozinho ltda",
+        "depoimento": "Lorem ipsum dolor sit amet. Et voluptate asperiores quo libero facilis non Quis ducimus sit omnis eius aut earum itaque eos voluptas reiciendis aut esse voluptas. Ad modi quas quo quam facere aut repellendus aperiam. Et consequatur perferendis et velit assumenda et nulla exercitationem vel temporibus aperiam aut sint quaerat ut dolores galisum.Sed officia incidunt cum commodi officiis aut voluptas odio est nihil Quis qui dolore minus ex omnis harum. Est magnam veritatis et dolore quia in ducimus nihil et sunt nostrum quo voluptatem consequatur At possimus omnis vel amet fugiat."
+      }
+    ]
+  }
+}
