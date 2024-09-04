@@ -4,14 +4,21 @@ import data from "@/app/data/capturePage.json";
 
 const Card = (props) => {
   return (
-    <div className="card-container h-fit max-w-screen w-full md:max-w-1/3">
-      <div className="flex flex-row items-end">
-        <Image width={48} height={48} src={props.imagem} alt={props.nome} />
-        <h2 className="title pl-5">{props.empresa}</h2>
+    <div className="flex flex-col max-w-[450px]  ">
+      <div className="flex  w-full flex-row items-end justify-center min-h-[75px] pb-1">
+        <Image
+          className="object-cover"
+          width={150}
+          height={75}
+          src={props.imagem}
+          alt={props.nome}
+        />
       </div>
-      <div className="card-content h-fit max-w-screen md:max-w-none">
-        <h3 className="font-semibold ">{props.nome}</h3>
-        <p>{props.depoimento}</p>
+      <div className="card-container  m-0 h-fit max-w-screen w-full md:max-w-1/3  justify-start">
+        <div className="card-content h-full text-start my-auto max-w-screen md:max-w-none ">
+          <h3 className="font-semibold  pb-2.5">{props.nome}</h3>
+          <p>{props.depoimento}</p>
+        </div>
       </div>
     </div>
   );

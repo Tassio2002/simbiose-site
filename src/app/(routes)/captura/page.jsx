@@ -13,15 +13,13 @@ const jost = Jost({ subsets: ["latin"] });
 
 export default function CapturePage() {
   const background = data.capturePage.background;
-  const src = data.capturePage.videos;
   const depoimentos = data.capturePage.depoimentos;
 
   return (
     <div className={`bg-background ${jost.className}`}>
       <Title background={background}></Title>
 
-      <SessionVideo {...src}></SessionVideo>
-      <div className="flex flex-col md:flex-row md:grow max-w-[1375px] w-full mx-auto py-8 md:py-16 gap-5 md:gap-10 items-center md:justify-center">
+      <div className="flex flex-col md:flex-row md:grow max-w-[1375px] w-full mx-auto py-8 md:py-16 gap-5 md:gap-10 items-center md:items-start md:justify-start">
         {depoimentos.map((depoimento, index) => (
           <Card
             key={index}
@@ -32,10 +30,12 @@ export default function CapturePage() {
           />
         ))}
       </div>
-      <div className="py-5 md:py-10">
-        <ContactSection titleForm={"Entre em contato conosco!"} />
+      <div id="formulario" className="py-5 md:py-10 min-h-screen">
+        <ContactSection
+          titleForm={"Entre em contato conosco!"}
+          contacts={"False"}
+        />
       </div>
-      <Footer />
     </div>
   );
 }
