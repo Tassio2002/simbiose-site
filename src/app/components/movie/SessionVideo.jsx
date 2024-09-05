@@ -9,7 +9,7 @@ const SessionVideo = ({ src, alt, text, title }) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
         alt={alt}
-        className="flex rounded-lg w-screen h-64 md:h-auto md:w-[660px] md:p-0 px-5 bg-cover"
+        className="flex rounded-lg w-screen h-64 md:h-[375px] md:w-[660px] md:p-0 px-5 bg-cover"
       ></iframe>
 
       <a
