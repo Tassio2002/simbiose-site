@@ -1,11 +1,9 @@
 "use client";
 import "./styles/style.css";
 import Title from "@/app/components/global/TitleSection";
-import SessionVideo from "@/app/components/movie/SessionVideo";
 import Card from "@/app/components/cardTestimony/Card";
 import ContactSection from "@/app/components/home/ContactSection";
 
-import Footer from "@/app/components/global/Footer/Footer";
 import data from "@/app/data/capturePage.json";
 import { Jost } from "next/font/google";
 
