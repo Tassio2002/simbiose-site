@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @layer components {
+  .button-container {
+    @apply text-white bg-button rounded-tl-[20px] rounded-tr-[3px] rounded-br-[20px] rounded-bl-[3px] shadow-buttonShadow max-w-[200px] h-[35px] cursor-pointer flex justify-center items-center gap-2;
+  }
+
+  .button-container:hover {
+    @apply bg-hover;
+  }
   .contact-section {
     @apply w-full p-16 relative bg-contain;
   }
@@ -76,9 +83,15 @@
     animation: twinkling infinite;
   }
   @keyframes twinkling {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 }
 
