@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  header {
+    @apply w-full py-6 relative z-10;
+  }
+
+  @media screen and (max-width: 1280px) {
+    header {
+      @apply pt-0;
+    }
+  }
+
+ 
+}

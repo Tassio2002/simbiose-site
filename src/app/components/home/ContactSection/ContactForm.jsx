@@ -5,7 +5,7 @@ import dataButton from "@/app/data/global-components.json";
 import Image from "next/image";
 import InputMask from "react-input-mask";
 
-const ContactForm = () => {
+const ContactForm = ({ titleForm }) => {
   const buttonData = dataButton.globalButton;
 
   const formData = data.home.contato.form.background;
@@ -48,7 +48,7 @@ const ContactForm = () => {
   if (emailSent) {
     return (
       <div className="form-container-post-shipment">
-        <div style={style.background}>
+        <div>
           <h2 className={"postShipmentTitle"}>Agradecemos o contato!</h2>
           <h3 className={"postShipmentText"}>
             Estaremos retornando o mais breve possível.
@@ -60,10 +60,14 @@ const ContactForm = () => {
     return (
       <div className="form-container">
         <form style={style.background} onSubmit={handleSubmit}>
-          <h2>Tem alguma dúvida?</h2>
+          <h2>{titleForm ? titleForm : "Tem alguma dúvida?"}</h2>
           <input type="text" placeholder="* Nome" required />
           <input type="email" placeholder="* E-mail" required />
-          <InputMask mask={'(99) 9 9999-9999'} maskChar='' placeholder="Telefone">
+          <InputMask
+            mask={"(99) 9 9999-9999"}
+            maskChar=""
+            placeholder="Telefone"
+          >
             {(inputProps) => <input {...inputProps} type="tel" required />}
           </InputMask>
           <textarea
