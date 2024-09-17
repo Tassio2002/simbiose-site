@@ -4,7 +4,7 @@
 
 @layer components {
   .partners-section {
-    @apply w-full py-10 px-2 flex justify-between gap-2 flex-col items-center bg-no-repeat bg-cover;
+    @apply w-full py-10 px-2 flex justify-between flex-col gap-2 items-center bg-no-repeat bg-cover;
   }
 
   .partner-box {
@@ -13,5 +13,9 @@
 
   .partners-section h2 {
     @apply text-4xl font-medium mb-8 text-white;
+  }
+
+  .testimonial-box {
+    @apply flex flex-col lg:flex-row gap-11 px-6;
   }
 }

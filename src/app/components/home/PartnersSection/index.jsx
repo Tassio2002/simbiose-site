@@ -5,6 +5,7 @@ import Image from "next/image";
 import Carousel from "nuka-carousel";
 import MobileObserverContext from "@/app/data/MobileObserverContext";
 import { useContext } from "react";
+import TestimonialCard from "./TestimonialCard";
 
 const PartnersSection = () => {
   const partnersData = data.home.parceiros;
@@ -30,7 +31,15 @@ const PartnersSection = () => {
       <h2>Parceiros de sucesso</h2>
       <Carousel {...params} className="carousel">
         {partnersData.images.map((image, index) => (
-          <div key={index} className="partner-box" style={{overflow: "hidden", marginLeft: "6px", marginRight: "6px"}}>
+          <div
+            key={index}
+            className="partner-box"
+            style={{
+              overflow: "hidden",
+              marginLeft: "6px",
+              marginRight: "6px",
+            }}
+          >
             <Image
               className="partner-image"
               src={image}
@@ -41,6 +50,15 @@ const PartnersSection = () => {
           </div>
         ))}
       </Carousel>
+      <div className="testimonial-box">
+        {partnersData.testimonials.map((card, index) => (
+          <TestimonialCard
+            key={index}
+            title={card.title}
+            content={card.content}
+          />
+        ))}
+      </div>
     </section>
   );
 };
