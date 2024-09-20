@@ -5,16 +5,17 @@ const SessionVideo = ({ src, alt, text, title }) => {
         width="660"
         height="375"
         src={src}
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
         alt={alt}
+        title="YouTube video player"
+        allowFullScreen
         className="flex rounded-lg w-screen h-64 md:h-[375px] md:w-[660px] md:p-0 px-5 bg-cover"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
       ></iframe>
-
       <a
         href="#formulario"
-        className="button-container w-fit mt-5 md:mt-10 py-2.5 px-4 md:py-5 md:px-8 max-w-none font-semibold"
+        className="button-container w-fit mt-5 md:mt-10 py-2.5 px-4 md:py-5 md:px-8 max-w-none font-semibold border-t-2 border-r-2  border-white"
       >
         Quero uma consultoria gratuita
       </a>

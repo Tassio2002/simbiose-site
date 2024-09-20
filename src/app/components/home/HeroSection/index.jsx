@@ -23,7 +23,10 @@ export const Hero = () => {
         <SectionName name={assets.enterpriseName} />
         <HeroTitle />
         <p className="subtitle">{assets.subtitle}</p>
-        <HighlightBtn />
+        <div className="flex flex-row gap-3">
+          <HighlightBtn />
+          <HighlightBtn link={"/consultoria"} text={"Quero uma consultoria"} />
+        </div>
         {isMobile && <MeetUs />}
       </div>
 
