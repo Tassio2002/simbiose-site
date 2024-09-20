@@ -13,4 +13,7 @@
     transition: 0.2s;
     background-color: #164567;
   }
+  html {
+    scroll-behavior: smooth;
+  }
 }

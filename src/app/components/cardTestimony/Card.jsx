@@ -5,7 +5,7 @@ import data from "@/app/data/capturePage.json";
 const Card = (props) => {
   return (
     <div className="flex flex-col max-w-[450px]  ">
-      <div className="flex  w-full flex-row items-end justify-center min-h-[75px] pb-1">
+      <div className="flex  w-full flex-row items-end justify-center min-h-auto lg:min-h-[75px] pb-2.5 lg:pb-1">
         <Image
           className="object-cover"
           width={150}

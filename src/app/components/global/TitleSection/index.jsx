@@ -4,7 +4,6 @@ import data from "@/app/data/capturePage.json";
 import Image from "next/image";
 import SessionVideo from "@/app/components/movie/SessionVideo";
 import Link from "next/link";
-
 const Title = ({ children, background }) => {
   const headerStyle = {
     background: `url(${background}) no-repeat`,
@@ -17,19 +16,19 @@ const Title = ({ children, background }) => {
 
   return (
     <header
-      className="max-h-none md:max-h-screen min-h-full flex flex-col "
+      className="max-h-none lg:max-h-screen min-h-full flex flex-col "
       style={headerStyle}
     >
       <div className="body-container ">
         <div className="flex-container min-h-full">
-          <div className="flex flex-col  pt-2.5 md:pt-5 items-center gap-2.5 md:gap-5 ">
+          <div className="flex flex-col  pt-2.5 lg:pt-5 items-center gap-2.5 lg:gap-5 ">
             <div className="flex flex-row items-center justify-between w-full p-5 z-50 ">
-              <Link href="/">
+              <Link target="_blank " href="/">
                 <Image
-                  className="max-w-[200px] md:max-w-none"
+                  className="max-w-[200px] lg:max-w-none"
                   src={logo}
                   alt="Logo Simbiose"
-                  width={30}
+                  width={200}
                   height={30}
                 />
               </Link>
@@ -43,10 +42,10 @@ const Title = ({ children, background }) => {
               </Link>
             </div>
           </div>
-          <div className="text-white flex flex-row md:-mt-[90px] max-w-[1375px] w-full h-screen items-start md:items-center mx-auto">
-            <div className="flex flex-col md:flex-row gap-1 w-full">
-              <div className="flex flex-col w-full text-start py-5 md:py-2.5 px-5">
-                <h1 className="text-2xl md:text-[56px] w-full leading-snug md:p-0 text-white font-bold  text-start ">
+          <div className="text-white flex flex-row lg:-mt-[90px] max-w-[1375px] w-full h-screen items-start lg:items-center mx-auto">
+            <div className="flex flex-col lg:flex-row gap-1 w-full">
+              <div className="flex flex-col w-full text-center lg:text-start py-5 md:py-20 lg:py-2.5 px-5">
+                <h1 className="text-2xl lg:text-[56px] w-full leading-snug lg:p-0 text-white font-bold  text-center lg:text-start ">
                   Problemas com software em pleno 2024?
                 </h1>
                 <p className="text-xl  py-5">
