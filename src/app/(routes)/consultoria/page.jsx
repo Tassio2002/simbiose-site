@@ -18,7 +18,7 @@ export default function CapturePage() {
     <div className={`bg-background ${jost.className}`}>
       <Title background={background}></Title>
 
-      <div className="flex flex-col lg:flex-row lg:grow max-w-[1375px] w-full mx-auto py-8 lg:py-8 gap-5 lg:gap-10 items-center lg:items-start lg:justify-start">
+      <div className="flex flex-col xl:flex-row lg:grow max-w-[1375px] px-0 lg:px-5 xl:px-0 w-full mx-auto py-8 lg:py-8 gap-5 lg:gap-10  items-center xl:items-start xl:justify-start">
         {depoimentos.map((depoimento, index) => (
           <Card
             key={index}
