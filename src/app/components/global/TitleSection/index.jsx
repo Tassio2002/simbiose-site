@@ -42,7 +42,7 @@ const Title = ({ children, background }) => {
               </Link>
             </div>
           </div>
-          <div className="text-white flex flex-row  xl:-mt-[90px] max-w-[1375px] w-full lg:max-h-[1024px] max-h-fit xl:max-h-screen h-screen items-start xl:items-center mx-auto">
+          <div className="text-white flex flex-row  xl:-mt-[90px] max-w-[1375px] w-full lg:max-h-[1024px] h-screen md:h-auto max-h-min xl:max-h-screen lg:h-screen items-start xl:items-center mx-auto">
             <div className="flex flex-col xl:flex-row gap-1 w-full">
               <div className="flex flex-col w-full text-center xl:text-start py-5 lg:px-20 md:py-20 xl:px-5 xl:py-2.5 px-5">
                 <h1 className="text-2xl xl:text-[56px] w-full leading-snug xl:p-0 text-white font-bold  text-center xl:text-start ">

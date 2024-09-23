@@ -18,7 +18,7 @@ export default function CapturePage() {
     <div className={`bg-background ${jost.className}`}>
       <Title background={background}></Title>
 
-      <div className="flex flex-col xl:flex-row lg:grow max-w-[1375px] px-0 lg:px-5 xl:px-0 w-full mx-auto py-8 lg:py-8 gap-5 lg:gap-10  items-center xl:items-start xl:justify-start">
+      <div className="flex flex-col xl:flex-row lg:grow max-w-[1375px] px-5 xl:px-0 w-full mx-auto py-8 lg:py-8 gap-5 lg:gap-10  items-center xl:items-start xl:justify-start">
         {depoimentos.map((depoimento, index) => (
           <Card
             key={index}
@@ -29,7 +29,7 @@ export default function CapturePage() {
           />
         ))}
       </div>
-      <div id="formulario" className="py-5 lg:py-10 min-h-screen">
+      <div id="formulario" className="py-5 lg:py-10 xl:min-h-screen">
         <ContactSection
           titleForm={"Entre em contato conosco!"}
           contacts={"False"}
