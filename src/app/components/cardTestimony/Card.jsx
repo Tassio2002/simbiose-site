@@ -4,10 +4,10 @@ import data from "@/app/data/capturePage.json";
 
 const Card = (props) => {
   return (
-    <div className="flex flex-col max-w-[450px]  ">
+    <div className="flex flex-col lg:max-w-[65vw] xl:max-w-[450px]  ">
       <div className="flex  w-full flex-row items-end justify-center min-h-auto lg:min-h-[75px] pb-2.5 lg:pb-1">
         <Image
-          className="object-cover"
+          className="object-cover lg:pb-5 pb-0 xl:pb-0"
           width={150}
           height={75}
           src={props.imagem}
