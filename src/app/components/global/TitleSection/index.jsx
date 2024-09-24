@@ -23,7 +23,7 @@ const Title = ({ children, background }) => {
         <div className="flex-container min-h-full">
           <div className="flex flex-col  pt-2.5 xl:pt-5 items-center gap-2.5 xl:gap-5 ">
             <div className="flex flex-row items-center justify-between w-full p-5 z-50 ">
-              <Link target="_blank " href="/">
+              <Link target="_blank" href="/">
                 <Image
                   className="max-w-[200px] xl:max-w-none"
                   src={logo}
@@ -32,7 +32,7 @@ const Title = ({ children, background }) => {
                   height={30}
                 />
               </Link>
-              <Link href={whatsapp.link}>
+              <Link target="_blank" href={whatsapp.link}>
                 <Image
                   src={whatsapp.icon}
                   alt="Logo Whatsapp"
