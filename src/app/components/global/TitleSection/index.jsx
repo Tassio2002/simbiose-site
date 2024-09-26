@@ -56,6 +56,12 @@ const Title = ({ children, background }) => {
                   Em apenas <b>30 minutos</b> traremos soluções que já geraram
                   resultados rápidos e expressivos para negócios como o seu.
                 </p>
+                <a
+                  href="#formulario"
+                  className="highlightBtn  mt-5 md:mt-14 xl:flex hidden "
+                >
+                  Quero uma consultoria gratuita
+                </a>
               </div>
               <SessionVideo {...src}></SessionVideo>
             </div>

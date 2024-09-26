@@ -1,3 +1,5 @@
+import "./styles/style.css";
+
 const SessionVideo = ({ src, alt, text, title }) => {
   return (
     <div className="w-full mx-auto flex flex-col items-center">
@@ -15,7 +17,7 @@ const SessionVideo = ({ src, alt, text, title }) => {
       ></iframe>
       <a
         href="#formulario"
-        className="button-container w-fit mt-5 md:mt-10 py-2.5 px-4 md:py-5 md:px-8 max-w-none font-semibold border-t-2 border-r-2  border-white"
+        className="highlightBtn xl:hidden flex  mt-5 md:mt-10 "
       >
         Quero uma consultoria gratuita
       </a>
