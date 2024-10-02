@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
                 src="https://www.googletagmanager.com/gtag/js?id=AW-11182275938"
                 strategy="afterInteractive"
               />
-              <Script id="event-form">
+              <Script id="event-form" strategy="afterInteractive">
                 {`
                   gtag('event', 'conversion_event_submit_lead_form', {
                   // <event_parameters>
