@@ -5,7 +5,6 @@ import { Jost } from "next/font/google";
 import { ServiceContextProvider } from "./data/ServiceContextProvider";
 import { MobileObserverContextProvider } from "./data/MobileObserverContextProvider";
 import { SetServicePageIndexContextProvider } from "./data/setServicePageIndex";
-
 const jost = Jost({ subsets: ["latin"] });
 
 export const metadata = {
@@ -23,6 +22,15 @@ export default function RootLayout({ children }) {
           content="upgrade-insecure-requests"
         />
         <meta name="description" content={metadata.description} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-KW3DCQDZ')`,
+          }}
+        />{" "}
       </Head>
       <body className={jost.className}>
         <MobileObserverContextProvider>
@@ -49,13 +57,7 @@ export default function RootLayout({ children }) {
                 src="https://www.googletagmanager.com/gtag/js?id=AW-11182275938"
                 strategy="afterInteractive"
               />
-              <Script id="event-form" strategy="afterInteractive">
-                {`
-                  gtag('event', 'conversion_event_submit_lead_form', {
-                  // <event_parameters>
-                  });
-                `}
-              </Script>
+
               <Script id="google-tag-config" strategy="afterInteractive">
                 {`
                   window.dataLayer = window.dataLayer || [];
@@ -64,6 +66,14 @@ export default function RootLayout({ children }) {
                   gtag('config', 'AW-11182275938');
                 `}
               </Script>
+              <noscript>
+                <iframe
+                  src="https://www.googletagmanager.com/ns.html?id=GTM-KW3DCQDZ"
+                  height="0"
+                  width="0"
+                  style="display:none;visibility:hidden"
+                ></iframe>
+              </noscript>
             </ServiceContextProvider>
           </SetServicePageIndexContextProvider>
         </MobileObserverContextProvider>
