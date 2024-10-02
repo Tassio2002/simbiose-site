@@ -44,7 +44,18 @@ export default function RootLayout({ children }) {
                     s.parentNode.insertBefore(b, s);})(window.lintrk);
                 `}
               </Script>
-              <Script id="google-tag" src="https://www.googletagmanager.com/gtag/js?id=AW-11182275938" strategy="afterInteractive" />
+              <Script
+                id="google-tag"
+                src="https://www.googletagmanager.com/gtag/js?id=AW-11182275938"
+                strategy="afterInteractive"
+              />
+              <Script id="event-form">
+                {`
+                  gtag('event', 'conversion_event_submit_lead_form', {
+                  // <event_parameters>
+                  });
+                `}
+              </Script>
               <Script id="google-tag-config" strategy="afterInteractive">
                 {`
                   window.dataLayer = window.dataLayer || [];
