@@ -22,34 +22,8 @@ export default function RootLayout({ children }) {
           content="upgrade-insecure-requests"
         />
         <meta name="description" content={metadata.description} />
-        <>
-          <Script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-3BVWEJEVTK"
-          />
-          <Script
-            id="google-analytics"
-            strategy="afterInteractive" // ou "lazyOnload"
-            dangerouslySetInnerHTML={{
-              __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-3BVWEJEVTK');
-          `,
-            }}
-          />
-        </>
       </Head>
       <body className={jost.className}>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KW3DCQDZ"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
         <MobileObserverContextProvider>
           <SetServicePageIndexContextProvider>
             <ServiceContextProvider>
@@ -70,28 +44,21 @@ export default function RootLayout({ children }) {
                 `}
               </Script>
               <Script
-                id="google-tag"
-                src="https://www.googletagmanager.com/gtag/js?id=AW-11182275938"
-                strategy="afterInteractive"
+                async
+                src="https://www.googletagmanager.com/gtag/js?id=G-3BVWEJEVTK"
               />
-
-              <Script id="google-tag-config" strategy="afterInteractive">
-                {`
+              <Script
+                id="google-analytics"
+                strategy="afterInteractive" // ou "lazyOnload"
+                dangerouslySetInnerHTML={{
+                  __html: `
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
-                  gtag('config', 'AW-11182275938');
-                `}
-              </Script>
-              <Script id="form" strategy="afterInteractive">
-                {`
-                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                  })(window,document,'script','dataLayer','GTM-KW3DCQDZ');
-                `}
-              </Script>
+                  gtag('config', 'G-3BVWEJEVTK');
+                `,
+                }}
+              />
             </ServiceContextProvider>
           </SetServicePageIndexContextProvider>
         </MobileObserverContextProvider>
