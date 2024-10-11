@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  header {
+    @apply w-full py-6 relative z-10;
+  }
+
+  @media screen and (max-width: 1280px) {
+    header {
+      @apply pt-0;
+    }
+  }
+
+  @layer components {
+    .highlightBtn {
+      @apply bg-primary text-white flex items-center justify-center gap-4 rounded-tl-[20px] rounded-tr-[5px] rounded-br-[20px] rounded-bl-[5px] text-lg w-max px-14 py-3 box-border;
+      transition: 0.2s;
+    }
+
+    .highlightBtn:hover {
+      box-shadow: 6px 6px #09aff4;
+      transition: 0.2s;
+      background-color: #164567;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+}
