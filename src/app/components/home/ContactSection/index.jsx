@@ -66,7 +66,7 @@ const ContactSection = ({ titleForm, contacts }) => {
             </div>
           )}
           <div className="form">
-            <ContactForm titleForm={titleForm} />
+            <ContactForm titleForm={titleForm} pageAgradecimento={true} />
           </div>
         </div>
       </Container>

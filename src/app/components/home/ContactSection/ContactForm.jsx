@@ -5,7 +5,7 @@ import dataButton from "@/app/data/global-components.json";
 import Image from "next/image";
 import InputMask from "react-input-mask";
 
-const ContactForm = ({ titleForm }) => {
+const ContactForm = ({ titleForm, pageAgradecimento = false }) => {
   const buttonData = dataButton.globalButton;
 
   const formData = data.home.contato.form.background;
@@ -40,6 +40,9 @@ const ContactForm = ({ titleForm }) => {
         },
         body: JSON.stringify(values),
       }).then((response) => (response.status === 200 ? sendedFlow() : ""));
+      if (pageAgradecimento) {
+        window.location.href = "/agradecimento";
+      }
     } catch (error) {
       console.log(error);
     }

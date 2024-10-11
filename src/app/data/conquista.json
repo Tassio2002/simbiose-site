@@ -1,0 +1,31 @@
+{
+  "capturePage": {
+    "background": "/backgroundImage.png",
+    "logo": "/logo.png",
+    "whatsapp": {
+      "icon": "/logo-whatsapp-white-24.png",
+      "link": "https://api.whatsapp.com/send?phone=5531984853252&text=Ol%C3%A1,%20gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20tecnologia%20da%20Simbiose/BrTale%E2%80%A6"
+    },
+    "videos": {
+      "src": "https://www.youtube.com/embed/_o05oC3R1nQ?si=_yhQ-w5bwaH90FkC?&amp;theme=dark&amp;autohide=2&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3",
+      "alt": "Video de captura"
+    },
+    "depoimentos": [
+      {
+        "imagem": "/layers.png",
+        "nome": "Murillo A. (PM - Layers Education)",
+        "depoimento": "Desde o início do relacionamento com a Simbiose, eu senti um grande engajamento por parte do desenvolvedor. Apesar do tempo que ele precisou para se adaptar e se integrar ao ritmo da nossa equipe interna, eu sempre tive o suporte da Simbiose, que acolheu meus relatos e feedbacks e ofereceu o apoio necessário para o crescimento do desenvolvedor. Hoje ele realmente veste a camisa da empresa, aprende com as situações e se dedica cada vez mais dentro da equipe."
+      },
+      {
+        "imagem": "/cpe.png",
+        "nome": "Luiz Henrique - (CTO - CPE Tecnologia, Mercado Topográfico e Motbot)",
+        "depoimento": "Gostaria de expressar meus sinceros elogios à equipe da Simbiose pelo excelente trabalho que têm realizado recentemente. Estou impressionado com a qualidade e eficiência das entregas.Fiquei particularmente impressionado com a capacidade da equipe em trabalhar de forma colaborativa e engajada, superando desafios e entregando soluções inovadoras e de alto nível.É notável a dedicação e competência da equipe na criação de soluções que atendem às nossas necessidades, entregando um produto final de alta qualidade e com a melhor experiência do usuário. As equipes tem demonstrado um comprometimento com os nossos objetivos, trabalhando com dedicação e paixão para garantir o sucesso dos projetos.Gostaria de parabenizá-los pelos resultados obtidos. É um privilégio trabalhar com profissionais tão talentosos e dedicados."
+      },
+      {
+        "imagem": "/zoom.png",
+        "nome": "Rodrigo Teleginski Vidal (P.O. - ZOOM education for life)",
+        "depoimento": "A Simbiose tem especialistas de diferentes áreas que estão disponíveis quando nós da Zoom precisamos, então isso nos traz segurança porque sabemos a quem recorrer quando temos um problema. O canal de comunicação é direto.A gente nota um profissionalismo muito bom, tanto da parte dos desenvolvedores quanto da estrutura da Simbiose, o pessoal realmente se importa com o projeto."
+      }
+    ]
+  }
+}
