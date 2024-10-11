@@ -22,6 +22,24 @@ export default function RootLayout({ children }) {
           content="upgrade-insecure-requests"
         />
         <meta name="description" content={metadata.description} />
+        <>
+          <Script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-3BVWEJEVTK"
+          />
+          <Script
+            id="google-analytics"
+            strategy="afterInteractive" // ou "lazyOnload"
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3BVWEJEVTK');
+          `,
+            }}
+          />
+        </>
       </Head>
       <body className={jost.className}>
         <noscript>
