@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
                   src="https://www.googletagmanager.com/ns.html?id=GTM-KW3DCQDZ"
                   height="0"
                   width="0"
-                  style="display:none;visibility:hidden"
+                  style={{ display: "none", visibility: "hidden" }}
                 ></iframe>
               </noscript>
               <Script id="linkedin-tag" strategy="afterInteractive">
